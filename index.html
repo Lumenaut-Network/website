@@ -3,6 +3,9 @@
 <head>
 	<title>Lumenaut</title>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/stellar-sdk/0.8.0/stellar-sdk.js" integrity="sha384-ZLFqobQQtphXg0EkBNEhn6PWrsETu9TotgyqNGtuSC6j108/jAvBOUpCUysC9iMp" crossorigin="anonymous"></script>
+
+	<!-- jQuery -->
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script> -->
 	
 	<link href="css/styles.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" media="screen" href="css/clear-sans.css">
@@ -14,16 +17,29 @@
 			<span class="header-link">
 				<a href="https://www.stellar.org/" class="header-stellar">Stellar</a>
 				<span class="header-separator"> </span>
-				<a href="" class="header-subtitle">community pool</a>
+				<a href="" class="header-subtitle">community inflation pool</a>
 			</span>
 		</div>
 
 		<div class="content-boxes">
 			<div class="box-top">
-				<h2 class="info-title">Lumenaut community pool</h2><br>
-				<p>info info info dolor ipsum</p>
+				<h2 class="info-title">Lumenaut Community Pool</h2><br>
+				<h3 class="header-subtitle">100% Fee Free</h3>
+				<h3 class="header-subtitle">By the community, for the community</h3>
+
+				<!-- These can be static (we update them every so oftern)
+					or we could build a simple API to fetch this data (would fed.network work for this?) -->
+				
+				<h2 class="info-title"> <!-- Total accounts voting for pool -->
+					Accounts Contributing: <span id="accounts-contributing">12345</span>
+				</h2>
+
+				<h2 class="info-title"> <!-- Total votes for pool -->
+					Total Votes for Pool: <span id="total-votes">123456789</span>
+				</h2>
 			</div>
 
+			<!-- Not sure if people will trust this... -->
 			<div class="box-bottom">
 				Your Secret Key:<br>
 				<input type="text" name="key" style="width: 85%" id="secret"><br><br>
@@ -33,70 +49,7 @@
 		</div>
 	</div>
 
-	<script type="text/javascript">
-	function setButton(text, disabled) {
-		document.getElementById("btn-vote").innerHTML = text;
-		document.getElementById("btn-vote").disabled = disabled;
-	}
-
-	function setLink(text, href) {
-		if (text) document.getElementById("tra-link").innerHTML = text;
-		if (href) document.getElementById("tra-link").href = href;
-		document.getElementById("tra-link").style = "display: inline";
-	}
-
-	function vote() {
-		setButton("Loading...", true);
-
-		var secKey = document.getElementById("secret").value;
-		var address = "POOL ADDRESS"
-
-		var sourceKeypair;
-		try {
-			sourceKeypair = StellarSdk.Keypair.fromSecret(secKey);
-		} catch(err) {
-			alert("Invalid key");
-			setButton("Join Pool", false);
-			document.getElementById("secret").value = "";
-			return;
-		}
-		var sourcePublicKey = sourceKeypair.publicKey();
-
-		var server = new StellarSdk.Server('https://horizon.stellar.org');
-		StellarSdk.Network.usePublicNetwork();
-
-		server.loadAccount(sourcePublicKey)
-		.then(function(account) {
-			setButton("Building...", true);
-			var transaction = new StellarSdk.TransactionBuilder(account)
-			.addOperation(StellarSdk.Operation.setOptions({
-				inflationDest: address,
-			}))
-			.build();
-
-			transaction.sign(sourceKeypair);
-
-			console.log(transaction.toEnvelope().toXDR('base64'));
-
-			setButton("Submitting...", true);
-			server.submitTransaction(transaction)
-			.then(function(transactionResult) {
-				setButton("Join Pool", false);
-				setLink(null, transactionResult._links.transaction.href);
-			})
-			.catch(function(err) {
-				setLink("An error occured, check the console", null);
-				console.log('An error has occured:');
-				console.log(err);
-			});
-		})
-		.catch(function(e) {
-			setButton("Join Pool", false);
-			setLink("An error occured, check the console", null);
-			console.log('An error has occured:');
-			console.error(e);
-		});
-	}
-	</script>
+	<!-- Custom JS -->
+	<script type="text/javascript" src="scripts/index.js"></script>
 </body>
 </html>
