@@ -1,3 +1,7 @@
+/*
+ * General
+*/
+
 html {
 	font-family: sans-serif;
 	-ms-text-size-adjust: 100%;
@@ -32,11 +36,9 @@ p {
 	margin: 0 0 1em 0;
 }
 
-main {
-	width: 45em;
-	margin: 0 auto;
-	background-color: gainsboro;
-}
+/*
+ * Header
+*/
 
 body > header > a {
 	font-size: 28px;
@@ -48,6 +50,16 @@ body > header > p {
     font-size: 18px;
     font-weight: 300;
     color: #a9a9a9;
+}
+
+/*
+ * Main
+*/
+
+main {
+	width: 45em;
+	margin: 0 auto;
+	background-color: gainsboro;
 }
 
 .box-top {
