@@ -59,6 +59,9 @@ body > header > p {
 main {
 	width: 45em;
 	margin: 0 auto;
+}
+
+main > section {
 	background-color: #dcdcdc;
 }
 
