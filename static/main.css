@@ -3,30 +3,70 @@
 */
 
 html {
-	font-family: sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
-}
+	font-family: sans-serif;
+	font-size: 100%;
+	font-weight: 100;
+	line-height: 1.4;	/* important for good lecture */
+	color: rgb(61,70,77);
+	}
 
 body {
-	font-weight: 300;
 	margin: 0;
-	
 	background-color: rgb(43,43,45); /* prevent color jump */
 	background-image: url("bg.png");
-}
+	}
 
 body > header,
 body > main,
 body > footer {
 	width: 45em;
 	margin: 0 auto;
-}
+	}
+
+a {
+	color: rgb(11,101,234);
+	font-weight: 300;
+	}
+
+a:hover,
+a:focus {
+	color: ;
+	}
+
+a:active {
+	color: ;
+	}
+
+a:visited {
+	color: ;
+	}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0 0 3vmin;
+	font-weight: normal;
+	color: rgb(27,39,51);
+	}
+
+h1 { font-size: 250%; }
+h2 { font-size: 200%; }
+h3 { font-size: 175%; }
+h4 { font-size: 100%; }
+h5 { font-size: 90%; }
+h6 { font-size: 80%; }
 
 p {
 	display: block;
-	margin: 0 0 1em 0;
-}
+	padding: 0;
+	margin: 0 0 3em 0;
+	}
+
+p:last-child {
+	margin-bottom: 0 !important;	/* good stuff, trust me */
+	}
 
 /*
  * Header
@@ -36,13 +76,13 @@ body > header > a {
 	font-size: 28px;
 	color: #3a3f43;
 	padding: 18px 0 18px 0;
-}
+	}
 
 body > header > p {
 	font-size: 18px;
 	font-weight: 300;
 	color: #a9a9a9;
-}
+	}
 
 /*
  * Main
@@ -52,7 +92,7 @@ main > section {
 	padding: 1vmin;
 	background-color: rgba(230,248,252,0.8);
 	border-radius: 1vmin;
-}
+	}
 
 /*
  * Secret Key (not sure yet)
@@ -66,7 +106,7 @@ main > section {
 	border-radius: 3px;
 	box-sizing: inherit;
 	overflow-wrap: break-word;
-}
+	}
 
 button {
 	z-index: 1;
@@ -79,16 +119,16 @@ button {
 	margin: 0;
 	border-radius: 3px;
 	cursor: pointer;
-}
+	}
 
 #btn-vote {
 	background: #08b5e5;
-}
+	}
 
 #btn-donate {
 	background: #006600;
 	border: 1px solid #003300;
-}
+	}
 
 /*
  * Footer
@@ -97,8 +137,8 @@ button {
 footer {
 	display: flex;
 	
-}
+	}
 
 footer > div {
 	margin-left: auto;
-}
+	}
