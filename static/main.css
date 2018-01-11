@@ -23,21 +23,6 @@ body > footer {
 	margin: 0 auto;
 }
 
-* {
-	border-color: #242a2e;
-}
-
-*, *:before, *:after {
-	box-sizing: inherit;
-}
-
-a {
-	background-color: transparent;
-	color: inherit;
-	text-decoration: underline;
-	cursor: pointer;
-}
-
 p {
 	display: block;
 	margin: 0 0 1em 0;
@@ -115,5 +100,5 @@ footer {
 }
 
 footer > div {
-	
+	margin-left: auto;
 }
