@@ -72,16 +72,17 @@ p:last-child {
  * Header
 */
 
-body > header > a {
-	font-size: 28px;
+body > header {
+	text-align: center;
+	}
+
+body > header > h1 {
 	color: #3a3f43;
 	padding: 18px 0 18px 0;
 	}
 
-body > header > p {
-	font-size: 18px;
-	font-weight: 300;
-	color: #a9a9a9;
+body > header > nav {
+	font-size: 80%;
 	}
 
 /*
@@ -89,9 +90,14 @@ body > header > p {
 */
 
 main > section {
+	margin-bottom: 8vmin;
 	padding: 1vmin;
 	background-color: rgba(230,248,252,0.8);
-	border-radius: 1vmin;
+	border-radius: 0.3vmin;
+	}
+
+main > section h2 {
+	text-align: center;
 	}
 
 /*
