@@ -5,9 +5,10 @@ html {
 }
 
 body {
-	font-family: "Clear Sans", sans-serif;
 	font-weight: 300;
 	margin: 0;
+	
+	background-color: rgb(43,43,45); /* prevent color jump */
 	background-image: url("bg.png");
 }
 
