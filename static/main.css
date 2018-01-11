@@ -47,9 +47,9 @@ body > header > a {
 }
 
 body > header > p {
-    font-size: 18px;
-    font-weight: 300;
-    color: #a9a9a9;
+	font-size: 18px;
+	font-weight: 300;
+	color: #a9a9a9;
 }
 
 /*
@@ -59,7 +59,7 @@ body > header > p {
 main {
 	width: 45em;
 	margin: 0 auto;
-	background-color: gainsboro;
+	background-color: #dcdcdc;
 }
 
 .box-top {
