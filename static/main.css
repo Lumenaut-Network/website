@@ -74,7 +74,7 @@ p:last-child {
 
 body > aside {
 	margin: 1vmin auto;
-	color: #fff;
+	color: #dcdcdc;
 	font-size: 80%;
 	text-align: center;
 	}
@@ -160,7 +160,10 @@ button {
 
 footer {
 	display: flex;
-	color: #fff;
+	}
+
+footer h6 {
+	color: #dcdcdc;
 	font-size: inherit;
 	font-weight: inherit;
 	}
