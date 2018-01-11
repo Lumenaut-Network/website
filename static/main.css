@@ -155,12 +155,12 @@ footer h6 {
 	}
 
 footer > div {
+	display: flex;
 	margin-left: auto;
 	}
 
 footer > div a {
 	overflow: hidden;
-	display: inline-block;
 	text-indent: -9999px;
 	max-width: 32px;
 	max-height: 32px;
