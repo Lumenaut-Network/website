@@ -109,6 +109,11 @@ button {
  * Footer
 */
 
+footer {
+	display: flex;
+	
+}
+
 footer > div {
 	
 }
