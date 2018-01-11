@@ -1,7 +1,7 @@
 from flask import Flask, render_template
 
 app = Flask("lumenaut")
-app.secret_key = '\xdbc\xbe\x9bGJ\xdd\x8fS*\xa7X!\xfd\x90_\xba\x17e\xd4\xcfp)X'
+app.secret_key = 'use something random in prod'
 
 @app.route("/index")
 @app.route("/")
