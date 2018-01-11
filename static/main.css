@@ -89,17 +89,36 @@ body > aside {
 
 .highlight-red {
 	color: red;
+	-webkit-animation: red 1s;
+	animation: red 1s;
 	}
 
 .highlight-green {
 	color: green;
+	-webkit-animation: green 1s;
+	animation: green 1s;
 	}
 
-.price {
-	-webkit-transition: 1s linear all;
-	transition: 1s linear all;
-	color: inherit;
+@-webkit-keyframes green {
+	0%   { color: inherit; }
+	100% { color: green; }
 	}
+
+@keyframes green {
+	0%   { color: inherit; }
+	100% { color: green; }
+	}
+
+@-webkit-keyframes red {
+	0%   { color: inherit; }
+	100% { color: red; }
+	}
+
+@keyframes red {
+	0%   { color: inherit; }
+	100% { color: red; }
+	}
+
 
 body > header {
 	text-align: center;
@@ -162,8 +181,8 @@ footer > div {
 footer > div a {
 	overflow: hidden;
 	text-indent: -9999px;
-	max-width: 32px;
-	max-height: 32px;
+	max-width:  32px;
+	max-height:  32px;
 	background: 50% 50% no-repeat;
 	}
 
