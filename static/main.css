@@ -16,6 +16,13 @@ body {
 	background-image: url("bg.png");
 }
 
+body > header,
+body > main,
+body > footer {
+	width: 45em;
+	margin: 0 auto;
+}
+
 * {
 	border-color: #242a2e;
 }
@@ -55,13 +62,6 @@ body > header > p {
 /*
  * Main
 */
-
-body > header,
-body > main,
-body > footer {
-	width: 45em;
-	margin: 0 auto;
-}
 
 main > section {
 	background-color: #dcdcdc;
