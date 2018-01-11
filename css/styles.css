@@ -8,6 +8,7 @@ body {
 	font-family: "Clear Sans", sans-serif;
 	font-weight: 300;
 	margin: 0;
+	background-image: url("../resource/bg.png");
 }
 
 * {
@@ -88,6 +89,7 @@ p {
     font-size: 18px;
     text-decoration: none;
     font-weight: 300;
+    color: #a9a9a9;
 }
 
 .box-top {
