@@ -65,34 +65,9 @@ main > section {
 	background-color: #dcdcdc;
 }
 
-.box-top {
-	max-width: 36em;
-	padding: 1.5em 2em 1em 2em;
-	border: 1px solid #9ce1f5;
-	background: #e6f8fc;
-	border-radius: 3px;
-	box-sizing: inherit;
-	overflow-wrap: break-word;
-}
-
-.info-title {
-    font-weight: 300;
-    margin-bottom: 1em;
-	font-size: 24px;
-	margin: 0;
-	padding: 0;
-	line-height: 1.25em;
-}
-
-.box-middle {
-	max-width: 36em;
-	padding: 1.5em 2em 1em 2em;
-	border: 1px solid #9ce1f5;
-	background: #e6f8fc;
-	border-radius: 3px;
-	box-sizing: inherit;
-	overflow-wrap: break-word;
-}
+/*
+ * Secret Key
+*/
 
 .box-bottom {
 	max-width: 36em;
@@ -126,6 +101,10 @@ button {
 	border: 1px solid #003300;
 }
 
-.generate-box #buttons {
-	display: inline;
+/*
+ * Footer
+*/
+
+footer {
+	
 }
