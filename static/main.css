@@ -16,7 +16,7 @@ html {
 
 body {
 	margin: 0;
-	background-color: rgb(43,43,45); /* prevent color jump */
+	background-color: rgb(43,43,45); /* prevent browser color jump */
 	background-image: url("bg.png");
 	}
 
@@ -35,21 +35,20 @@ a {
 
 a:hover,
 a:focus {
-	color: ;
+	color: rgb(11,101,234); /* change later */
 	}
 
 a:active {
-	color: ;
+	color: rgb(11,101,234); /* change later */
 	}
 
 a:visited {
-	color: ;
+	color: rgb(11,101,234); /* change later */
 	}
 
 h1, h2, h3, h4, h5, h6 {
 	margin: 0 0 3vmin;
 	font-weight: normal;
-	color: rgb(27,39,51);
 	}
 
 h1 { font-size: 250%; }
@@ -62,7 +61,7 @@ h6 { font-size: 80%; }
 p {
 	display: block;
 	padding: 0;
-	margin: 0 0 3em 0;
+	margin: 0 0 1em 0;
 	}
 
 p:last-child {
@@ -74,7 +73,7 @@ p:last-child {
 */
 
 body > aside {
-	margin: 1vmin;
+	margin: 1vmin auto;
 	color: #fff;
 	font-size: 80%;
 	text-align: center;
@@ -85,11 +84,11 @@ body > header {
 	}
 
 body > header > h1 {
-	color: #3a3f43;
-	padding: 18px 0 18px 0;
+	/* logo goes here */
 	}
 
 body > header > nav {
+	font-size: 100%;
 	}
 
 /*
@@ -108,7 +107,7 @@ main > section h2 {
 	}
 
 /*
- * Secret Key (not sure yet)
+ * Secret Key (we aren't sure yet about this delete later if necessary)
 */
 
 .box-bottom {
