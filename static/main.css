@@ -142,6 +142,7 @@ main > section h2 {
 
 footer {
 	display: flex;
+	height: 32px;
 	}
 
 footer h6 {
@@ -152,4 +153,10 @@ footer h6 {
 
 footer > div {
 	margin-left: auto;
+	}
+
+footer > div a {
+	height: 0;
+	margin-bottom: 100%;
+	background-color: red;
 	}
