@@ -83,7 +83,7 @@ body > header {
 	text-align: center;
 	}
 
-body > header > h1 {
+body > header > h1 a {
 	display: inline-block;
 	min-width: 128px;
 	min-height: 128px;
