@@ -157,7 +157,7 @@ button {
 footer {
 	display: flex;
 	color: #fff;
-	font-size: 100%;
+	font-size: inherit;
 	font-weight: inherit;
 	}
 
