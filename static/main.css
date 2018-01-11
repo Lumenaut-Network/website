@@ -64,6 +64,7 @@ body > header > p {
 */
 
 main > section {
+	padding: 1vmin;
 	background-color: #dcdcdc;
 	border-radius: 1vmin;
 }
