@@ -87,10 +87,18 @@ body > aside {
 	color: red;
 	}
 
+.highlight-red {
+	color: red;
+	}
+
+.highlight-green {
+	color: green;
+	}
+
 .price {
 	-webkit-transition: 1s linear all;
 	transition: 1s linear all;
-	background-color: clear;
+	color: clear;
 	}
 
 body > header {
@@ -152,11 +160,29 @@ footer > div {
 
 footer > div a {
 	overflow: hidden;
+	display: inline-block;
 	text-indent: -9999px;
 	max-width: 32px;
 	max-height: 32px;
+	background: 50% 50% no-repeat;
 	}
 
 footer > div a:nth-child(1) {
+	background-image: url("fooReddit.svg");
+	}
+
+footer > div a:nth-child(2) {
 	background-image: url("fooTwitter.svg");
+	}
+
+footer > div a:nth-child(3) {
+	background-image: url("fooFacebook.svg");
+	}
+
+footer > div a:nth-child(4) {
+	background-image: url("fooSlack.svg");
+	}
+
+footer > div a:nth-child(5) {
+	background-image: url("fooGithub.svg");
 	}
