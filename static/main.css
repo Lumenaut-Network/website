@@ -79,6 +79,24 @@ body > aside {
 	text-align: center;
 	}
 
+.price_up {
+	color: green;
+}
+.price_down {
+	color: red;
+}
+.highlight-red {
+    background-color: red;
+}
+.highlight-green {
+    background-color: green;
+}
+.price {
+    -webkit-transition: 1s linear all;
+    transition: 1s linear all;
+    background-color: clear;
+}
+
 body > header {
 	text-align: center;
 	}

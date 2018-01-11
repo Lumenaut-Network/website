@@ -5,14 +5,42 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/stellar-sdk/0.8.0/stellar-sdk.js" integrity="sha384-ZLFqobQQtphXg0EkBNEhn6PWrsETu9TotgyqNGtuSC6j108/jAvBOUpCUysC9iMp" crossorigin="anonymous"></script>
 
 	<!-- jQuery -->
-	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+	<!-- Socket.io -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js" integrity="sha256-WPeFPWD3PZQUDrpFnDM1N2KadNVwCfNS4cCZ78b76T8=" crossorigin="anonymous"></script>
 	
 	<link rel="stylesheet" href="static/base.css">
 	<link rel="stylesheet" href="static/main.css">
 </head>
 <body>
 	<aside>
-		XLM = BTC Ƀ0.00007391 | USD $1 | EUR €0.84
+		<div id="price-ticker">
+			<table id="price-ticker-table">
+				<col width="100"><col width="100"><col width="100">
+				<thead>
+					<tr>
+						<th><span>XLM / BTC</span></th>
+						<th><span>XLM / USD</span></th>
+						<th><span>XLM / EUR</span></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							Ƀ <span id="price_XLM-BTC" class="price"></span> <span id="change24HourPct_XLM-BTC"></span>
+						</td>
+						<td>
+							$ <span id="price_XLM-USD" class="price"></span> <span id="change24HourPct_XLM-USD"></span>
+						</td>
+						<td>
+							€ <span id="price_XLM-EUR" class="price"></span>
+							<!-- <span id="change24HourPct_XLM-EUR"></span> -->
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
 	</aside>
 
 	<header>
@@ -55,6 +83,12 @@
 		</div>
 	</footer>
 
+	<!-- JS -->
 	<script type="text/javascript" src="static/index.js"></script>
+
+	<!-- Price streamer utility function - credit: https://github.com/cryptoqween/cryptoqween.github.io/blob/master/streamer/ccc-streamer-utilities.js -->
+	<script type="text/javascript" src="static/ccc-streamer-utility.js"></script>
+	<!-- Price ticker JS -->
+	<script type="text/javascript" src="static/price-ticker.js"></script>
 </body>
 </html>
