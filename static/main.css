@@ -98,7 +98,7 @@ body > aside {
 .price {
 	-webkit-transition: 1s linear all;
 	transition: 1s linear all;
-	color: clear;
+	color: inherit;
 	}
 
 body > header {
