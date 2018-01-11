@@ -91,7 +91,10 @@ body > header > h1 a {
 	height: 24vmin;
 	color: transparent;
 	background-image: url("logo_test.png");
-	background-size: 100%;
+	}
+
+body > header > h1 a:hover {
+	color: transparent;
 	}
 
 body > header > nav {
