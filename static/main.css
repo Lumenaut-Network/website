@@ -73,6 +73,12 @@ p:last-child {
  * Header
 */
 
+body > aside {
+	margin: 1vmin;
+	color: #fff;
+	font-size: 80%;
+	}
+
 body > header {
 	text-align: center;
 	}
@@ -83,7 +89,6 @@ body > header > h1 {
 	}
 
 body > header > nav {
-	font-size: 80%;
 	}
 
 /*
