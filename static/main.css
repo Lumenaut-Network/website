@@ -50,7 +50,7 @@ body > header > p {
 
 main > section {
 	padding: 1vmin;
-	background-color: #e6f8fc;
+	background-color: rgba(230,248,252,0.8);
 	border-radius: 1vmin;
 }
 
