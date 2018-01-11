@@ -157,6 +157,7 @@ footer > div {
 
 footer > div a {
 	overflow: hidden;
+	display: inline-block;
 	color: transparent;
 	width: 32px;
 	height: 0;
