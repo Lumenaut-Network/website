@@ -56,13 +56,16 @@ body > header > p {
  * Main
 */
 
-main {
+body > header,
+body > main,
+body > footer {
 	width: 45em;
 	margin: 0 auto;
 }
 
 main > section {
 	background-color: #dcdcdc;
+	border-radius: 1vmin;
 }
 
 /*
@@ -105,6 +108,6 @@ button {
  * Footer
 */
 
-footer {
+footer > div {
 	
 }
