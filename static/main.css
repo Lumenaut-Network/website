@@ -160,3 +160,7 @@ footer > div a {
 	margin-bottom: 100%;
 	background-color: #fff;
 	}
+
+footer > div a:nth-child(1) {
+	background-image: url("fooTwitter.svg");
+	}
