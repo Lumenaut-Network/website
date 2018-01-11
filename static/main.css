@@ -20,6 +20,7 @@ body {
 	background-image: url("bg.png");
 	}
 
+body > aside,
 body > header,
 body > main,
 body > footer {
