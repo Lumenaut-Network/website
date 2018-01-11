@@ -149,6 +149,7 @@ button {
 footer {
 	display: flex;
 	color: #fff;
+	font-size: 100%;
 	}
 
 footer > div {
