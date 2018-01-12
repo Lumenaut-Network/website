@@ -80,6 +80,13 @@ body > aside {
 	background-image: url("bg.png");
 	}
 
+
+#price-ticker-table {
+	margin: 0 auto;
+	width: 600px;
+}
+
+
 .price_up {
 	color: green;
 	}
