@@ -180,10 +180,16 @@ footer > div {
 
 footer > div a {
 	overflow: hidden;
-	text-indent: -9999px;
 	max-width:  32px;
 	max-height:  32px;
+	margin-left: 3vmin;
+	color: transparent;
 	background: 50% 50% no-repeat;
+	background-size: contain;
+	}
+
+footer > div a:hover {
+	color: transparent;
 	}
 
 footer > div a:nth-child(1) {
@@ -203,5 +209,5 @@ footer > div a:nth-child(4) {
 	}
 
 footer > div a:nth-child(5) {
-	background-image: url("fooGithub.svg");
+	background-image: url("fooGithub.png");
 	}
