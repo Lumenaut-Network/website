@@ -125,29 +125,8 @@ body > aside {
 */
 
 
-body > header::after {
-	position: absolute;
-	display: block;
-	content: "";
-	width: 0;
-	height: 0;
-	border-style: solid;
-	border-width: 200px 200px 0 0;
-	border-color: rgb(43,43,45) transparent transparent transparent;
-
-
-	background-color: rgb(43,43,45); /* prevent browser color jump */
-	border-image: url("bg.png");
-border-image: url(bg.png) 10 round;
-	}
-
-
-body > header > * {
-	z-index: 2 !important;
-	}
 
 body > header {
-	z-index: 2 !important;
 	text-align: center;
 	background-color: rgb(43,43,45); /* prevent browser color jump */
 	background-image: url("bg.png");
