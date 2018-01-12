@@ -16,15 +16,13 @@ html {
 
 body {
 	margin: 0;
-	background-color: rgb(43,43,45); /* prevent browser color jump */
-	background-image: url("bg.png");
 	}
 
 body > aside,
 body > header,
 body > main,
 body > footer {
-	width: 45em;
+	padding: 0 20em;
 	margin: 0 auto;
 	}
 
@@ -69,14 +67,17 @@ p:last-child {
 	}
 
 /*
- * Header
+ * Ticker
 */
 
 body > aside {
-	margin: 1vmin auto;
+	margin: 0 auto;
+	padding-top: 2vmin;
 	color: #dcdcdc;
 	font-size: 80%;
 	text-align: center;
+	background-color: rgb(43,43,45); /* prevent browser color jump */
+	background-image: url("bg.png");
 	}
 
 .price_up {
@@ -119,9 +120,37 @@ body > aside {
 	100% { color: red; }
 	}
 
+/*
+ * Header
+*/
+
+
+body > header::after {
+	position: absolute;
+	display: block;
+	content: "";
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 200px 200px 0 0;
+	border-color: rgb(43,43,45) transparent transparent transparent;
+
+
+	background-color: rgb(43,43,45); /* prevent browser color jump */
+	border-image: url("bg.png");
+border-image: url(bg.png) 10 round;
+	}
+
+
+body > header > * {
+	z-index: 2 !important;
+	}
 
 body > header {
+	z-index: 2 !important;
 	text-align: center;
+	background-color: rgb(43,43,45); /* prevent browser color jump */
+	background-image: url("bg.png");
 	}
 
 body > header > h1 a {
@@ -207,5 +236,5 @@ footer > div a:nth-child(4) {
 	}
 
 footer > div a:nth-child(5) {
-	background-image: url("fooGithub.svg");
+	background-image: url("fooGithub.png");
 	}
