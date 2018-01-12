@@ -151,8 +151,6 @@ body > header > nav {
 main > section {
 	margin-bottom: 8vmin;
 	padding: 1vmin;
-	background-color: rgba(230,248,252,0.8);
-	border-radius: 0.3vmin;
 	}
 
 main > section h2 {
