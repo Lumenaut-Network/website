@@ -4,14 +4,11 @@
 	<meta http-equiv="Content-Language" content="en">
 	
 	<title>Lumenaut</title>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/stellar-sdk/0.8.0/stellar-sdk.js" integrity="sha384-ZLFqobQQtphXg0EkBNEhn6PWrsETu9TotgyqNGtuSC6j108/jAvBOUpCUysC9iMp" crossorigin="anonymous"></script>
 
-	<!-- jQuery -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-
-	<!-- Socket.io -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js" integrity="sha256-WPeFPWD3PZQUDrpFnDM1N2KadNVwCfNS4cCZ78b76T8=" crossorigin="anonymous"></script>
+	<!-- Booststrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
 	
+	<!-- CSS -->
 	<link rel="stylesheet" href="static/base.css">
 	<link rel="stylesheet" href="static/main.css">
 </head>
@@ -74,6 +71,120 @@
 			</div>
 			-->
 		</section>
+
+		<!-- Instructions -->
+		<section>
+			<h1>Instructions</h1>
+			<div>
+
+				<div class="container instructions-container">
+					<div class="row">
+						<div class="col-sm-4 instructions-left">
+							<div class="nav flex-column nav-pills instructions-nav" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+								<a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">
+									1. Fund your personal account
+								</a>
+								<a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+									2. Select wallet
+								</a>
+								<a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">
+									3. Cast vote for pool
+								</a>
+								<a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+									4. Confirm your vote
+								</a>
+							</div>
+						</div>
+						<div class="col-sm-8 instructions-right">
+							<div class="tab-content instructions-content" id="v-pills-tabContent">
+								<div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+									<h3>Move XLM off exchange</h3>
+									<section>
+										<p>
+											explain why a personal account is needed. select a wallet.
+										</p>
+										<p>Need help choosing a wallet? Check out Stellar's officially supported wallets.</p>
+										<a href="https://www.stellar.org/lumens/wallets/" class="btn btn-outline-info" target="_blank">Stellar Wallets</a>
+									</section>
+								</div>
+								<div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+									<h3>Select chosen wallet</h3>
+									<section>
+										<div class="wallet-grid row">
+											<div class="wallet-grid-item col-sm-4">
+												<!-- Ledger -->
+												<img class="wallets-logo" src="https://www.stellar.org/wp-content/uploads/2017/09/ledger-1.png" alt="">
+											</div>
+											<div class="wallet-grid-item col-sm-4">
+												<!-- Stronghold -->
+												<img class="wallets-logo" src="https://www.stellar.org/wp-content/uploads/2017/09/stronghold-1.png" alt="">
+											</div>
+											<div class="wallet-grid-item col-sm-4">
+												<!-- StellarTerm -->
+												<img class="wallets-logo" src="https://www.stellar.org/wp-content/themes/stellar/images/graphics/wallets/stellarterm.png" alt="">
+											</div>
+											<div class="wallet-grid-item col-sm-4">
+												<!-- Stellar Desktop Client -->
+												<img class="wallets-logo" src="https://www.stellar.org/wp-content/themes/stellar/images/graphics/wallets/stellardesktop.png" alt="">
+											</div>
+											<div class="wallet-grid-item col-sm-4">
+												<!-- blackwallet -->
+												<img class="wallets-logo" src="https://www.stellar.org/wp-content/themes/stellar/images/graphics/wallets/blackwallet.png" alt="">
+											</div>
+											<div class="wallet-grid-item col-sm-4">
+												<!-- LuPoEx -->
+												<img class="wallets-logo" src="https://www.stellar.org/wp-content/uploads/2017/09/lupoexlogo.png" alt="">
+											</div>
+											<div class="wallet-grid-item col-sm-4">
+												<!-- Lobstr -->
+												<img class="wallets-logo" src="https://www.stellar.org/wp-content/themes/stellar/images/graphics/wallets/lobstr.png" alt="">
+											</div>
+											<div class="wallet-grid-item col-sm-4">
+												<!-- stargazer -->
+												<img class="wallets-logo" src="https://www.stellar.org/wp-content/themes/stellar/images/graphics/wallets/stargazer.png" alt="">
+											</div>
+											<div class="wallet-grid-item col-sm-4">
+												<!-- Other -->
+												<button class="btn btn-secondary" style="width: 100%; height: 100%;">Other</button>
+											</div>
+										</div>
+									</section>
+								</div>
+								<div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+									<h3>Set inflation destination</h3>
+									<section>
+										<p>
+											instructions specific to what wallet they selected. stellar laboratory instructions by default.
+										</p>
+									</section>
+								</div>
+								<div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+									<h3>Confirm your vote</h3>
+									<section>
+										<p>
+											put public address in, checks if inflation destination is set
+										</p>
+										<div class="input-group mb-3">
+											<input type="text" class="form-control" placeholder="public address" aria-label="Recipient's username" aria-describedby="basic-addon2">
+											<div class="input-group-append">
+												<button class="btn btn-outline-success" type="button" id="verify-xlm-address-button">Verify</button>
+											</div>
+										</div>
+
+										<div>
+											<p id="verify-xlm-address-result" style="display: none;">
+												result
+											</p>
+										</div>
+
+									</section>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 	</main>
 
 	<footer>
@@ -87,6 +198,20 @@
 		</div>
 	</footer>
 
+
+	<!-- Stellar SDK -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/stellar-sdk/0.8.0/stellar-sdk.js" integrity="sha384-ZLFqobQQtphXg0EkBNEhn6PWrsETu9TotgyqNGtuSC6j108/jAvBOUpCUysC9iMp" crossorigin="anonymous"></script>
+
+	<!-- Socket.io -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js" integrity="sha256-WPeFPWD3PZQUDrpFnDM1N2KadNVwCfNS4cCZ78b76T8=" crossorigin="anonymous"></script>
+
+	<!-- jQuery -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+	<!-- Bootstrap -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+
 	<!-- JS -->
 	<script src="static/index.js"></script>
 
@@ -95,5 +220,8 @@
 
 	<!-- Price ticker JS -->
 	<script src="static/price-ticker.js"></script>
+
+	<!-- Instructions JS -->
+	<script src="static/instructions.js"></script>
 </body>
 </html>

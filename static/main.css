@@ -127,11 +127,31 @@ body > aside {
 	100% { color: red; }
 	}
 
+
+/*
+ * Instructions
+ */
+
+.instructions-container {
+	border-radius: 10px;
+	box-shadow: 0 0 2px 2px lightgrey;
+}
+.instructions-left {
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	box-shadow: 3px 0 5px 0px lightgrey;
+}
+.instructions-nav {
+	margin: 20px 5px;
+}
+.instructions-content {
+	margin: 20px 15px;
+}
+
+
 /*
  * Header
 */
-
-
 
 body > header {
 	text-align: center;
