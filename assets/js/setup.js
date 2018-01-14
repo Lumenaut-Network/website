@@ -109,7 +109,7 @@ $(document).ready(function() {
 $(window).scroll(function() {    
 	var scroll = $(window).scrollTop();
 
-	if (scroll >= 200) {
+	if (scroll >= 150) {
 		$("body header").addClass("sticky");
 	}
 	else {
