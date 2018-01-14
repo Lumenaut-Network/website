@@ -127,7 +127,6 @@ body > aside {
 	100% { color: red; }
 	}
 
-
 /*
  * Instructions
  */
@@ -242,5 +241,9 @@ footer > div a:nth-child(4) {
 	}
 
 footer > div a:nth-child(5) {
+	background-image: url("fooDiscord.svg");
+	}
+
+footer > div a:nth-child(6) {
 	background-image: url("fooGithub.png");
 	}
