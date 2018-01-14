@@ -41,7 +41,7 @@ $(document).ready(function() {
     };
 
     var displayData = function(current, fromSym, toSym, pairSym) {
-        console.log('current: ', current, fromSym, toSym, pairSym, CCC.STATIC.CURRENCY.getSymbol(toSym));
+        // console.log('current: ', current, fromSym, toSym, pairSym, CCC.STATIC.CURRENCY.getSymbol(toSym));
 
         $('#price_' + pairSym).text(current.PRICE);
         $('#change24HourPct_' + pairSym).text(' (' + current.CHANGE24HOURPCT + ')');

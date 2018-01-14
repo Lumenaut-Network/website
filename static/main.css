@@ -146,6 +146,16 @@ body > aside {
 .instructions-content {
 	margin: 20px 15px;
 }
+#verify-xlm-address-input {
+	font-size: 0.85em;
+	letter-spacing: 0px;
+}
+.wallet-logos:hover {
+	box-shadow: 0 0 5px 2px lightgrey;
+}
+.hidden {
+	display: none;
+}
 
 
 /*
