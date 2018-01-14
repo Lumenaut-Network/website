@@ -33,15 +33,20 @@ $(document).ready(function() {
 	});
 
 
-
 	$addrInput.keyup((e) => {
 		e.preventDefault();
 
 		$verifyResult.empty();
+
+		const pubKey = $addrInput.val();
+		if (pubKey && StellarSdk.StrKey.isValidEd25519PublicKey(pubKey)) {
+			verifyAccount();
+		}
 	});
 
-	$verifyButton.click((e) => {
-		e.preventDefault();
+	$verifyButton.click(verifyAccount);
+
+	function verifyAccount() {
 
 		const pubKey = $addrInput.val();
 		console.log('pub key: ', pubKey);
@@ -98,5 +103,7 @@ $(document).ready(function() {
 			);
 			return;
 		}
-	});
+	}
 });
+
+	
