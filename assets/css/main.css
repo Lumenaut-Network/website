@@ -227,7 +227,7 @@ main > section h2 {
 main #welcome {
 	align-items: center;
 	color: #fff;
-	background: rgb(43,43,45) 0 0 no-repeat;
+	background: rgb(2,14,27) 0 0 no-repeat;
 	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../img/bg.jpg");
 	background-size: cover;
 	}
