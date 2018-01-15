@@ -220,7 +220,6 @@ main #welcome {
 
 main > #welcome > h3 {
 	font-family: "Bebas Neue Bold", sans-serif;
-	color: rgb(79,177,234);
 	margin: 6vmin 0 0 0;
 	}
 
@@ -243,9 +242,16 @@ main > #welcome #copy-address {
 	transition: color 0.1s linear;
 	}
 
-#copy-address-link:hover,
-#copy-address-link.visited {
+#copy-address-link {
+	color: rgb(79,177,234);
+	}
+
+#copy-address-link:hover {
 	color: rgb(253,188,64);
+	}
+
+#copy-address-link.visited {
+	color: rgb(52,199,73);
 	}
 
 #copy-icon {
