@@ -115,6 +115,11 @@ body > aside {
 	font-size: 80%;
 	}
 
+header > table th, td {
+	text-align: center;
+	width: 33.3%;
+	}
+
 #price-ticker-table {
 	margin: 0 auto;
 	}

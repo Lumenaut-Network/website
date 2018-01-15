@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	// change this to Lumenaut pool address
-	const POOL_ADDRESS = 'GA3FUYFOPWZ25YXTCA73RK2UGONHCO27OHQRSGV3VCE67UEPEFEDCOPA';
+	const POOL_ADDRESS = 'GD36QS27YLUCQCHXZVOKE7NLIJZESD6NKOTZT5NC6N44ZXHU73T6NAUT';
 	const $walletLogos = $('.wallet-logos');
 	const $castVoteTab = $('#v-pills-cast-vote-tab');
 	const $instructions = $('.instructions');
