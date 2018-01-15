@@ -71,7 +71,6 @@ body > header {
 	display: flex;
 	flex-wrap: wrap;
 	color: #fff;
-	background: transparent;
 	}
 
 body > header.sticky {
@@ -113,9 +112,21 @@ body > header > aside {
 	width: 40%;
 	margin: 0;
 	text-align: center;
-	font-size: 80%;
+	font-size: 75%;
 	display: flex;
 	justify-content: center;
+	}
+
+body > header > aside th {
+	color: rgba(255,255,255,0.5);
+	}
+
+body > header > aside th .xlm {
+	color: rgb(79,177,234);
+	}
+
+body > header > aside th .pair {
+	color: #fff;
 	}
 
 .price_up,
