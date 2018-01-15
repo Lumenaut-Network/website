@@ -219,8 +219,9 @@ main #welcome {
 	}
 
 main > #welcome > h3 {
+	font-family: "Bebas Neue Bold", sans-serif;
 	color: rgb(79,177,234);
-	margin-bottom: 0;
+	margin: 6vmin 0 0 0;
 	}
 
 main > #welcome > address,
