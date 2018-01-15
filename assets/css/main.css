@@ -56,6 +56,11 @@ p:last-child {
 	margin-bottom: 0 !important;	/* good stuff, trust me, please DO NOT CHANGE */
 	}
 
+mark {
+	background: none;
+	color: inherit;
+	}
+
 /*
  * Header
 */
@@ -211,6 +216,7 @@ main > section h2 {
 
 main #welcome {
 	align-items: center;
+	justify-content: flex-end;
 	text-align: center;
 	color: #fff;
 	background: rgb(2,14,27) 0 0 no-repeat;
@@ -218,18 +224,32 @@ main #welcome {
 	background-size: cover;
 	}
 
-main > #welcome > h3 {
-	font-family: "Bebas Neue Bold", sans-serif;
+main #welcome mark,
+main #welcome > h3 {
 	margin: 6vmin 0 0 0;
+	font-family: "Bebas Neue Bold", sans-serif;
 	}
 
-main > #welcome > address,
-main > #welcome > address > span {
+main #welcome mark {
+	font-size: 125%;
+	}
+
+main #welcome mark span {
+	color: rgba(255,255,255,0.3);
+	}
+
+main #welcome mark #accounts-contributing,
+main #welcome mark #total-votes {
+	color: rgb(79,177,234);
+	}
+
+main #welcome > address,
+main #welcome > address > span {
 	font-style: normal;
 	font-weight: bold;
 	}
 
-main > #welcome #copy-address {
+main #welcome #copy-address {
 	margin: 0;
 	font-size: 18px;
 	font-style: normal;
