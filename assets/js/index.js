@@ -61,3 +61,20 @@ function vote() {
 		console.error(e);
 	});
 }
+
+// clipboard
+$(document).ready(() => {
+	var clipboard = new Clipboard('#copy-address-link');
+	const $addrLink = $('#copy-address-link');
+	$addrLink.click((e) => {
+		e.preventDefault();
+		console.log('copied');
+		$addrLink.addClass('visited');
+
+		// change copy icon to check icon
+		$(this)
+			.find('[data-fa-processed]')
+			.toggle('fa-copy')
+			.toggle('fa-check-circle');
+	});
+})

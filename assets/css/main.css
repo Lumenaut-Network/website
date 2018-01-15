@@ -237,6 +237,47 @@ main #welcome {
 	background-size: cover;
 	}
 
+main > #welcome > h3 {
+	color: rgb(79,177,234);
+	margin-bottom: 0;
+}
+
+main > #welcome > #copy-address {
+	margin: 0;
+	font-size: 18px;
+}
+#copy-address-link {
+	position: relative;
+	color: #fff;
+}
+#copy-address-link.visited {
+	color: rgb(253,188,64);
+}
+#copy-icon {
+	visibility: visible;
+	opacity: 1;
+	transition: visibility 1s, opacity 0.5s linear;
+}
+#copy-address-link.visited > #copy-icon {
+	visibility: hidden;
+	opacity: 0;
+}
+#check-icon {
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0s, opacity 1s linear;
+}
+#copy-address-link.visited > #check-icon {
+	visibility: visible;
+	opacity: 1;
+
+}
+.addr-icon {
+	position: absolute;
+	top: 1px;
+	right: -23px;
+}
+
 /*
  * FAQ
 */
