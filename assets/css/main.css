@@ -139,11 +139,11 @@ body > header > aside td {
 */
 
 body > header > nav {
-	width: 25%;
+	width: 30%;
 	margin: 0;
 	display: flex;
 	align-items: center;
-	justify-content: space-evenly;
+	justify-content: flex-end;
 	font-family: "Bebas Neue Bold";
 	font-size: 120%;
 	}
@@ -151,6 +151,7 @@ body > header > nav {
 body > header > nav > * {
 	color: #fff;
 	padding: 0.5vmin 1vmin 0.25vmin;
+	margin-left: 3vmin;
 	}
 
 body > header > nav > *:hover {
