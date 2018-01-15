@@ -211,12 +211,15 @@ main #welcome {
 main > #welcome > h3 {
 	color: rgb(79,177,234);
 	margin-bottom: 0;
-}
+	}
 
-main > #welcome > #copy-address {
+main > #welcome #copy-address {
 	margin: 0;
 	font-size: 18px;
-}
+	font-style: none;
+	font-weight: bold;
+	}
+
 #copy-address-link {
 	position: relative;
 	color: #fff;
@@ -245,7 +248,6 @@ main > #welcome > #copy-address {
 #copy-address-link.visited > #check-icon {
 	visibility: visible;
 	opacity: 1;
-
 }
 .addr-icon {
 	position: absolute;
