@@ -1,3 +1,4 @@
+// Setup & Instructions
 $(document).ready(function() {
 	// change this to Lumenaut pool address
 	const POOL_ADDRESS = 'GD36QS27YLUCQCHXZVOKE7NLIJZESD6NKOTZT5NC6N44ZXHU73T6NAUT';
@@ -106,9 +107,9 @@ $(document).ready(function() {
 	}
 });
 
+// Navbar sticky class
 $(window).scroll(function() {    
 	var scroll = $(window).scrollTop();
-
 	if (scroll >= 150) {
 		$("body header").addClass("sticky");
 	}
@@ -116,3 +117,13 @@ $(window).scroll(function() {
 		$("body header").removeClass();
 	}
 });
+
+// clipboard
+$(document).ready(() => {
+	var clipboard = new Clipboard('#copy-address-link');
+	const $addrLink = $('#copy-address-link');
+	$addrLink.click((e) => {
+		e.preventDefault();
+		$addrLink.addClass('visited');
+	});
+})
