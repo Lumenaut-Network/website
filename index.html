@@ -116,8 +116,8 @@
 						<div class="col-sm-8 instructions-right">
 							<div class="tab-content instructions-content" id="v-pills-tabContent">
 								<div class="tab-pane fade show active" id="v-pills-personal-account" role="tabpanel" aria-labelledby="v-pills-personal-account-tab">
-									<h3>Move XLM off exchange</h3>
 									<section>
+										<h3>Move XLM off exchange</h3>
 										<p>
 											explain why a personal account is needed. select a wallet.
 										</p>
@@ -126,8 +126,8 @@
 									</section>
 								</div>
 								<div class="tab-pane fade" id="v-pills-select-wallet" role="tabpanel" aria-labelledby="v-pills-select-wallet-tab">
-									<h3>Select chosen wallet</h3>
 									<section>
+										<h3>Select chosen wallet</h3>
 										<div class="wallet-grid row">
 											<div class="wallet-grid-item col-sm-4">
 												<!-- Ledger -->
@@ -170,24 +170,24 @@
 								</div>
 								<div class="tab-pane fade" id="v-pills-cast-vote" role="tabpanel" aria-labelledby="v-pills-cast-vote-tab">
 									<h3>Set inflation destination</h3>
-									<section class="instructions hidden" id="stellar-desktop-client-instructions">
-										<p>Stellar Desktop Client Instructions</p>
-									</section>
-									<section class="instructions hidden" id="ledger-nano-instructions">
-										<p>Ledger Nano Instructions</p>
-									</section>
-									<section class="instructions" id="stellar-laboratory-instructions">
-										<p>Stellar Laboratory Instructions</p>
-									</section>
+									<div class="instructions hidden" id="stellar-desktop-client-instructions">
+										<h4>Stellar Desktop Client Instructions</h4>
+									</div>
+									<div class="instructions hidden" id="ledger-nano-instructions">
+										<h4>Ledger Nano Instructions</h4>
+									</div>
+									<div class="instructions" id="stellar-laboratory-instructions">
+										<h4>Stellar Laboratory Instructions</h4>
+									</div>
 								</div>
 								<div class="tab-pane fade" id="v-pills-confirm-vote" role="tabpanel" aria-labelledby="v-pills-confirm-vote-tab">
 									<h3>Confirm your vote</h3>
-									<section>
+									<div>
 										<p>
 											put public address in, checks if inflation destination is set
 										</p>
 										<div class="input-group mb-3">
-											<input type="text" class="form-control" id="verify-xlm-address-input" placeholder="public address" aria-label="public address" aria-describedby="basic-addon2">
+											<input type="text" class="form-control" id="verify-xlm-address-input" placeholder="public address" aria-label="public address">
 											<div class="input-group-append">
 												<button class="btn btn-outline-success" type="button" id="verify-xlm-address-button">Verify</button>
 											</div>
@@ -196,7 +196,7 @@
 										<div id="verify-xlm-address-result">
 										</div>
 
-									</section>
+									</div>
 								</div>
 							</div>
 						</div>
