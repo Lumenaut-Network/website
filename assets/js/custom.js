@@ -117,6 +117,12 @@ $(window).scroll(function() {
 		$("body header").removeClass();
 	}
 });
+// if page refreshes already scrolled down
+$(document).ready(() => {
+	if ($(window).scrollTop() >= 150) {
+		$('body header').addClass('sticky');
+	}
+});
 
 // clipboard
 $(document).ready(() => {
@@ -126,4 +132,21 @@ $(document).ready(() => {
 		e.preventDefault();
 		$addrLink.addClass('visited');
 	});
-})
+});
+
+// fetch vote info from fed.network
+$(document).ready(() => {
+	// change to our pool once we have votes
+	const inflationDest = 'GA3FUYFOPWZ25YXTCA73RK2UGONHCO27OHQRSGV3VCE67UEPEFEDCOPA';
+	$.get({
+		url: 'https://fed.network/inflation/' + inflationDest
+	}).then((result) => {
+		$('#accounts-contributing').text(result.entries.length.toLocaleString());
+		const totalVotes = result.entries.reduce((sum, entry) => {
+			return sum + parseInt(entry.balance) / 10000000;
+		}, 0);
+		$('#total-votes').text(parseInt(totalVotes).toLocaleString());
+	}, (err) => {
+		console.log('error: ', err.responseJSON);
+	});
+});
