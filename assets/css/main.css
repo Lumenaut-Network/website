@@ -249,8 +249,12 @@ main > #welcome > #copy-address {
 #copy-address-link {
 	position: relative;
 	color: #fff;
+	transition: color 0.1s linear;
 }
 #copy-address-link.visited {
+	color: rgb(253,188,64);
+}
+#copy-address-link:hover {
 	color: rgb(253,188,64);
 }
 #copy-icon {
