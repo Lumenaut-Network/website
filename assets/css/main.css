@@ -112,63 +112,26 @@ body > header > h1 > a:hover {
 */
 
 body > header > aside {
-	width: 50%;
+	width: 40%;
 	margin: 0;
-	}
-
-body > aside {
-	color: #fff;
 	text-align: center;
 	font-size: 80%;
+	display: flex;
+	justify-content: center;
 	}
 
-header > table th, td {
-	text-align: center;
-	width: 33.3%;
+body > header > aside th,
+body > header > aside td {
 	}
 
-#price-ticker-table {
-	margin: 0 auto;
-	}
-
-.price_up {
-	color: green;
-	}
-
-.price_down {
-	color: red;
-	}
-
-.highlight-red {
-	color: red;
-	-webkit-animation: red 1s;
-	animation: red 1s;
-	}
-
+.price_up,
 .highlight-green {
-	color: green;
-	-webkit-animation: green 1s;
-	animation: green 1s;
+	color: rgb(52,199,73);
 	}
 
-@-webkit-keyframes green {
-	0%   { color: inherit; }
-	100% { color: green; }
-	}
-
-@keyframes green {
-	0%   { color: inherit; }
-	100% { color: green; }
-	}
-
-@-webkit-keyframes red {
-	0%   { color: inherit; }
-	100% { color: red; }
-	}
-
-@keyframes red {
-	0%   { color: inherit; }
-	100% { color: red; }
+.price_down,
+.highlight-red {
+	color: rgb(201,81,81);
 	}
 
 /*
