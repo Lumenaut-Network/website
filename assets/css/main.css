@@ -121,10 +121,6 @@ body > header > aside {
 	justify-content: center;
 	}
 
-body > header > aside th,
-body > header > aside td {
-	}
-
 .price_up,
 .highlight-green {
 	color: rgb(52,199,73);
@@ -203,9 +199,10 @@ main > section h2 {
 
 main #welcome {
 	align-items: center;
+	text-align: center;
 	color: #fff;
 	background: rgb(2,14,27) 0 0 no-repeat;
-	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../img/bg.jpg");
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../img/bg.jpg"); /* use base64 later */
 	background-size: cover;
 	}
 
@@ -214,47 +211,55 @@ main > #welcome > h3 {
 	margin-bottom: 0;
 	}
 
+main > #welcome > address,
+main > #welcome > address > span {
+	font-style: normal;
+	font-weight: bold;
+	}
+
 main > #welcome #copy-address {
 	margin: 0;
 	font-size: 18px;
-	font-style: none;
-	font-weight: bold;
 	}
 
 #copy-address-link {
 	position: relative;
 	color: #fff;
 	transition: color 0.1s linear;
-}
+	}
+
+#copy-address-link:hover,
 #copy-address-link.visited {
 	color: rgb(253,188,64);
-}
-#copy-address-link:hover {
-	color: rgb(253,188,64);
-}
+	}
+
 #copy-icon {
 	visibility: visible;
 	opacity: 1;
 	transition: visibility 1s, opacity 0.5s linear;
-}
+	}
+
 #copy-address-link.visited > #copy-icon {
 	visibility: hidden;
 	opacity: 0;
-}
+	}
+
 #check-icon {
 	visibility: hidden;
 	opacity: 0;
 	transition: visibility 0s, opacity 1s linear;
-}
+	}
+
 #copy-address-link.visited > #check-icon {
 	visibility: visible;
 	opacity: 1;
-}
+	}
+
 .addr-icon {
 	position: absolute;
 	top: 1px;
 	right: -23px;
-}
+	}
 
 /*
  * FAQ
