@@ -1,7 +1,7 @@
 // Setup & Instructions
 $(document).ready(function() {
-	// change this to Lumenaut pool address
-	const POOL_ADDRESS = 'GD36QS27YLUCQCHXZVOKE7NLIJZESD6NKOTZT5NC6N44ZXHU73T6NAUT';
+	// Lumenaut Community Pool address
+	const POOL_ADDRESS = 'GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT';
 	const $walletLogos = $('.wallet-logos');
 	const $castVoteTab = $('#v-pills-cast-vote-tab');
 	const $instructions = $('.instructions');
@@ -137,7 +137,7 @@ $(document).ready(() => {
 // fetch vote info from fed.network
 $(document).ready(() => {
 	// change to our pool once we have votes
-	const inflationDest = 'GA3FUYFOPWZ25YXTCA73RK2UGONHCO27OHQRSGV3VCE67UEPEFEDCOPA';
+	const inflationDest = 'GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT';
 	$.get({
 		url: 'https://fed.network/inflation/' + inflationDest
 	}).then((result) => {
