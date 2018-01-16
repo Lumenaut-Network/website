@@ -99,12 +99,12 @@ body > header > h1 {
 	}
 
 body > header > h1 > a {
-	padding-left: 8vmin;
+	padding-left: 60px;
 	font-family: "Ailerons";
 	font-size: 70%;
 	color: #fff;
 	background: url("../img/logo.svg") 0 0 no-repeat;
-	background-size: 9vmin;
+	background-size: 60px;
 	}
 
 body > header > h1 > a:hover {
