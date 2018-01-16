@@ -358,15 +358,18 @@ main #faq {
 	margin: 0;
 	padding: 20px 0 20px 30px;
 }
-.nav-link:hover {
-	color: #fff;
-	background-color: rgb(79,177,234);
-	box-shadow: inset 4px 0 3px -3px grey, inset -4px 0 3px -3px grey;
-}
+.nav-link:hover,
 .nav-link.active {
 	color: #fff;
 	background-color: rgb(79,177,234);
 	box-shadow: inset 4px 0 3px -3px grey, inset -4px 0 3px -3px grey;
+}
+.nav-link-last {
+
+}
+.nav-link-last:hover, .nav-link-last.active {
+	border-bottom-left-radius: 10px;
+	box-shadow: inset 4px 0 3px -3px grey, inset -4px 0 3px -3px grey, inset 0 -4px 3px -3px grey;
 }
 .instructions-right {
 	padding: 15px 25px;
