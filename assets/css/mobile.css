@@ -1,0 +1,40 @@
+@media
+only screen and (max-width: 1200px),
+only screen and (max-device-width: 1200px) {
+
+}
+
+@media
+only screen and (max-width: 980px),
+only screen and (max-device-width: 980px) {
+	aside {
+		display: none !important;
+		}
+
+	body > header > nav {
+		width: 70%;
+		}
+
+	main #welcome {
+		align-items: center;
+		justify-content: center;
+		}
+}
+
+@media
+only screen and (max-width: 720px),
+only screen and (max-device-width: 720px) {
+	main > section {
+		padding: 6vmin;
+		}
+}
+
+@media
+only screen and (max-width: 520px),
+only screen and (max-device-width: 520px) {
+	body > header,
+	body > main,
+	body > footer {
+		padding: 6vmin 2vmin 0;
+		}
+}
