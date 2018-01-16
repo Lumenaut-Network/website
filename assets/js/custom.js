@@ -52,20 +52,20 @@ $(document).ready(function() {
 		const pubKey = $addrInput.val();
 		console.log('pub key: ', pubKey);
 
-		try {
-			if (!StellarSdk.StrKey.isValidEd25519PublicKey(pubKey)) {
-				$verifyResult.empty();
-				$verifyResult.append(
-					"<div class=\"alert alert-warning alert-dismissible fade show\" role=\"alert\">\
-						Invalid address. Try copy-pasting again.\
-						<button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-label=\"Close\">\
-							<span aria-hidden=\"true\">&times;</span>\
-						</button>\
-					</div>"
-				);
-				return;
-			}
+		if (!StellarSdk.StrKey.isValidEd25519PublicKey(pubKey)) {
+			$verifyResult.empty();
+			$verifyResult.append(
+				"<div class=\"alert alert-warning alert-dismissible fade show\" role=\"alert\">\
+					Invalid address. Try copy-pasting again.\
+					<button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-label=\"Close\">\
+						<span aria-hidden=\"true\">&times;</span>\
+					</button>\
+				</div>"
+			);
+			return;
+		}
 
+		try {
 			server.loadAccount(pubKey).then((account) => {
 				console.log(account);
 
@@ -90,16 +90,6 @@ $(document).ready(function() {
 						</div>"
 					);
 				}
-			}, (fail) => {
-				$verifyResult.empty();
-				$verifyResult.append(
-					"<div class=\"alert alert-warning alert-dismissible fade show\" role=\"alert\">\
-						Hmmm. Looks like you're not in the pool yet.\
-						<button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-label=\"Close\">\
-							<span aria-hidden=\"true\">&times;</span>\
-						</button>\
-					</div>"
-				);
 			});
 		} catch(err) {
 			console.log(err);
@@ -127,6 +117,7 @@ $(window).scroll(function() {
 		$("body header").removeClass();
 	}
 });
+
 // if page refreshes already scrolled down
 $(document).ready(() => {
 	if ($(window).scrollTop() >= 150) {
