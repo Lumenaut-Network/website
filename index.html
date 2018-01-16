@@ -39,7 +39,7 @@
 		<nav>
 			<a href="#about">About</a>
 			<a href="#faq">FAQ</a>
-			<a href="#setup">Setup</a>
+			<a href="#setup">Join</a>
 			<a href="store.html">Store</a>
 		</nav>
 	</header>
@@ -86,16 +86,18 @@
 		</section>
 
 		<!-- Instructions -->
-		<section id="setup">
-			<h2>Setup</h2>
-			<div>
-
+		<section id="setup" class="container-fluid">
+			<h2>Join the Pool</h2>
+			<div class="container-fluid">
 				<div class="container instructions-container">
 					<div class="row">
-						<div class="col-sm-4 instructions-left">
-							<div class="nav flex-column nav-pills instructions-nav" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+						<div class="col-12 col-md-4 instructions-left">
+							<div class="nav flex-column instructions-nav" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+								<h3 class="instructions-nav-header">
+									Instructions
+								</h3>
 								<a class="nav-link active" id="v-pills-personal-account-tab" data-toggle="pill" href="#v-pills-personal-account" role="tab" aria-controls="v-pills-personal-account" aria-selected="true">
-									1. Fund your personal account
+									1. Fund personal account
 								</a>
 								<a class="nav-link" id="v-pills-select-wallet-tab" data-toggle="pill" href="#v-pills-select-wallet" role="tab" aria-controls="v-pills-select-wallet" aria-selected="false">
 									2. Select wallet
@@ -104,79 +106,128 @@
 									3. Cast vote for pool
 								</a>
 								<a class="nav-link" id="v-pills-confirm-vote-tab" data-toggle="pill" href="#v-pills-confirm-vote" role="tab" aria-controls="v-pills-confirm-vote" aria-selected="false">
-									4. Confirm your vote
+									4. Confirm vote
 								</a>
 							</div>
 						</div>
-						<div class="col-sm-8 instructions-right">
+						<div class="col-12 col-md-8 instructions-right">
 							<div class="tab-content instructions-content" id="v-pills-tabContent">
 								<div class="tab-pane fade show active" id="v-pills-personal-account" role="tabpanel" aria-labelledby="v-pills-personal-account-tab">
-									<section>
-										<h3>Move XLM off exchange</h3>
-										<p>
-											explain why a personal account is needed. select a wallet.
-										</p>
-										<p>Need help choosing a wallet? Check out Stellar's officially supported wallets.</p>
-										<a href="https://www.stellar.org/lumens/wallets/" class="btn btn-outline-info" target="_blank">Stellar Wallets</a>
-									</section>
+									<h3 class="instructions-content-header">
+										Move XLM off exchange
+									</h3>
+									<p>
+										explain why a personal account is needed. select a wallet.
+									</p>
+									<p>Need help choosing a wallet? Check out Stellar's officially supported wallets.</p>
+									<a href="https://www.stellar.org/lumens/wallets/" class="btn btn-lg btn-primary" target="_blank">Stellar Wallets</a>
 								</div>
 								<div class="tab-pane fade" id="v-pills-select-wallet" role="tabpanel" aria-labelledby="v-pills-select-wallet-tab">
-									<section>
-										<h3>Select chosen wallet</h3>
-										<div class="wallet-grid row">
-											<div class="wallet-grid-item col-sm-4">
-												<!-- Ledger -->
-												<a href="#"><img class="wallet-logos" src="https://www.stellar.org/wp-content/uploads/2017/09/ledger-1.png" alt="" data-wallet="ledger"></a>
-											</div>
-											<div class="wallet-grid-item col-sm-4">
-												<!-- Stronghold -->
-												<a href="#"><img class="wallet-logos" src="https://www.stellar.org/wp-content/uploads/2017/09/stronghold-1.png" alt="" data-wallet="stronghold"></a>
-											</div>
-											<div class="wallet-grid-item col-sm-4">
-												<!-- StellarTerm -->
-												<a href="#"><img class="wallet-logos" src="https://www.stellar.org/wp-content/themes/stellar/images/graphics/wallets/stellarterm.png" alt="" data-wallet="stellar-term"></a>
-											</div>
-											<div class="wallet-grid-item col-sm-4">
-												<!-- Stellar Desktop Client -->
-												<a href="#"><img class="wallet-logos" src="https://www.stellar.org/wp-content/themes/stellar/images/graphics/wallets/stellardesktop.png" alt="" data-wallet="stellar-desktop-client"></a>
-											</div>
-											<div class="wallet-grid-item col-sm-4">
-												<!-- LuPoEx -->
-												<a href="#"><img class="wallet-logos" src="https://www.stellar.org/wp-content/uploads/2017/09/lupoexlogo.png" alt="" data-wallet="lupoex"></a>
-											</div>
-											<div class="wallet-grid-item col-sm-4">
-												<!-- Lobstr -->
-												<a href="#"><img class="wallet-logos" src="https://www.stellar.org/wp-content/themes/stellar/images/graphics/wallets/lobstr.png" alt="" data-wallet="lobstr"></a>
-											</div>
-											<div class="wallet-grid-item col-sm-4">
-												<!-- stargazer -->
-												<a href="#"><img class="wallet-logos" src="https://www.stellar.org/wp-content/themes/stellar/images/graphics/wallets/stargazer.png" alt="" data-wallet="stargazer"></a>
-											</div>
-											<div class="wallet-grid-item col-sm-4">
-												<!-- Saza -->
-												<a href="#"><img class="wallet-logos" src="https://www.stellar.org/wp-content/themes/stellar/images/graphics/wallets/saza.png" alt="" data-wallet="saza"></a>
-											</div>
-											<div class="wallet-grid-item col-sm-4">
-												<!-- Other -->
-												<button class="btn btn-outline-secondary wallet-logos" data-wallet="other" style="width: 100%; height: 100%;">Other</button>
-											</div>
+									<h3 class="instructions-content-header">
+										Select chosen wallet
+									</h3>
+									<div class="wallet-grid row">
+										<div class="wallet-grid-item col-6 col-lg-4">
+											<!-- Ledger -->
+											<a href="#"><img class="wallet-logos" src="https://www.stellar.org/wp-content/uploads/2017/09/ledger-1.png" alt="" data-wallet="ledger"></a>
 										</div>
-									</section>
+										<div class="wallet-grid-item col-6 col-lg-4">
+											<!-- Stronghold -->
+											<a href="#"><img class="wallet-logos" src="https://www.stellar.org/wp-content/uploads/2017/09/stronghold-1.png" alt="" data-wallet="stronghold"></a>
+										</div>
+										<div class="wallet-grid-item col-6 col-lg-4">
+											<!-- StellarTerm -->
+											<a href="#"><img class="wallet-logos" src="https://www.stellar.org/wp-content/themes/stellar/images/graphics/wallets/stellarterm.png" alt="" data-wallet="stellar-term"></a>
+										</div>
+										<div class="wallet-grid-item col-6 col-lg-4">
+											<!-- Stellar Desktop Client -->
+											<a href="#"><img class="wallet-logos" src="https://www.stellar.org/wp-content/themes/stellar/images/graphics/wallets/stellardesktop.png" alt="" data-wallet="stellar-desktop-client"></a>
+										</div>
+										<div class="wallet-grid-item col-6 col-lg-4">
+											<!-- LuPoEx -->
+											<a href="#"><img class="wallet-logos" src="https://www.stellar.org/wp-content/uploads/2017/09/lupoexlogo.png" alt="" data-wallet="lupoex"></a>
+										</div>
+										<div class="wallet-grid-item col-6 col-lg-4">
+											<!-- Lobstr -->
+											<a href="#"><img class="wallet-logos" src="https://www.stellar.org/wp-content/themes/stellar/images/graphics/wallets/lobstr.png" alt="" data-wallet="lobstr"></a>
+										</div>
+										<div class="wallet-grid-item col-6 col-lg-4">
+											<!-- stargazer -->
+											<a href="#"><img class="wallet-logos" src="https://www.stellar.org/wp-content/themes/stellar/images/graphics/wallets/stargazer.png" alt="" data-wallet="stargazer"></a>
+										</div>
+										<div class="wallet-grid-item col-6 col-lg-4">
+											<!-- Saza -->
+											<a href="#"><img class="wallet-logos" src="https://www.stellar.org/wp-content/themes/stellar/images/graphics/wallets/saza.png" alt="" data-wallet="saza"></a>
+										</div>
+										<div class="wallet-grid-item other-item col-12 col-lg-4">
+											<!-- Other -->
+											<button class="btn btn-outline-secondary wallet-other" data-wallet="other">Other</button>
+										</div>
+									</div>
 								</div>
 								<div class="tab-pane fade" id="v-pills-cast-vote" role="tabpanel" aria-labelledby="v-pills-cast-vote-tab">
-									<h3>Set inflation destination</h3>
+									<h3 class="instructions-content-header">
+										Set inflation destination
+									</h3>
 									<div class="instructions hidden" id="stellar-desktop-client-instructions">
-										<h4>Stellar Desktop Client Instructions</h4>
+										<div style="text-align: center;">
+											<h4 class="m-0">Inflation Destination</h4>
+											<address id="copy-address-1">
+												<a id="copy-address-link-1" href="#" data-clipboard-text="GD36QS27YLUCQCHXZVOKE7NLIJZESD6NKOTZT5NC6N44ZXHU73T6NAUT">
+													<span id="pool-address-1">GD36QS27YLUCQCHXZVOKE7NLIJZESD6NKOTZT5NC6N44ZXHU73T6NAUT</span>
+													<i class="fas fa-copy addr-icon" aria-hidden="true" id="copy-icon-1"></i>
+													<i class="fas fa-check-circle addr-icon" aria-hidden="true" id="check-icon-1"></i>
+												</a>
+											</address>
+										</div>
+
+										<p>1. Copy pool address above</p>
+										<p>2. Open Stellar Desktop Client, click account address in top right</p>
+										<p>3. Click inlation destination on the left</p>
+										<p>5. Paste pool address in the text input labeled inflation destination</p>
+										<p>6. Click save!</p>
 									</div>
 									<div class="instructions hidden" id="ledger-nano-instructions">
-										<h4>Ledger Nano Instructions</h4>
+										<h4>Copy the pool address below and follow the instructions to set your inflation destination using the your Ledger.</h4>
+
+										<div style="text-align: center;">
+											<h4 class="m-0">Inflation Destination</h4>
+											<address id="copy-address-2">
+												<a id="copy-address-link-2" href="#" data-clipboard-text="GD36QS27YLUCQCHXZVOKE7NLIJZESD6NKOTZT5NC6N44ZXHU73T6NAUT">
+													<span id="pool-address-2">GD36QS27YLUCQCHXZVOKE7NLIJZESD6NKOTZT5NC6N44ZXHU73T6NAUT</span>
+													<i class="fas fa-copy addr-icon" aria-hidden="true" id="copy-icon-2"></i>
+													<i class="fas fa-check-circle addr-icon" aria-hidden="true" id="check-icon-2"></i>
+												</a>
+											</address>
+
+											<a href="https://www.reddit.com/r/Stellar/comments/7kuege/how_to_set_inflation_destination_for_ledger_nano_s/" target="_blank" class="btn btn-lg btn-primary">
+												Ledger Nano Instructions
+											</a>
+										</div>
 									</div>
 									<div class="instructions" id="stellar-laboratory-instructions">
-										<h4>Stellar Laboratory Instructions</h4>
+										<h4>Copy the pool address below and follow the instructions to set your inflation destination using the Stellar Laboratory.</h4>
+
+										<div style="text-align: center;">
+											<h4 class="m-0">Inflation Destination</h4>
+											<address id="copy-address-3">
+												<a id="copy-address-link-3" href="#" data-clipboard-text="GD36QS27YLUCQCHXZVOKE7NLIJZESD6NKOTZT5NC6N44ZXHU73T6NAUT">
+													<span id="pool-address-3">GD36QS27YLUCQCHXZVOKE7NLIJZESD6NKOTZT5NC6N44ZXHU73T6NAUT</span>
+													<i class="fas fa-copy addr-icon" aria-hidden="true" id="copy-icon-3"></i>
+													<i class="fas fa-check-circle addr-icon" aria-hidden="true" id="check-icon-3"></i>
+												</a>
+											</address>
+
+											<a href="https://www.reddit.com/r/stellartutorials/comments/7mzf7e/how_to_manually_set_inflation_destination/" class="btn btn-lg btn-primary">
+												Stellar Laboratory Instructions
+											</a>
+										</div>
 									</div>
 								</div>
 								<div class="tab-pane fade" id="v-pills-confirm-vote" role="tabpanel" aria-labelledby="v-pills-confirm-vote-tab">
-									<h3>Confirm your vote</h3>
+									<h3 class="instructions-content-header">
+										Confirm your vote
+									</h3>
 									<div>
 										<p>
 											put public address in, checks if inflation destination is set

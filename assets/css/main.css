@@ -258,42 +258,59 @@ main #welcome #copy-address {
 	font-weight: bold;
 	}
 
-#copy-address-link {
+#copy-address-link,
+#copy-address-link-1,
+#copy-address-link-2,
+#copy-address-link-3 {
 	position: relative;
-	color: #fff;
+	color: rgb(79,177,234);
 	transition: color 0.1s linear;
 	}
 
-#copy-address-link {
-	color: rgb(79,177,234);
-	}
-
-#copy-address-link:hover {
+#copy-address-link:hover,
+#copy-address-link-1:hover,
+#copy-address-link-2:hover,
+#copy-address-link-2:hover {
 	color: rgb(253,188,64);
 	}
 
-#copy-address-link.visited {
+#copy-address-link.visited,
+#copy-address-link-1.visited,
+#copy-address-link-2.visited,
+#copy-address-link-3.visited {
 	color: rgb(52,199,73);
 	}
 
-#copy-icon {
+#copy-icon,
+#copy-icon-1,
+#copy-icon-2,
+#copy-icon-3 {
 	visibility: visible;
 	opacity: 1;
 	transition: visibility 1s, opacity 0.5s linear;
 	}
 
-#copy-address-link.visited > #copy-icon {
+#copy-address-link.visited > #copy-icon,
+#copy-address-link-1.visited > #copy-icon-1,
+#copy-address-link-2.visited > #copy-icon-2,
+#copy-address-link-3.visited > #copy-icon-3 {
 	visibility: hidden;
 	opacity: 0;
 	}
 
-#check-icon {
+#check-icon,
+#check-icon-1,
+#check-icon-2,
+#check-icon-3 {
 	visibility: hidden;
 	opacity: 0;
 	transition: visibility 0s, opacity 1s linear;
 	}
 
-#copy-address-link.visited > #check-icon {
+#copy-address-link.visited > #check-icon,
+#copy-address-link-1.visited > #check-icon-1,
+#copy-address-link-2.visited > #check-icon-2,
+#copy-address-link-3.visited > #check-icon-3 {
 	visibility: visible;
 	opacity: 1;
 	}
@@ -325,29 +342,90 @@ main #faq {
 	}
 
 .instructions-container {
+	background-color: #fff;
 	border-radius: 10px;
-	box-shadow: 0 0 2px 2px lightgrey;
+	box-shadow: 0 0 3px 3px grey, inset 0 0 3px 1px grey;
 }
 .instructions-left {
 	border-top-left-radius: 10px;
 	border-bottom-left-radius: 10px;
-	box-shadow: 3px 0 5px 0px lightgrey;
+	box-shadow: 4px 0 7px -1px grey;
+	padding: 0;
+}
+.nav-link {
+	font-size: 1.6em;
+	border-top: 3px solid grey;
+	margin: 0;
+	padding: 20px 0 20px 30px;
+}
+.nav-link:hover {
+	color: #fff;
+	background-color: rgb(79,177,234);
+	box-shadow: inset 4px 0 3px -3px grey, inset -4px 0 3px -3px grey;
+}
+.nav-link.active {
+	color: #fff;
+	background-color: rgb(79,177,234);
+	box-shadow: inset 4px 0 3px -3px grey, inset -4px 0 3px -3px grey;
+}
+.instructions-right {
+	padding: 15px 25px;
 }
 .instructions-nav {
-	margin: 20px 5px;
+	margin-top: 0;
+}
+.instructions-nav-header {
+	font-size: 2.3em;
+	text-align: center;
+	margin: 15px 0;
 }
 .instructions-content {
-	margin: 20px 15px;
+	margin: 0;
+}
+.instructions-content-header {
+	font-size: 2.3em;
+	text-align: center;
+	margin-bottom: 15px;
 }
 #verify-xlm-address-input {
 	font-size: 0.85em;
 	letter-spacing: 0px;
 }
+.wallet-logos {
+	margin: 7px 0;
+	border-radius: 10px;
+	box-shadow: 0 0 0 2px grey;
+	transition: all .2s ease-in-out;
+}
 .wallet-logos:hover {
-	box-shadow: 0 0 5px 2px lightgrey;
+	box-shadow: 0 0 7px 2px grey;
+	transform: scale(1.1);
+}
+.other-item {
+	padding-top: 7px;
+	padding-bottom: 7px;
+}
+.wallet-other {
+	font-size: 1.5em;
+	border-radius: 10px;
+	width: 100%;
+	height: 100%;
+	box-shadow: 0 0 0 1px grey;
+	transition: all .2s ease-in-out;
+}
+.wallet-other:hover {
+	transform: scale(1.1);
 }
 .hidden {
 	display: none;
+}
+.SDK-instructions-ol {
+	margin-left: 15px;
+	list-style-type: decimal;
+	list-style-position: inside; 
+}
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: rgb(79,177,234) !important;
 }
 
 /*

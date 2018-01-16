@@ -52,20 +52,20 @@ $(document).ready(function() {
 		const pubKey = $addrInput.val();
 		console.log('pub key: ', pubKey);
 
-		if (!StellarSdk.StrKey.isValidEd25519PublicKey(pubKey)) {
-			$verifyResult.empty();
-			$verifyResult.append(
-				"<div class=\"alert alert-warning alert-dismissible fade show\" role=\"alert\">\
-					Invalid address. Try copy-pasting again.\
-					<button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-label=\"Close\">\
-						<span aria-hidden=\"true\">&times;</span>\
-					</button>\
-				</div>"
-			);
-			return;
-		}
-
 		try {
+			if (!StellarSdk.StrKey.isValidEd25519PublicKey(pubKey)) {
+				$verifyResult.empty();
+				$verifyResult.append(
+					"<div class=\"alert alert-warning alert-dismissible fade show\" role=\"alert\">\
+						Invalid address. Try copy-pasting again.\
+						<button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-label=\"Close\">\
+							<span aria-hidden=\"true\">&times;</span>\
+						</button>\
+					</div>"
+				);
+				return;
+			}
+
 			server.loadAccount(pubKey).then((account) => {
 				console.log(account);
 
@@ -90,6 +90,16 @@ $(document).ready(function() {
 						</div>"
 					);
 				}
+			}, (fail) => {
+				$verifyResult.empty();
+				$verifyResult.append(
+					"<div class=\"alert alert-warning alert-dismissible fade show\" role=\"alert\">\
+						Hmmm. Looks like you're not in the pool yet.\
+						<button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-label=\"Close\">\
+							<span aria-hidden=\"true\">&times;</span>\
+						</button>\
+					</div>"
+				);
 			});
 		} catch(err) {
 			console.log(err);
@@ -131,6 +141,27 @@ $(document).ready(() => {
 	$addrLink.click((e) => {
 		e.preventDefault();
 		$addrLink.addClass('visited');
+	});
+
+	var clipboard1 = new Clipboard('#copy-address-link-1');
+	const $addrLink1 = $('#copy-address-link-1');
+	$addrLink1.click((e) => {
+		e.preventDefault();
+		$addrLink1.addClass('visited');
+	});
+
+	var clipboard2 = new Clipboard('#copy-address-link-2');
+	const $addrLink2 = $('#copy-address-link-2');
+	$addrLink2.click((e) => {
+		e.preventDefault();
+		$addrLink2.addClass('visited');
+	});
+
+	var clipboard3 = new Clipboard('#copy-address-link-3');
+	const $addrLink3 = $('#copy-address-link-3');
+	$addrLink3.click((e) => {
+		e.preventDefault();
+		$addrLink3.addClass('visited');
 	});
 });
 
