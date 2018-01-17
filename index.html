@@ -96,19 +96,14 @@
 
 			<p>Voting is done by setting the option Inflation Destination in your wallet to our account ID. The number of votes you have is equal to your balance, so if you have 100 XLM then you have 100 votes. The more Lumens you have the more Lumens you receive via Inflation and we will send you the inflation lumens to your wallet address every week. To know how to set the option Inflation Destination for your wallet please consult the instructions below.</p>
 
-			<h2>How much will I get each inflation?</h2>
+			<h2>How Much Will You Get In Each Inflation</h2>
 
 			<div class="calculator">
+				<label for="calculator-input">Enter your XLM amount or Public Key bellow to know how much you will receive each week.</label>
+				<input type="text" id="calculator-input" class="form-control">
+				<small>We don't store anything on our server, calculation is done locally on your browser. <a href="https://github.com/Lumenaut-Network/website/tree/gh-pages">More info.</a></small>
 
-				<div class="form-group">
-					<label for="calculator-input">Enter your XLM amount / your wallet address here</label>
-					<input type="text" id="calculator-input" class="form-control" aria-describedby="estimation-help" >
-					<small id="emailHelp" class="form-text text-muted">We don't store anything on our server, calculation is done locally on your browser. <a href="https://github.com/Lumenaut-Network/website/tree/gh-pages">More info.</a></small>
-				</div>
-
-				<div class="result">
-					<h3><strong>Estimated payout: <span id="calculator-result">0</span> XLM </strong></h3>
-				</div>
+				<h3 class="result"><strong>Estimated payout = <span id="calculator-result">0</span> XLM</strong></h3>
 			</div>
 		</section>
 
