@@ -19,7 +19,7 @@ $(document).ready(function() {
   var $calculatorTotalResult = $('#calculator-total-result');
 
 
-  var getXMLAmount = function(xlmOrAddress) {
+  var getXLMAmount = function(xlmOrAddress) {
       return new Promise(function(resolve, reject){
         // assume XLM is inserted
         userXLM = parseFloat(xlmOrAddress);
@@ -82,11 +82,11 @@ $(document).ready(function() {
   $('#calculator-input').keyup(function() {
 
     delay(function(){
-      // 1. Get XML Amount AND get totalCoin + feePool
+      // 1. Get XLM Amount AND get totalCoin + feePool
       // 2. Calculate inflation
       // 3. Update
-      Promise.all([getXMLAmount($calculatorInput.val()), getLatestLedgerInfo()])
-        .then(function([XMLAmount, _]){
+      Promise.all([getXLMAmount($calculatorInput.val()), getLatestLedgerInfo()])
+        .then(function([XLMAmount, _]){
             var weeklyTotal = calculateInflation(userXLM, feePool, totalCoins);
 
             var yearlyTotal = userXLM + weeklyTotal;
