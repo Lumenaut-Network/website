@@ -1,0 +1,129 @@
+/*
+ * General
+*/
+
+html {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	font-family: sans-serif;
+	font-size: 100%;
+	line-height: 1.4;	/* important for good lecture, please DO NOT CHANGE */
+	}
+
+body {
+	display: flex;
+	flex-direction: column;
+	flex-align: flex-end;
+	margin: 0;
+	padding: 0 20%;
+	height: 100vh;
+	text-align: center;
+	color: #fff;
+	background: rgb(2,14,27) 0 0 no-repeat;
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../img/bg.jpg"); /* use base64 later */
+	background-size: cover;
+	}
+
+a {
+	color: rgb(79,177,234);
+	-webkit-transition: color 0.2s ease-out; 
+	transition: color 0.2s ease-out; 
+	}
+
+a:hover,
+a:focus {
+	color: rgb(253,188,64);
+	-webkit-transition: color 0.1s ease-out; 
+	transition: color 0.1s ease-out; 
+	}
+
+a:active {
+	color: rgb(52,199,73);
+	-webkit-transition: color 0.1s ease-out; 
+	transition: color 0.1s ease-out; 
+	}
+
+/*
+ * Header
+*/
+
+header	{
+	margin-top: 20%;
+	}
+
+h1 a {
+	display: inline-block;
+	height: 16vmin;
+	padding-left: 18vmin;
+	font-family: "Ailerons";
+	font-size: 170%;
+	text-align: center;
+	color: #fff;
+	background: url("../img/logo.svg") 0 0 no-repeat;
+	background-size: 18vmin;
+	}
+
+p {
+	display: block;
+	padding: 0;
+	margin: 0;
+	}
+
+/*
+ * Footer
+*/
+
+footer {
+	display: flex;
+	margin-top: auto;
+	}
+
+footer h6 {
+	font-size: inherit;
+	font-weight: inherit;
+	}
+
+footer > div {
+	display: flex;
+	margin-left: auto;
+	}
+
+footer > div a {
+	overflow: hidden;
+	max-width:  32px;
+	max-height:  32px;
+	margin-left: 3vmin;
+	color: transparent;
+	background: 50% 50% no-repeat;
+	background-size: contain;
+	}
+
+footer > div a:hover {
+	color: transparent;
+	}
+
+footer > div a:nth-child(1) {
+	background-image: url("../img/fooReddit.svg");
+	}
+
+footer > div a:nth-child(2) {
+	background-image: url("../img/fooTwitter.svg");
+	}
+
+footer > div a:nth-child(3) {
+	background-image: url("../img/fooFacebook.svg");
+	}
+
+footer > div a:nth-child(4) {
+	background-image: url("../img/fooSlack.svg");
+	}
+
+footer > div a:nth-child(5) {
+	background-image: url("../img/fooDiscord.svg");
+	}
+
+footer > div a:nth-child(6) {
+	background-image: url("../img/fooGithub.png");
+	}

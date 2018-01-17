@@ -19,21 +19,21 @@ body {
 
 a {
 	color: rgb(79,177,234);
-	-webkit-transition: color 0.2s ease-out; 
-	transition: color 0.2s ease-out; 
+	-webkit-transition: color 0.2s ease-out;
+	transition: color 0.2s ease-out;
 	}
 
 a:hover,
 a:focus {
 	color: rgb(253,188,64);
-	-webkit-transition: color 0.1s ease-out; 
-	transition: color 0.1s ease-out; 
+	-webkit-transition: color 0.1s ease-out;
+	transition: color 0.1s ease-out;
 	}
 
 a:active {
 	color: rgb(52,199,73);
-	-webkit-transition: color 0.1s ease-out; 
-	transition: color 0.1s ease-out; 
+	-webkit-transition: color 0.1s ease-out;
+	transition: color 0.1s ease-out;
 	}
 
 h1, h2, h3, h4, h5, h6 {
@@ -99,12 +99,12 @@ body > header > h1 {
 	}
 
 body > header > h1 > a {
-	padding-left: 60px;
+	padding-left: 45px;
 	font-family: "Ailerons";
 	font-size: 70%;
 	color: #fff;
 	background: url("../img/logo.svg") 0 0 no-repeat;
-	background-size: 60px;
+	background-size: contain;
 	}
 
 body > header > h1 > a:hover {
@@ -218,7 +218,7 @@ main > section h2 {
 
 main #welcome {
 	align-items: center;
-	justify-content: flex-end;
+	justify-content: center;
 	text-align: center;
 	color: #fff;
 	background: rgb(2,14,27) 0 0 no-repeat;
@@ -242,75 +242,56 @@ main #welcome mark span {
 
 main #welcome mark #accounts-contributing,
 main #welcome mark #total-votes {
-	color: rgb(79,177,234);
+	color: rgb(52,199,73);
 	}
 
-main #welcome > address,
-main #welcome > address > span {
-	font-style: normal;
-	font-weight: bold;
-	}
-
-main #welcome #copy-address {
-	margin: 0;
-	font-size: 18px;
+main address,
+main address > span {
+	margin: 0 auto;
+	font-size: 115%;
 	font-style: normal;
 	font-weight: bold;
 	}
 
 #copy-address-link,
-#copy-address-link-1,
-#copy-address-link-2,
-#copy-address-link-3 {
+#copy-address-link-1 {
 	position: relative;
 	color: rgb(79,177,234);
 	transition: color 0.1s linear;
 	}
 
 #copy-address-link:hover,
-#copy-address-link-1:hover,
-#copy-address-link-2:hover,
-#copy-address-link-2:hover {
+#copy-address-link-1:hover {
 	color: rgb(253,188,64);
 	}
 
 #copy-address-link.visited,
-#copy-address-link-1.visited,
-#copy-address-link-2.visited,
-#copy-address-link-3.visited {
+#copy-address-link-1.visited {
 	color: rgb(52,199,73);
 	}
 
 #copy-icon,
-#copy-icon-1,
-#copy-icon-2,
-#copy-icon-3 {
+#copy-icon-1 {
 	visibility: visible;
 	opacity: 1;
 	transition: visibility 1s, opacity 0.5s linear;
 	}
 
 #copy-address-link.visited > #copy-icon,
-#copy-address-link-1.visited > #copy-icon-1,
-#copy-address-link-2.visited > #copy-icon-2,
-#copy-address-link-3.visited > #copy-icon-3 {
+#copy-address-link-1.visited > #copy-icon-1 {
 	visibility: hidden;
 	opacity: 0;
 	}
 
 #check-icon,
-#check-icon-1,
-#check-icon-2,
-#check-icon-3 {
+#check-icon-1 {
 	visibility: hidden;
 	opacity: 0;
 	transition: visibility 0s, opacity 1s linear;
 	}
 
 #copy-address-link.visited > #check-icon,
-#copy-address-link-1.visited > #check-icon-1,
-#copy-address-link-2.visited > #check-icon-2,
-#copy-address-link-3.visited > #check-icon-3 {
+#copy-address-link-1.visited > #check-icon-1 {
 	visibility: visible;
 	opacity: 1;
 	}
@@ -329,104 +310,136 @@ main #faq {
 	background-color: rgb(230,231,232);
 	}
 
-/*
- * Instructions
- */
-
-#setup {
-	background-color: rgb(79,177,234);
+.calculator,
+#calculator-input {
+	text-align: center;
 	}
 
-#setup > h2 {
+.calculator small {
+	color: rgba(0,0,0,0.4);
+	}
+
+.calculator .result {
+	margin-bottom: 0;
+	font-family: "Bebas Neue Bold", sans-serif;
+	}
+
+/*
+ * Join
+*/
+
+#join {
+	background-color: rgb(79,177,234);
+	padding: 18vmin 6vmin;
+	}
+
+#join > h2 {
 	color: #fff;
 	}
 
 .instructions-container {
 	background-color: #fff;
-	border-radius: 10px;
-	box-shadow: 0 0 3px 3px grey, inset 0 0 3px 1px grey;
-}
+	border-radius: 1vmin;
+	}
+
 .instructions-left {
-	border-top-left-radius: 10px;
-	border-bottom-left-radius: 10px;
-	box-shadow: 4px 0 7px -1px grey;
-	padding: 0;
-}
-.nav-link {
-	font-size: 1.6em;
-	border-top: 3px solid grey;
-	margin: 0;
-	padding: 20px 0 20px 30px;
-}
-.nav-link:hover {
-	color: #fff;
-	background-color: rgb(79,177,234);
-	box-shadow: inset 4px 0 3px -3px grey, inset -4px 0 3px -3px grey;
-}
-.nav-link.active {
-	color: #fff;
-	background-color: rgb(79,177,234);
-	box-shadow: inset 4px 0 3px -3px grey, inset -4px 0 3px -3px grey;
-}
-.instructions-right {
-	padding: 15px 25px;
-}
+	border-top-left-radius: 1vmin;
+	border-bottom-left-radius: 1vmin;
+	border-right: 2px solid rgb(79,177,234);
+	}
+
 .instructions-nav {
-	margin-top: 0;
-}
-.instructions-nav-header {
-	font-size: 2.3em;
-	text-align: center;
-	margin: 15px 0;
-}
+	margin: 20px 5px;
+	}
+
 .instructions-content {
-	margin: 0;
-}
-.instructions-content-header {
-	font-size: 2.3em;
-	text-align: center;
-	margin-bottom: 15px;
-}
+	margin: 20px 15px;
+	}
+
+.instructions-content h4 {
+	font-weight: bold;
+	}
+
+#stellar-laboratory-instructions li {
+	}
+
+#stellar-laboratory-instructions ol {
+	padding-left: 3vmin;
+	list-style-position: outside;
+	list-style-type: decimal;
+	}
+
+#stellar-laboratory-instructions ol li {
+	padding-top: 1vmin;
+	margin-bottom: 3vmin;
+	}
+
+#stellar-laboratory-instructions img {
+	display: block !important;
+	width: 100% !important;
+	height: 100% !important;
+	}
+
+
+.btn-outline-info {
+	background-color: rgb(79,177,234);
+	border: 2px solid rgb(79,177,234);
+	color: white;
+	border-radius: 1vmin;
+	-webkit-transition: background-color 0.2s ease-out;
+	transition: background-color 0.2s ease-out;
+	}
+
+.btn-outline-info:hover {
+	background-color: #fff;
+	border: 2px solid rgb(253,188,64);
+	color: rgb(253,188,64);
+	-webkit-transition: background-color 0.2s ease-out;
+	transition: background-color 0.2s ease-out;
+	}
+
+.btn-outline-secondary:hover {
+	background-color: #fff;
+	color: rgb(253,188,64);
+	}
+
+.instructions-nav {
+	font-weight: bold;
+	}
+
+.instructions-nav .active {
+	background-color: transparent !important; /* green */
+	color: rgb(52,199,73) !important;
+	font-weight: bold;
+	}
+
 #verify-xlm-address-input {
 	font-size: 0.85em;
 	letter-spacing: 0px;
-}
+	border: 2px solid rgb(79,177,234);
+	}
+
+#verify-xlm-address-button {
+	border: 2px solid rgb(52,199,73) !important; /* green */
+	}
+
+#verify-xlm-address-button:hover {
+	background-color: rgb(52,199,73) !important; /* green */
+	color: #fff;
+	}
+
 .wallet-logos {
-	margin: 7px 0;
-	border-radius: 10px;
-	box-shadow: 0 0 0 2px grey;
-	transition: all .2s ease-in-out;
-}
+	border: 2px solid transparent;
+	border-radius: 1vmin;
+	}
+
 .wallet-logos:hover {
-	box-shadow: 0 0 7px 2px grey;
-	transform: scale(1.1);
-}
-.other-item {
-	padding-top: 7px;
-	padding-bottom: 7px;
-}
-.wallet-other {
-	font-size: 1.5em;
-	border-radius: 10px;
-	width: 100%;
-	height: 100%;
-	box-shadow: 0 0 0 1px grey;
-	transition: all .2s ease-in-out;
-}
-.wallet-other:hover {
-	transform: scale(1.1);
-}
+	border: 2px solid rgb(253,188,64);
+	}
+
 .hidden {
 	display: none;
-}
-.SDK-instructions-ol {
-	margin-left: 15px;
-	list-style-type: decimal;
-	list-style-position: inside; 
-}
-.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
-    background-color: rgb(79,177,234) !important;
-}
+	}
 
 /*
  * Footer
