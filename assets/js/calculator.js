@@ -35,7 +35,6 @@ $(document).ready(function() {
           $.get('https://horizon.stellar.org/accounts/' + userAddress)
 
             .done(function(data){
-              console.log('done');
               // TODO: Look for native assets only, this might break if user has
               // multiple assets
               userXLM = data.balances[0].balance;
@@ -78,15 +77,11 @@ $(document).ready(function() {
   $('#calculator-input').keyup(function() {
 
     delay(function(){
-
-      console.log('Calculating!');
-
       // 1. Get XML Amount AND get totalCoin + feePool
       // 2. Calculate inflation
       // 3. Update
       Promise.all([getXMLAmount($calculatorInput.val()), getLatestLedgerInfo()])
         .then(function([XMLAmount, _]){
-            console.log(XMLAmount);
             var total = (XMLAmount / 5200) + (userXLM * feePool / totalCoins ) - 0.0000100
 
             // This is not accurate and also slowwwww
