@@ -310,21 +310,19 @@ main #faq {
 	background-color: rgb(230,231,232);
 	}
 
-/*
- * Estimate payout
-*/
-
-.calculator, #calculator-input {
-	text-align: center;
-}
-
+.calculator,
 #calculator-input {
-	text-size: 1.5em;
-}
+	text-align: center;
+	}
 
-.calculator .result h3 {
+.calculator small {
+	color: rgba(0,0,0,0.4);
+	}
+
+.calculator .result {
 	margin-bottom: 0;
-}
+	font-family: "Bebas Neue Bold", sans-serif;
+	}
 
 /*
  * Join
