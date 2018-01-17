@@ -323,7 +323,9 @@ main #faq {
 	margin-bottom: 0;
 	font-family: "Bebas Neue Bold", sans-serif;
 	}
-
+.calculator .units {
+	font-size: 75%;
+	}
 /*
  * Join
 */

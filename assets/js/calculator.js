@@ -15,7 +15,8 @@ $(document).ready(function() {
   var totalCoins;
   var feePool;
   var $calculatorInput = $('#calculator-input');
-  var $calculatorResult = $('#calculator-result');
+  var $calculatorNextResult = $('#calculator-next-result');
+  var $calculatorTotalResult = $('#calculator-total-result');
 
 
   var getXMLAmount = function(xlmOrAddress) {
@@ -72,6 +73,10 @@ $(document).ready(function() {
     });
   };
 
+  // Do the maths here
+  var calculateInflation = function(userXLM, feePool, totalCoins) {
+    return (userXLM / 5200) + (userXLM * feePool / totalCoins ) - 0.0000100;
+  };
 
   // Our main listener
   $('#calculator-input').keyup(function() {
@@ -82,10 +87,17 @@ $(document).ready(function() {
       // 3. Update
       Promise.all([getXMLAmount($calculatorInput.val()), getLatestLedgerInfo()])
         .then(function([XMLAmount, _]){
-            var total = (XMLAmount / 5200) + (userXLM * feePool / totalCoins ) - 0.0000100
+            var weeklyTotal = calculateInflation(userXLM, feePool, totalCoins);
+
+            var yearlyTotal = userXLM + weeklyTotal;
+
+            for (var i = 1; i < 52; i++) {
+              yearlyTotal = yearlyTotal + calculateInflation(yearlyTotal, feePool, totalCoins);
+            }
 
             // This is not accurate and also slowwwww
-            $calculatorResult.html(Number((total).toFixed(7)));
+            $calculatorNextResult.html(Number((weeklyTotal).toFixed(7)));
+            $calculatorTotalResult.html(Number((yearlyTotal).toFixed(7)));
         })
         .catch(function(e){
           console.log("Please check your address / XLM amount!" +  e);
