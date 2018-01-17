@@ -18,7 +18,7 @@ $(document).ready(function() {
   var $calculatorResult = $('#calculator-result');
 
 
-  var getXMLAmount = function(xlmOrAddress) {
+  var getXLMAmount = function(xlmOrAddress) {
       return new Promise(function(resolve, reject){
         // assume XLM is inserted
         userXLM = parseFloat(xlmOrAddress);
@@ -77,12 +77,12 @@ $(document).ready(function() {
   $('#calculator-input').keyup(function() {
 
     delay(function(){
-      // 1. Get XML Amount AND get totalCoin + feePool
+      // 1. Get XLM Amount AND get totalCoin + feePool
       // 2. Calculate inflation
       // 3. Update
-      Promise.all([getXMLAmount($calculatorInput.val()), getLatestLedgerInfo()])
-        .then(function([XMLAmount, _]){
-            var total = (XMLAmount / 5200) + (userXLM * feePool / totalCoins ) - 0.0000100
+      Promise.all([getXLMAmount($calculatorInput.val()), getLatestLedgerInfo()])
+        .then(function([XLMAmount, _]){
+            var total = (XLMAmount / 5200) + (userXLM * feePool / totalCoins ) - 0.0000100
 
             // This is not accurate and also slowwwww
             $calculatorResult.html(Number((total).toFixed(7)));
