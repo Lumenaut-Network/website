@@ -19,21 +19,21 @@ body {
 
 a {
 	color: rgb(79,177,234);
-	-webkit-transition: color 0.2s ease-out; 
-	transition: color 0.2s ease-out; 
+	-webkit-transition: color 0.2s ease-out;
+	transition: color 0.2s ease-out;
 	}
 
 a:hover,
 a:focus {
 	color: rgb(253,188,64);
-	-webkit-transition: color 0.1s ease-out; 
-	transition: color 0.1s ease-out; 
+	-webkit-transition: color 0.1s ease-out;
+	transition: color 0.1s ease-out;
 	}
 
 a:active {
 	color: rgb(52,199,73);
-	-webkit-transition: color 0.1s ease-out; 
-	transition: color 0.1s ease-out; 
+	-webkit-transition: color 0.1s ease-out;
+	transition: color 0.1s ease-out;
 	}
 
 h1, h2, h3, h4, h5, h6 {
@@ -309,6 +309,22 @@ main address > span {
 main #faq {
 	background-color: rgb(230,231,232);
 	}
+
+/*
+ * Estimate payout
+*/
+
+.calculator, #calculator-input {
+	text-align: center;
+}
+
+#calculator-input {
+	text-size: 1.5em;
+}
+
+.calculator .result h3 {
+	margin-bottom: 0;
+}
 
 /*
  * Join

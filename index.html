@@ -65,7 +65,7 @@
 
 			<h2>Members of Lumenaut</h2>
 			<p>The collective is formed from users that met in the official <a href="https://reddit.com/r/stellar">Stellar subreddit</a>, we don't like to differentiate collaborators because we believe that any contribution has its own merits, this list may grow and as such we will edit it to add the new members.</p>
-			
+
 			<p>As of now the contributors are (no order of preference): u/b1tcc, iduvall, enzo-the-dog, xlm_in_2018, jeffreytai, jorbs2, voidburn, texm, 7Swerve7, johnmars, lyeandro2587, CryptoErik, AkdM_, IAmBabau, usbogie, peepluvr, fatguy6pack, RedRanger, sinceron, kucak, emmittj, andrew, arya, bloddwyn, complex, CptSpacePirate, craigChan, dotsun, ExMachina, Flexo, hugetanks, jaybirch, kawera, lemand, matheususb.comp, jyl5555, prasanth, sandworm, shahin, speakoespanglish, speed7, spyiestspy, stellar-source, seiryuz... and you!</p>
 
 			<h2>How To Help Lumenaut</h2>
@@ -95,7 +95,23 @@
 			<h2>How To Vote In The Community Pool</h2>
 
 			<p>Voting is done by setting the option Inflation Destination in your wallet to our account ID. The number of votes you have is equal to your balance, so if you have 100 XLM then you have 100 votes. The more Lumens you have the more Lumens you receive via Inflation and we will send you the inflation lumens to your wallet address every week. To know how to set the option Inflation Destination for your wallet please consult the instructions below.</p>
+
+			<h2>How much will I get each inflation?</h2>
+
+			<div class="calculator">
+
+				<div class="form-group">
+					<label for="calculator-input">Enter your XLM amount / your wallet address here</label>
+					<input type="text" id="calculator-input" class="form-control" aria-describedby="estimation-help" >
+					<small id="emailHelp" class="form-text text-muted">We don't store anything on our server, calculation is done locally on your browser. <a href="https://github.com/Lumenaut-Network/website/tree/gh-pages">More info.</a></small>
+				</div>
+
+				<div class="result">
+					<h3><strong>Estimated payout: <span id="calculator-result">0</span> XLM </strong></h3>
+				</div>
+			</div>
 		</section>
+
 
 		<section id="join">
 			<h2>Join Community Pool</h2>
@@ -279,6 +295,9 @@
 
 	<!-- Price ticker JS -->
 	<script src="assets/js/ticker.js"></script>
+
+	<!-- Calculator JS -->
+	<script src="assets/js/calculator.js"></script>
 
 	<!-- Font Awesome -->
 	<script defer src="assets/js/fontawesome-all.min.js"></script>
