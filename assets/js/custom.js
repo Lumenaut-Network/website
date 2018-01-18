@@ -108,21 +108,26 @@ $(document).ready(function() {
 });
 
 // Navbar sticky class
-$(window).scroll(function() {    
-	var scroll = $(window).scrollTop();
-	if (scroll >= 150) {
-		$("body header").addClass("sticky");
-	}
-	else {
-		$("body header").removeClass();
-	}
+$(window).scroll(function() {
+  var scroll = $(window).scrollTop();
+  var maxHeight = $('#welcome').outerHeight(true) - $('header').outerHeight(true);
+  if (scroll >= maxHeight) {
+    $("body header").addClass("sticky");
+  }
+  else {
+    $("body header").removeClass();
+    $('#welcome').children().each(function(index){
+		$(this).css('opacity', 1 - scroll / (200 + index*90));
+	})
+  }
 });
 
 // if page refreshes already scrolled down
 $(document).ready(() => {
-	if ($(window).scrollTop() >= 150) {
-		$('body header').addClass('sticky');
-	}
+  var maxHeight = $('#welcome').outerHeight(true) - $('header').outerHeight(true);
+  if ($(window).scrollTop() >= maxHeight) {
+    $('body header').addClass('sticky');
+  }
 });
 
 // clipboard
