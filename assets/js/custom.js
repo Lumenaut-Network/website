@@ -117,7 +117,8 @@ $(window).scroll(function() {
 	else {
 		$("body header").removeClass();
 		$('#welcome').children().each(function(index){
-			$(this).css('opacity', 1 - scroll / ($('#welcome').height()/2 + index*90));
+			var offset = $('#welcome').height()/2.4 + index*90
+			$(this).css('opacity', 1 - scroll / offset);
 		});
 	}
 });
