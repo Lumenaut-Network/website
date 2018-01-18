@@ -7,6 +7,9 @@ only screen and (max-device-width: 1200px) {
 @media
 only screen and (max-width: 980px),
 only screen and (max-device-width: 980px) {
+	body {
+		font-size: 200%;
+	}
 	aside {
 		display: none !important;
 		}
@@ -15,26 +18,43 @@ only screen and (max-device-width: 980px) {
 		width: 70%;
 		}
 
+	body > header > h1 > a {
+		font-size: 50%;
+		padding-left: 80px;
+	}
+
 	main #welcome {
 		align-items: center;
 		justify-content: center;
 		}
+
+	#pool-address{
+		display: block;
+	}
+
+	main address, main address > span {
+		max-width: 100%;
+	}
+
+	#copy-icon, #copy-icon-1,
+	#check-icon, #check-icon-1 {
+		position: initial;
+		text-align: center;
+	}
+
+	#copy-address-link, #copy-address-link-1 {
+		overflow-wrap: break-word;
+		word-wrap: break-word;
+		display: block
+	}
 }
 
 @media
 only screen and (max-width: 720px),
 only screen and (max-device-width: 720px) {
-	main > section {
-		padding: 6vmin;
-		}
 }
 
 @media
 only screen and (max-width: 520px),
 only screen and (max-device-width: 520px) {
-	body > header,
-	body > main,
-	body > footer {
-		padding: 6vmin 2vmin 0;
-		}
 }
