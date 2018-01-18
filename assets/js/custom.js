@@ -109,15 +109,15 @@ $(document).ready(function() {
 
 // Navbar sticky class
 $(window).scroll(function() {
-	var scroll = $(window).scrollTop();
-	var maxHeight = $('#welcome').outerHeight(true) - $('header').outerHeight(true);
+	const scroll = $(window).scrollTop();
+	const maxHeight = $('#welcome').outerHeight(true) - $('header').outerHeight(true);
 	if (scroll >= maxHeight) {
 		$("body header").addClass("sticky");
 	}
 	else {
 		$("body header").removeClass();
 		$('#welcome').children().each(function(index){
-			var offset = $('#welcome').height()/2.4 + index*90
+			const offset = $('#welcome').height()/2.4 + index*90
 			$(this).css('opacity', 1 - scroll / offset);
 		});
 	}
@@ -125,7 +125,7 @@ $(window).scroll(function() {
 
 // if page refreshes already scrolled down
 $(document).ready(() => {
-	var maxHeight = $('#welcome').outerHeight(true) - $('header').outerHeight(true);
+	const maxHeight = $('#welcome').outerHeight(true) - $('header').outerHeight(true);
 	if ($(window).scrollTop() >= maxHeight) {
 		$('body header').addClass('sticky');
 	}
