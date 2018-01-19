@@ -16,35 +16,32 @@ $(document).ready(function() {
   var feePool;
   var $calculatorInput = $('#calculator-input');
   var $calculatorResult = $('#calculator-result');
+  const server = new StellarSdk.Server('https://horizon.stellar.org');
+  StellarSdk.Network.usePublicNetwork();
 
 
   var getXLMAmount = function(xlmOrAddress) {
       return new Promise(function(resolve, reject){
-        // assume XLM is inserted
+        // check for XLM amount or valid address
         userXLM = parseFloat(xlmOrAddress);
         if (!isNaN(userXLM)) {
-
           resolve(userXLM);
-
-        } else {
-
-          // Not valid lumens, assume it's an address
+        } else if (StellarSdk.StrKey.isValidEd25519PublicKey(xlmOrAddress)) {
           var userAddress = xlmOrAddress;
-
-          // TODO: Validate that it looks like an address before hitting the api
-          $.get('https://horizon.stellar.org/accounts/' + userAddress)
-
-            .done(function(data){
-              // TODO: Look for native assets only, this might break if user has
-              // multiple assets
-              userXLM = data.balances[0].balance;
+          server.loadAccount(userAddress)
+            .then((account) => {
+              console.log(account);
+              const nativeBalance = account.balances.find((el) => {return el.asset_type === 'native';});
+              userXLM = nativeBalance.balance;
               resolve(userXLM);
-
-            })
-            .fail(function(){ reject(); });
-
+            }, (fail) => {
+              console.log('failed to fetch user account in calculator - error: ', fail);
+              reject();
+            });
+        } else {
+          // not a valid XLM amount or valid address
+          reject();
         }
-
       });
 
   };
@@ -60,14 +57,15 @@ $(document).ready(function() {
       } else {
 
         // Hit the API
-        $.get('https://horizon.stellar.org/ledgers?order=desc&limit=1')
-          .done(function(data){
-            // save to cache and resolve
-            totalCoins = data._embedded.records[0].total_coins;
-            feePool = data._embedded.records[0].fee_pool;
+        server.ledgers().limit(1).order('desc').call()
+          .then(({records}) => {
+            feePool = records[0].fee_pool;
+            totalCoins = records[0].total_coins;
             resolve();
-          })
-          .fail(function(){ reject(); });
+          }, (fail) => {
+            console.log('failed to fetch ledger in calculator - errror: ', fail);
+            reject();
+          });
       }
     });
   };
@@ -83,13 +81,14 @@ $(document).ready(function() {
       Promise.all([getXLMAmount($calculatorInput.val()), getLatestLedgerInfo()])
         .then(function([XLMAmount, _]){
           // weekly inlation rate set in stellar core code - https://github.com/stellar/stellar-core/blob/master/src/transactions/InflationOpFrame.cpp
-          var total = (XLMAmount * 0.000190721) + (userXLM * feePool / totalCoins ) - 0.0000100
+          var total = Math.max((XLMAmount * 0.000190721) + (userXLM * feePool / totalCoins ) - 0.0000100, 0.0);
 
           // This is not accurate and also slowwwww
           $calculatorResult.html(Number((total).toFixed(7)));
         })
         .catch(function(e){
-          console.log("Please check your address / XLM amount!" +  e);
+          console.log("Please check your address / XLM amount!");
+          $calculatorResult.html(0);
         });
 
     }, 400 );
