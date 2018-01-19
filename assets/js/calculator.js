@@ -82,10 +82,11 @@ $(document).ready(function() {
       // 3. Update
       Promise.all([getXLMAmount($calculatorInput.val()), getLatestLedgerInfo()])
         .then(function([XLMAmount, _]){
-            var total = (XLMAmount / 5200) + (userXLM * feePool / totalCoins ) - 0.0000100
+          // weekly inlation rate set in stellar core code - https://github.com/stellar/stellar-core/blob/master/src/transactions/InflationOpFrame.cpp
+          var total = (XLMAmount * 0.000190721) + (userXLM * feePool / totalCoins ) - 0.0000100
 
-            // This is not accurate and also slowwwww
-            $calculatorResult.html(Number((total).toFixed(7)));
+          // This is not accurate and also slowwwww
+          $calculatorResult.html(Number((total).toFixed(7)));
         })
         .catch(function(e){
           console.log("Please check your address / XLM amount!" +  e);
