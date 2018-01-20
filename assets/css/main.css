@@ -18,6 +18,7 @@ body {
 	}
 
 a {
+	font-weight: bold;
 	color: rgb(79,177,234);
 	-webkit-transition: color 0.2s ease-out;
 	transition: color 0.2s ease-out;
@@ -36,13 +37,21 @@ a:active {
 	transition: color 0.1s ease-out;
 	}
 
+.button {
+	color: rgb(79,177,234);
+	box-shadow: rgba(50,50,93,0.1) 0px 4px 6px 0px, rgba(0,0,0,0.1) 0px 1px 3px 0px;
+	}
+
+.button:hover {
+	}
+
 h1, h2, h3, h4, h5, h6 {
 	margin: 0 0 3vmin;
 	font-weight: normal;
 	}
 
 h1 { font-size: 250%; }
-h2 { font-size: 200%; }
+h2 { font-size: 250%; }
 h3 { font-size: 175%; }
 h4 { font-size: 100%; }
 h5 { font-size: 90%; }
@@ -82,40 +91,38 @@ body > header {
 
 body > header.sticky {
 	background: rgb(2,14,27) 0 0 no-repeat;
-	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../img/bg.jpg");
+	background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../img/bg.jpg");
+	background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../img/bg.jpg");
 	background-size: cover;
-	background-position: 0 20.5%;
+	background-position: 0 20%;
 	}
 
 /*
  * Logo
 */
 
-body > header > h1 {
+h1 {
 	width: 30%;
 	margin: 0;
 	display: flex;
 	align-items: center;
 	}
 
-body > header > h1 > a {
+h1 a {
 	padding-left: 45px;
 	font-family: "Ailerons";
 	font-size: 70%;
+	font-weight: normal;
 	color: #fff;
 	background: url("../img/logo.svg") 0 0 no-repeat;
 	background-size: contain;
-	}
-
-body > header > h1 > a:hover {
-	color: rgb(253,188,64);
 	}
 
 /*
  * Ticker
 */
 
-body > header > aside {
+body > header aside {
 	width: 40%;
 	margin: 0;
 	text-align: center;
@@ -124,16 +131,21 @@ body > header > aside {
 	justify-content: center;
 	}
 
-body > header > aside th {
+body > header aside th {
+	min-width: 33.3%;
 	color: rgba(255,255,255,0.5);
 	}
 
-body > header > aside th .xlm {
+body > header aside th .xlm {
 	color: rgb(79,177,234);
 	}
 
-body > header > aside th .pair {
+body > header aside th .pair {
 	color: #fff;
+	}
+
+body > header aside td {
+	min-width: 33.3%;
 	}
 
 .price_up,
@@ -150,36 +162,35 @@ body > header > aside th .pair {
  * Nav
 */
 
-body > header > nav {
+body > header nav {
 	width: 30%;
 	margin: 0;
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
 	font-family: "Bebas Neue Bold";
-	font-size: 120%;
+	font-size: 125%;
 	}
 
-body > header > nav > * {
+body > header nav * {
 	color: #fff;
-	padding: 0.5vmin 1vmin 0.25vmin;
+	padding: 0.5vmin 1vmin 0vmin;
 	margin-left: 3vmin;
 	}
 
-body > header > nav > *:hover {
+body > header nav *:hover {
 	color: rgb(253,188,64);
 	}
 
-body > header > nav > :nth-child(3) {
+body > header nav :nth-child(3) {
 	background-color: rgb(79,177,234);
 	border-radius: 1vmin;
 	-webkit-transition: background-color 0.2s ease-out;
 	transition: background-color 0.2s ease-out;
 	}
 
-body > header > nav > :nth-child(3):hover {
-	background-color: #fff;
-	color: rgb(253,188,64);
+body > header nav :nth-child(3):hover {
+	background-color: transparent;
 	-webkit-transition: background-color 0.2s ease-out;
 	transition: background-color 0.2s ease-out;
 	}
@@ -202,9 +213,9 @@ main > section h2:not(:first-child) {
 
 main > section h2 {
 	width: 100%;
+	padding-bottom: 1vmin;
 	text-align: center;
 	font-family: "Bebas Neue Bold", sans-serif;
-	font-size: 300%;
 	border-style: solid;
 	border-width: 0 0 4px 0;
 	border-image: -webkit-linear-gradient(left,rgba(0,0,0,0)0%,rgba(0,0,0,0)44.9%,rgba(79,177,234,1)45%,rgba(79,177,234,1)55%,rgba(0,0,0,0)55.1%,rgba(0,0,0,0)100%);
@@ -216,37 +227,36 @@ main > section h2 {
  * Welcome
 */
 
-main #welcome {
+#welcome {
 	align-items: center;
-	justify-content: center;
 	text-align: center;
 	color: #fff;
 	background: rgb(2,14,27) 0 0 no-repeat;
-	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../img/bg.jpg"); /* use base64 later */
+	background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../img/bg.jpg");
+	background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../img/bg.jpg");
 	background-size: cover;
 	}
 
-main #welcome mark,
-main #welcome > h3 {
+#welcome mark,
+#welcome h3 {
 	margin: 6vmin 0 0 0;
 	font-family: "Bebas Neue Bold", sans-serif;
 	}
 
-main #welcome mark {
+#welcome mark {
 	font-size: 125%;
 	}
 
-main #welcome mark span {
+#welcome mark span {
 	color: rgba(255,255,255,0.3);
 	}
 
-main #welcome mark #accounts-contributing,
-main #welcome mark #total-votes {
+#welcome mark #accounts-contributing,
+#welcome mark #total-votes {
 	color: rgb(52,199,73);
 	}
 
-main address,
-main address > span {
+main address {
 	margin: 0 auto;
 	font-size: 115%;
 	font-style: normal;
@@ -257,7 +267,8 @@ main address > span {
 #copy-address-link-1 {
 	position: relative;
 	color: rgb(79,177,234);
-	transition: color 0.1s linear;
+	-webkit-transition: color 0.2s linear;
+	transition: color 0.2s linear;
 	}
 
 #copy-address-link:hover,
@@ -274,6 +285,7 @@ main address > span {
 #copy-icon-1 {
 	visibility: visible;
 	opacity: 1;
+	-webkit-transition: visibility 1s, opacity 0.5s linear;
 	transition: visibility 1s, opacity 0.5s linear;
 	}
 
@@ -287,6 +299,7 @@ main address > span {
 #check-icon-1 {
 	visibility: hidden;
 	opacity: 0;
+	-webkit-transition: visibility 0s, opacity 1s linear;
 	transition: visibility 0s, opacity 1s linear;
 	}
 
@@ -306,84 +319,68 @@ main address > span {
  * FAQ
 */
 
-main #faq {
+#faq {
 	background-color: rgb(230,231,232);
 	}
 
-.calculator,
-#calculator-input {
+#faq #calculator-input {
 	text-align: center;
 	}
 
-.calculator small {
+#faq small {
+	display: block;
+	margin: 1vmin 0 0;
+	text-align: center;
 	color: rgba(0,0,0,0.4);
 	}
 
-.calculator .result {
-	margin-bottom: 0;
+#faq .result {
+	margin: 2vmin 0 0;
 	font-family: "Bebas Neue Bold", sans-serif;
+	text-align: center;
 	}
 
 /*
  * Join
 */
 
-#join {
-	background-color: rgb(79,177,234);
+#join,
+main > footer {
 	padding: 18vmin 6vmin;
-	}
-
-#join > h2 {
 	color: #fff;
+	background: #ccc 0 0 no-repeat fixed;
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../img/bg_join.jpg"); /* use base64 later */
+	background-size: cover;
 	}
 
-.instructions-container {
-	background-color: #fff;
-	border-radius: 1vmin;
-	}
-
-.instructions-left {
-	border-top-left-radius: 1vmin;
-	border-bottom-left-radius: 1vmin;
-	border-right: 2px solid rgb(79,177,234);
-	}
-
-.instructions-nav {
-	margin: 20px 5px;
-	}
-
-.instructions-content {
-	margin: 20px 15px;
-	}
-
+.instructions-left,
 .instructions-content h4 {
-	font-weight: bold;
+	font-family: "Bebas Neue Bold", sans-serif;
+	font-size: 150%;
 	}
 
-#stellar-laboratory-instructions li {
-	}
-
-#stellar-laboratory-instructions ol {
+.instructions-container ol {
 	padding-left: 3vmin;
 	list-style-position: outside;
 	list-style-type: decimal;
 	}
 
-#stellar-laboratory-instructions ol li {
-	padding-top: 1vmin;
-	margin-bottom: 3vmin;
+.instructions-container ol li {
+	margin: 3vmin 0;
 	}
 
-#stellar-laboratory-instructions img {
+.instructions-container li img {
 	display: block !important;
 	width: 100% !important;
 	height: 100% !important;
+	margin: 3vmin 0;
 	}
-
 
 .btn-outline-info {
 	background-color: rgb(79,177,234);
-	border: 2px solid rgb(79,177,234);
+	border: none;
+	font-family: "Bebas Neue Bold";
+	font-size: 125%;
 	color: white;
 	border-radius: 1vmin;
 	-webkit-transition: background-color 0.2s ease-out;
@@ -391,44 +388,39 @@ main #faq {
 	}
 
 .btn-outline-info:hover {
-	background-color: #fff;
-	border: 2px solid rgb(253,188,64);
+	background-color: transparent;
+	border: none;
 	color: rgb(253,188,64);
 	-webkit-transition: background-color 0.2s ease-out;
 	transition: background-color 0.2s ease-out;
 	}
 
-.btn-outline-secondary:hover {
-	background-color: #fff;
-	color: rgb(253,188,64);
-	}
-
-.instructions-nav {
-	font-weight: bold;
+.instructions-nav a {
+	display: inline !important;
 	}
 
 .instructions-nav .active {
-	background-color: transparent !important; /* green */
+	background-color: transparent !important;
 	color: rgb(52,199,73) !important;
-	font-weight: bold;
-	}
-
-#verify-xlm-address-input {
-	font-size: 0.85em;
-	letter-spacing: 0px;
-	border: 2px solid rgb(79,177,234);
 	}
 
 #verify-xlm-address-button {
-	border: 2px solid rgb(52,199,73) !important; /* green */
-	}
-
-#verify-xlm-address-button:hover {
+	border: none;
 	background-color: rgb(52,199,73) !important; /* green */
 	color: #fff;
 	}
 
+#verify-xlm-address-button:hover {
+	background-color: rgb(253,188,64) !important;
+	color: #fff;
+	}
+
+.wallet-grid-item {
+	padding: 1vmin;
+	}
+
 .wallet-logos {
+	background-color: #fff;
 	border: 2px solid transparent;
 	border-radius: 1vmin;
 	}
