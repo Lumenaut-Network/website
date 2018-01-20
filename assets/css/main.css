@@ -340,6 +340,15 @@ main address {
 	text-align: center;
 	}
 
+.warning {
+	display: block !important;
+	padding: 1vmin;
+	background-color: rgb(201,81,81);
+	color: #fff;
+	text-align: center;
+	border-radius: 1vmin;
+	}
+
 /*
  * Join
 */
