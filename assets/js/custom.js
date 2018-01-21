@@ -12,7 +12,8 @@ $(document).ready(function() {
 	const instructionsState = {};
 	const wallet_to_custom_instructions = {
 		'stellar-desktop-client': 'stellar-desktop-client-instructions',
-		'ledger': 'ledger-nano-instructions'
+		'ledger': 'ledger-nano-instructions',
+		'stellarterm': 'stellarterm-instructions'
 	};
 
 	const server = new StellarSdk.Server('https://horizon.stellar.org');
