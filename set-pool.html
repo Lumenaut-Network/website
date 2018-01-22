@@ -184,8 +184,8 @@
 		}
 		var sourcePublicKey = sourceKeypair.publicKey();
 
-		var server = new StellarSdk.Server('https://horizon-testnet.stellar.org');
-		StellarSdk.Network.useTestNetwork();
+		var server = new StellarSdk.Server('https://horizon.stellar.org');
+		StellarSdk.Network.usePublicNetwork();
 
 		server.loadAccount(sourcePublicKey)
 		.then(function(account) {
@@ -223,8 +223,8 @@
 		var pool_address = document.getElementById("address").innerHTML;
 		var account = document.getElementById("pubkey").value;
 
-		var server = new StellarSdk.Server('https://horizon-testnet.stellar.org');
-		StellarSdk.Network.useTestNetwork();
+		var server = new StellarSdk.Server('https://horizon.stellar.org');
+		StellarSdk.Network.usePublicNetwork();
 
 		var xdr;
 
