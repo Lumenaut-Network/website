@@ -78,7 +78,7 @@ $(document).ready(function() {
       // 1. Get XLM Amount AND get totalCoin + feePool
       // 2. Calculate inflation
       // 3. Update
-      Promise.all([getXLMAmount($calculatorInput.val()), getLatestLedgerInfo()])
+      Promise.all([getXLMAmount($calculatorInput.val().replace(/,/g, '')), getLatestLedgerInfo()])
         .then(function([XLMAmount, _]){
           // weekly inlation rate set in stellar core code - https://github.com/stellar/stellar-core/blob/master/src/transactions/InflationOpFrame.cpp
           var total = Math.max((XLMAmount * 0.000190721) + (userXLM * feePool / totalCoins ) - 0.0000100, 0.0);
