@@ -1,0 +1,87 @@
+{
+  "site.head.title": "Stellar Inflation Pool | Lumenaut.net",
+
+  "site.nav.about": "À propos",
+  "site.nav.faq": "FAQ",
+  "site.nav.join": "Rejoindre",
+  "site.nav.store": "Store",
+
+  "site.main.welcome.community_pool": "Community Pool",
+  "site.main.welcome.description": "100% payout, zero fees.<br>By the community, for the community.",
+  "site.main.welcome.accounts": "Accounts",
+  "site.main.welcome.votes": "Votes",
+  "site.main.welcome.inflation_destination": "Inflation Destination",
+
+  "site.main.about.what_is_lumenaut": "What is Lumenaut",
+  "site.main.about.what_is_lumenaut.collective_network": "Lumenaut is a collective network that is enthusiastic about <a href=\"https://www.stellar.org\">Stellar</a>.",
+  "site.main.about.what_is_lumenaut.description": "Lumenaut is a play-on-words based on \"lumen\" and \"naut\". The word \"lumen\" refers to the Stellar's network crypto-asset called Lumen and the word \"naut\" refers to astronaut or cosmonaut. If you like Stellar and hold Lumens (XLM) then you're a lumenaut, just like us.",
+
+  "site.main.about.members_of_lumenaut": "Members of Lumenaut",
+  "site.main.about.members_of_lumenaut.differentiation": "The collective is formed from users that met in the official <a href=\"https://reddit.com/r/stellar\">Stellar subreddit</a>. We don't like to differentiate collaborators because we believe that any contribution has its own merits. Accordingly, this list may grow and we will edit it to add the new members.",
+  "site.main.about.members_of_lumenaut.contributors": "As of now the contributors are (no order of preference):",
+  "site.main.about.members_of_lumenaut.and_you": "and you!",
+
+  "site.main.about.how_to_help": "How To Help Lumenaut",
+  "site.main.about.how_to_help.services": "All our services are fair and we work hard for free, trying to improve the community and Stellar ecosystem. As you know, servers have to be paid and we don't charge anything, we will do our best to offer you a top-notch service for free. If you would like to contribute and help us pay the servers, it will help this collective offer services free of charge. This will allow you to avoid using other pools that will subtract fees from your Inflation payments and/or spam you.",
+  "site.main.about.how_to_help.best_option": "Basically, we are your best option. We are reliable and free. If you would like us to continue to offer high-quality service at no cost, please help us achieve at least $50 per month so all the services can run smoothly. You can donate XLM to our donations address shared bellow.",
+
+  "site.main.about.donation_address_only": "Please use this address ONLY for donations!",
+
+  "site.main.faq.what_it_is": "What Is Inflation",
+  "site.main.faq.what_it_is.mechanism": "Inflation is a nominal mechanism that distributes new Lumens, on a weekly basis, at a rate of 1% per year to existing holders. The Inflation is distributed using a voting system whereby those with 0.05% of the total votes qualify for the new Lumens. If your address does not have the minimum requirement of 0.05% of the votes, then you can still meet the minimum requirement by joining a pool. The pool is where the community can gather together and vote using all of their Lumens to reach the minimum required for the Stellar Development Foundation to pay the Inflation. Basically, it means that if you're a holder then you receive free Lumens.",
+  "site.main.faq.what_it_is.read_more": "To read more about Inflation please consult the <a href=\"https://www.stellar.org/developers/guides/concepts/inflation.html\">official documentation</a>.",
+  
+  "site.main.faq.why_use_community_pool": "Why Use The Community Pool",
+  "site.main.faq.why_use_community_pool.currently": "Currently, there are other pools that charge fees to join and/or spam their users. Due to the lack of a good public pool, we decided to create something better where no fees will be taken from you and you will receive the full fair amount of your payment. By joining our pool you will not encounter any problems and you will not lose any of your Lumens. There is no risk and your Lumens will always be in your wallet. Everything is 100% safe!",
+  
+  "site.main.faq.how_to_vote": "How To Vote In The Community Pool",
+  "site.main.faq.how_to_vote.explain": "Voting is done by setting the option Inflation Destination in your wallet to our account ID. The number of votes you have is equal to your balance, so if you have 100 XLM then you have 100 votes. The more Lumens you have the more Lumens you receive via Inflation. We will send the Inflation lumens to your wallet address every week. To know how to set the option Inflation Destination for your wallet, please consult the instructions below.",
+
+  "site.main.faq.how_much": "How Much and When Will You Receive The Inflation",
+  "site.main.faq.how_much.when": "Inflation is usually distributed by the Stellar network between Monday night and Tuesday morning at 24h00 UTC. Processing on our end should take no more than a few hours after that, so you should receive your portion of the distribution sometime early Tuesday morning UTC.",
+  "site.main.faq.how_much.enter": "To know how much you will receive in the next payment, enter your XLM amount or Public Key below for the estimate of the inflation.",
+
+  "site.main.calculator.locally": "We don't store anything on our server, calculation is done locally on your browser. <a href=\"https://github.com/Lumenaut-Network/website/tree/gh-pages\">More info.</a>",
+  "site.main.calculator.estimated": "Estimated payout =",
+
+  "site.main.join": "Join Community Pool",
+  
+  "site.main.join.step_1.title": "1. Fund your account",
+  "site.main.join.step_1.right.title": "Fund your account",
+  "site.main.join.step_1.right.transfer": "First of all you will need to transfer all your Lumens to a wallet controlled by you. If you keep your Lumens in an exchange then the exchange will receive the Inflation and will not credit you. Also, having your Lumens in a wallet saved and controlled by you can prevent your Lumens from being stolen due to hacks.",
+  "site.main.join.step_1.right.need_help": "Need help choosing a wallet? Check out Stellar's officially supported wallets.",
+  "site.main.join.step_1.right.wallets": "Wallets",
+
+  "site.main.join.step_2.title": "2. Select your wallet",
+  "site.main.join.step_2.right.title": "Select your wallet to see the related tutorial",
+  "site.main.join.step_2.right.other": "Other",
+
+  "site.main.join.step_3.title": "3. Cast your vote",
+  "site.main.join.step_3.right.title": "Cast your vote",
+  "site.main.join.step_3.right.done": "Done!",
+  "site.main.join.step_3.right.stellarterm.set_inflation": "Go to \"Account\", choose \"Inflation\", input our address in \"Inflation destination\", and click \"Set inflation destination\";",
+  "site.main.join.step_3.right.stellarterm.wait_server": "Wait for the server answer;",
+  "site.main.join.step_3.right.stellarterm.confirm_success": "Confirm if it was successfully set;",
+
+  "site.main.join.step_3.right.goto_laboratory": "Go to <a href=\"https://www.stellar.org/laboratory/#?network=public\">Stellar Laboratory</a> and switch to public network:",
+  "site.main.join.step_3.right.laboratory.tx_builder": "Click in the tab \"Transaction Builder\":",
+  "site.main.join.step_3.right.laboratory.src_acc": "Paste your Public Key in \"Source Account\":",
+  "site.main.join.step_3.right.laboratory.seq_number": "Click the blue button \"Fetch next sequence number for account starting with...\":",
+  "site.main.join.step_3.right.laboratory.op_type": "Scroll down the page to \"Operation Type\", click the dropdown menu and choose \"Set Options\":",
+  "site.main.join.step_3.right.laboratory.infl_destination": "Paste our address in the \"Inflation Destination\":",
+  "site.main.join.step_3.right.laboratory.sign_tx": "Scroll down the page and click the blue button \"Sign in Transaction Signer\":",
+  "site.main.join.step_3.right.laboratory.add_signer": "You will be redirected to a new page, scroll down and paste your Secret Key in \"Add Signer\":",
+  "site.main.join.step_3.right.laboratory.submit_tx": "Scroll down and click the blue button \"Submit to Post Transaction endpoint\":",
+  "site.main.join.step_3.right.ledger.sign_bip": "Scroll down and click the blue button \"Sign with Default BIP path\":",
+  "site.main.join.step_3.right.ledger.approve_tx": "Approve the transaction on the device;",
+  "site.main.join.step_3.right.ledger.submit_final": "You will be redirected to a new page, click the blue button \"Submit\":",
+
+  "site.main.join.step_4.title": "4. Confirm your vote",
+  "site.main.join.step_4.right.title": "Confirm your vote",
+  "site.main.join.step_4.right.is_set": "Insert your Public Key below and check if the inflation destination is set.",
+  "site.main.join.step_4.right.verify": "Verify",
+  "site.main.join.step_4.error.not_joined": "Hmmm. Looks like you're not in the pool yet.",
+  "site.main.join.step_4.error.fetching": "Error fetching account info. Please try again later.",
+  "site.main.join.step_4.error.bad_format": "Invalid address. Try copy-pasting again.",
+  "site.main.join.step_4.success": "Success! Welcome to the pool!"
+}

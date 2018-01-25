@@ -1,306 +1,386 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="utf-8">
-	<title>Lumenaut</title>
-	<meta name="description" content="Stellar inflation pool. By the community, for the community.">
-	<link rel="stylesheet" href="assets/css/join.css">
-	<link rel="stylesheet" href="assets/css/base.css">
-	<link rel="stylesheet" href="assets/css/main.css">
-	<link rel="stylesheet" href="assets/css/fonts.css">
-	<link rel="stylesheet" href="assets/css/mobile.css">
-	<link rel="shortcut icon" href="assets/img/favicon.ico">
+    <meta charset="utf-8">
+    <title data-i18n="site.head.title">Stellar Inflation Pool | Lumenaut.net</title>
+    <meta name="description" content="Stellar inflation pool. By the community, for the community.">
+    <link rel="stylesheet" href="assets/css/join.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/mobile.css">
+    <link rel="shortcut icon" href="assets/img/favicon.ico">
 </head>
+
 <body>
-	<header>
-		<h1><a href="https://lumenaut.net">Lumenaut</a></h1>
+    <header>
+        <h1><a href="https://lumenaut.net">Lumenaut</a></h1>
 
-		<aside>
-			<table>
-				<thead>
-					<tr>
-						<th><span class="xlm">XLM</span> <span>/</span> <span class="pair">USD</span></th>
-						<th><span class="xlm">XLM</span> <span>/</span> <span class="pair">BTC</span></th>
-						<th><span class="xlm">XLM</span> <span>/</span> <span class="pair">ETH</span></th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>$ <span id="price_XLM-USD" class="price"></span> <span id="change24HourPct_XLM-USD"></span></td>
-						<td>Ƀ <span id="price_XLM-BTC" class="price"></span> <span id="change24HourPct_XLM-BTC"></span></td>
-						<td>Ξ <span id="price_XLM-ETH" class="price"></span> <span id="change24HourPct_XLM-ETH"></span></td>
-					</tr>
-				</tbody>
-			</table>
-		</aside>
+        <aside>
+            <table>
+                <thead>
+                    <tr>
+                        <th><span class="xlm">XLM</span> <span>/</span> <span class="pair">USD</span></th>
+                        <th><span class="xlm">XLM</span> <span>/</span> <span class="pair">BTC</span></th>
+                        <th><span class="xlm">XLM</span> <span>/</span> <span class="pair">ETH</span></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>$ <span id="price_XLM-USD" class="price"></span> <span id="change24HourPct_XLM-USD"></span></td>
+                        <td>Ƀ <span id="price_XLM-BTC" class="price"></span> <span id="change24HourPct_XLM-BTC"></span></td>
+                        <td>Ξ <span id="price_XLM-ETH" class="price"></span> <span id="change24HourPct_XLM-ETH"></span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </aside>
 
-		<nav>
-			<a href="#about">About</a>
-			<a href="#faq">FAQ</a>
-			<a href="#join">Join</a>
-			<a href="store.html">Store</a>
-		</nav>
-	</header>
+        <nav>
+            <a href="#about" data-i18n="site.nav.about">About</a>
+            <a href="#faq" data-i18n="site.nav.faq">FAQ</a>
+            <a href="#join" class="join_pool" data-i18n="site.nav.join">Join</a>
+            <a href="./store.html" data-i18n="site.nav.store">Store</a>
+            <div class="language-picker">
+                <button class="drop-btn">Language</button>
+                <div class="language-picker-content">
+                    <a class="language-item" onclick="translateInto('en_US');">
+                        <img src="http://i64.tinypic.com/fd60km.png" /> English
+                    </a>
+                    <a class="language-item" onclick="translateInto('fr_FR');">
+                        <img src="http://i65.tinypic.com/300b30k.png" /> Français
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-	<main>
-		<section id="welcome">
-			<h2>Community Pool</h2>
-			<p>100% payout, zero fees.<br>By the community, for the community.</p>
-			<mark><span id="accounts-contributing"></span> Accounts <span>|</span> <span id="total-votes"></span> Votes</mark>
+    <main>
+        <section id="welcome">
+            <h2 data-i18n="site.main.welcome.community_pool">Community Pool</h2>
+            <p data-i18n="site.main.welcome.description">100% payout, zero fees.
+                <br>By the community, for the community.</p>
+            <mark><span id="accounts-contributing"></span>
+                <label data-i18n="site.main.welcome.accounts">Accounts</label> <span>|</span> <span id="total-votes"></span>
+                <label data-i18n="site.main.welcome.votes">Votes</label>
+            </mark>
 
-			<h3>Inflation Destination</h3>
-			<address id="copy-address">
-				<a id="copy-address-link" data-clipboard-text="GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT">
-					<span id="pool-address">GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT</span>
-					<i class="fas fa-copy addr-icon" aria-hidden="true" id="copy-icon"></i>
-					<i class="fas fa-check-circle addr-icon" aria-hidden="true" id="check-icon"></i>
-				</a>
-			</address>
-		</section>
+            <h3 data-i18n="site.main.welcome.inflation_destination">Inflation Destination</h3>
+            <address id="copy-address">
+                <a id="copy-address-link" data-clipboard-text="GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT">
+                    <span id="pool-address">GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT</span>
+                    <i class="fas fa-copy addr-icon" aria-hidden="true" id="copy-icon"></i>
+                    <i class="fas fa-check-circle addr-icon" aria-hidden="true" id="check-icon"></i>
+                </a>
+            </address>
+        </section>
 
-		<section id="about">
-			<h2>What is Lumenaut</h2>
-			<p>Lumenaut is a collective network that is enthusiastic about <a href="https://www.stellar.org">Stellar</a>.</p>
-			<p>Lumenaut is a play-on-words based on "lumen" and "naut". The word "lumen" refers to the Stellar's network crypto-asset called Lumen and the word "naut" refers to astronaut or cosmonaut. If you like Stellar and hold Lumens (XLM) then you're a lumenaut, just like us.</p>
+        <section id="about">
+            <h2 data-i18n="site.main.about.what_is_lumenaut">What is Lumenaut</h2>
+            <p data-i18n="site.main.about.what_is_lumenaut.collective_network">Lumenaut is a collective network that is enthusiastic about <a href="https://www.stellar.org">Stellar</a>.</p>
+            <p data-i18n="site.main.about.what_is_lumenaut.description">Lumenaut is a play-on-words based on "lumen" and "naut". The word "lumen" refers to the Stellar's network crypto-asset called Lumen and the word "naut" refers to astronaut or cosmonaut. If you like Stellar and hold Lumens (XLM) then you're a lumenaut, just like us.</p>
 
-			<h2>Members of Lumenaut</h2>
-			<p>The collective is formed from users that met in the official <a href="https://reddit.com/r/stellar">Stellar subreddit</a>. We don't like to differentiate collaborators because we believe that any contribution has its own merits. Accordingly, this list may grow and we will edit it to add the new members.</p>
+            <h2 data-i18n="site.main.about.members_of_lumenaut">Members of Lumenaut</h2>
+            <p data-i18n="site.main.about.members_of_lumenaut.differentiation">The collective is formed from users that met in the official <a href="https://reddit.com/r/stellar">Stellar subreddit</a>. We don't like to differentiate collaborators because we believe that any contribution has its own merits. Accordingly, this list may grow and we will edit it to add the new members.</p>
 
-			<p>As of now the contributors are (no order of preference): b1tcc, iduvall, enzo-the-dog, xlm_in_2018, jeffreytai, jorbs2, voidburn, texm, 7Swerve7, johnmars, lyeandro2587, CryptoErik, AkdM_, IAmBabau, usbogie, peepluvr, fatguy6pack, RedRanger, sinceron, kucak, emmittj, andrew, arya, bloddwyn, complex, CptSpacePirate, craigChan, dotsun, ExMachima, Flexo, hugetanks, jaybirch, kawera, lemand, matheususb.comp, jyl5555, prasanth, sandworm, shahin, speakoespanglish, speed7, spyiestspy, stellar-source, seiryuz, Notoriolus10... and you!</p>
+            <p><span data-i18n="site.main.about.members_of_lumenaut.contributors">As of now the contributors are (no order of preference):</span> b1tcc, iduvall, enzo-the-dog, xlm_in_2018, jeffreytai, jorbs2, voidburn, texm, 7Swerve7, johnmars, lyeandro2587, CryptoErik, AkdM_, IAmBabau, usbogie, peepluvr, fatguy6pack, RedRanger, sinceron, kucak, emmittj, andrew, arya, bloddwyn, complex, CptSpacePirate, craigChan, dotsun, ExMachima, Flexo, hugetanks, jaybirch, kawera, lemand, matheususb.comp, jyl5555, prasanth, sandworm, shahin, speakoespanglish, speed7, spyiestspy, stellar-source, seiryuz, Notoriolus10... <span data-i18n="site.main.about.members_of_lumenaut.and_you">and you!</span></p>
 
-			<h2>How To Help Lumenaut</h2>
+            <h2 data-i18n="site.main.about.how_to_help">How To Help Lumenaut</h2>
 
-			<p>All our services are fair and we work hard for free, trying to improve the community and Stellar ecosystem. As you know, servers have to be paid and we don't charge anything, we will do our best to offer you a top-notch service for free. If you would like to contribute and help us pay the servers, it will help this collective offer services free of charge. This will allow you to avoid using other pools that will subtract fees from your Inflation payments and/or spam you.</p>
+            <p data-i18n="site.main.about.how_to_help.services">All our services are fair and we work hard for free, trying to improve the community and Stellar ecosystem. As you know, servers have to be paid and we don't charge anything, we will do our best to offer you a top-notch service for free. If you would like to contribute and help us pay the servers, it will help this collective offer services free of charge. This will allow you to avoid using other pools that will subtract fees from your Inflation payments and/or spam you.</p>
 
-			<p>Basically, we are your best option. We are reliable and free. If you would like us to continue to offer high-quality service at no cost, please help us achieve at least $50 per month so all the services can run smoothly. You can donate XLM to our donations address shared bellow.</p>
+            <p data-18n="site.main.about.how_to_help.best_option">Basically, we are your best option. We are reliable and free. If you would like us to continue to offer high-quality service at no cost, please help us achieve at least $50 per month so all the services can run smoothly. You can donate XLM to our donations address shared bellow.</p>
 
-			<address class="warning" id="copy-address-1">
-				<strong class="">Please use this address ONLY for donations!</strong>
+            <address class="warning" id="copy-address-1">
+                <strong data-18n="site.main.about.donation_address_only">Please use this address ONLY for donations!</strong>
+                <br />
+                <a id="copy-address-link-1" data-clipboard-text="GDP3J3NCR4MVB6QBQAYDOMWUYV53CAJ43YQIIFQSCU5ITIGESY2ONAUT">
+                    <span id="pool-address-1">GDP3J3NCR4MVB6QBQAYDOMWUYV53CAJ43YQIIFQSCU5ITIGESY2ONAUT</span>
+                    <i class="fas fa-copy addr-icon" aria-hidden="true" id="copy-icon-1"></i>
+                    <i class="fas fa-check-circle addr-icon" aria-hidden="true" id="check-icon-1"></i>
+                </a>
+            </address>
+        </section>
 
-				<a id="copy-address-link-1" data-clipboard-text="GDP3J3NCR4MVB6QBQAYDOMWUYV53CAJ43YQIIFQSCU5ITIGESY2ONAUT">
-					<span id="pool-address-1">GDP3J3NCR4MVB6QBQAYDOMWUYV53CAJ43YQIIFQSCU5ITIGESY2ONAUT</span>
-					<i class="fas fa-copy addr-icon" aria-hidden="true" id="copy-icon-1"></i>
-					<i class="fas fa-check-circle addr-icon" aria-hidden="true" id="check-icon-1"></i>
-				</a>
-			</address>
-		</section>
+        <section id="faq">
+            <h2 data-i18n="site.main.faq.what_it_is">What Is Inflation</h2>
+            <p data-i18n="site.main.faq.what_it_is.mechanism">Inflation is a nominal mechanism that distributes new Lumens, on a weekly basis, at a rate of 1% per year to existing holders. The Inflation is distributed using a voting system whereby those with 0.05% of the total votes qualify for the new Lumens. If your address does not have the minimum requirement of 0.05% of the votes, then you can still meet the minimum requirement by joining a pool. The pool is where the community can gather together and vote using all of their Lumens to reach the minimum required for the Stellar Development Foundation to pay the Inflation. Basically, it means that if you're a holder then you receive free Lumens.</p>
 
-		<section id="faq">
-			<h2>What Is Inflation</h2>
-			<p>Inflation is a nominal mechanism that distributes new Lumens, on a weekly basis, at a rate of 1% per year to existing holders. The Inflation is distributed using a voting system whereby those with 0.05% of the total votes qualify for the new Lumens. If your address does not have the minimum requirement of 0.05% of the votes, then you can still meet the minimum requirement by joining a pool. The pool is where the community can gather together and vote using all of their Lumens to reach the minimum required for the Stellar Development Foundation to pay the Inflation. Basically, it means that if you're a holder then you receive free Lumens.</p>
+            <p data-i18n="site.main.faq.what_it_is.read_more">To read more about Inflation please consult the <a href="https://www.stellar.org/developers/guides/concepts/inflation.html">official documentation</a>.</p>
 
-			<p>To read more about Inflation please consult the <a href="https://www.stellar.org/developers/guides/concepts/inflation.html">official documentation</a>.</p>
+            <h2 data-i18n="site.main.faq.why_use_community_pool">Why Use The Community Pool</h2>
+            <p data-i18n="site.main.faq.why_use_community_pool.currently">Currently, there are other pools that charge fees to join and/or spam their users. Due to the lack of a good public pool, we decided to create something better where no fees will be taken from you and you will receive the full fair amount of your payment. By joining our pool you will not encounter any problems and you will not lose any of your Lumens. There is no risk and your Lumens will always be in your wallet. Everything is 100% safe!</p>
 
-			<h2>Why Use The Community Pool</h2>
-			<p>Currently, there are other pools that charge fees to join and/or spam their users. Due to the lack of a good public pool, we decided to create something better where no fees will be taken from you and you will receive the full fair amount of your payment. By joining our pool you will not encounter any problems and you will not lose any of your Lumens. There is no risk and your Lumens will always be in your wallet. Everything is 100% safe!</p>
+            <h2 data-i18n="site.main.faq.how_to_vote">How To Vote In The Community Pool</h2>
 
-			<h2>How To Vote In The Community Pool</h2>
+            <p data-i18n="site.main.faq.how_to_vote.explain">Voting is done by setting the option Inflation Destination in your wallet to our account ID. The number of votes you have is equal to your balance, so if you have 100 XLM then you have 100 votes. The more Lumens you have the more Lumens you receive via Inflation. We will send the Inflation lumens to your wallet address every week. To know how to set the option Inflation Destination for your wallet, please consult the instructions below.</p>
 
-			<p>Voting is done by setting the option Inflation Destination in your wallet to our account ID. The number of votes you have is equal to your balance, so if you have 100 XLM then you have 100 votes. The more Lumens you have the more Lumens you receive via Inflation. We will send the Inflation lumens to your wallet address every week. To know how to set the option Inflation Destination for your wallet, please consult the instructions below.</p>
+            <h2 data-i18n="site.main.faq.how_much">How Much and When Will You Receive The Inflation</h2>
 
-			<h2>How Much and When Will You Receive The Inflation</h2>
+            <p data-i18n="site.main.faq.how_much.when">Inflation is usually distributed by the Stellar network between Monday night and Tuesday morning at 24h00 UTC. Processing on our end should take no more than a few hours after that, so you should receive your portion of the distribution sometime early Tuesday morning UTC.</p>
 
-			<p>Inflation is usually distributed by the Stellar network between Monday night and Tuesday morning at 24h00 UTC. Processing on our end should take no more than a few hours after that, so you should receive your portion of the distribution sometime early Tuesday morning UTC.</p>
+            <p data-i18n="site.main.faq.how_much.enter">To know how much you will receive in the next payment, enter your XLM amount or Public Key below for the estimate of the inflation.</p>
 
-			<p>To know how much you will receive in the next payment, enter your XLM amount or Public Key below for the estimate of the inflation.</p>
+            <div>
+                <input type="text" id="calculator-input" class="form-control">
+                <small data-i18n="site.main.calculator.locally">We don't store anything on our server, calculation is done locally on your browser. <a href="https://github.com/Lumenaut-Network/website/tree/gh-pages">More info.</a></small>
+                <h3 class="result"><strong><label data-i18n="site.main.calculator.estimated">Estimated payout =</label> <span id="calculator-result">0</span> XLM</strong></h3>
+            </div>
+        </section>
 
-			<div>
-				<input type="text" id="calculator-input" class="form-control">
-				<small>We don't store anything on our server, calculation is done locally on your browser. <a href="https://github.com/Lumenaut-Network/website/tree/gh-pages">More info.</a></small>
-				<h3 class="result"><strong>Estimated payout = <span id="calculator-result">0</span> XLM</strong></h3>
-			</div>
-		</section>
+        <section id="join">
+            <h2 data-i18n="site.main.join">Join Community Pool</h2>
+            <div class="container instructions-container">
+                <div class="row">
+                    <div class="col-sm-4 instructions-left">
+                        <div class="nav flex-column nav-pills instructions-nav" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <a class="nav-link active" id="v-pills-personal-account-tab" data-toggle="pill" href="#v-pills-personal-account" role="tab" aria-controls="v-pills-personal-account" aria-selected="true" data-i18n="site.main.join.step_1.title">1. Fund your account</a>
+                            <a class="nav-link" id="v-pills-select-wallet-tab" data-toggle="pill" href="#v-pills-select-wallet" role="tab" aria-controls="v-pills-select-wallet" aria-selected="false" data-i18n="site.main.join.step_2.title">2. Select your wallet</a>
+                            <a class="nav-link" id="v-pills-cast-vote-tab" data-toggle="pill" href="#v-pills-cast-vote" role="tab" aria-controls="v-pills-cast-vote" aria-selected="false" data-i18n="site.main.join.step_3.title">3. Cast your vote</a>
+                            <a class="nav-link" id="v-pills-confirm-vote-tab" data-toggle="pill" href="#v-pills-confirm-vote" role="tab" aria-controls="v-pills-confirm-vote" aria-selected="false" data-i18n="site.main.join.step_4.title">4. Confirm your vote</a>
+                        </div>
+                    </div>
+                    <!-- Begin of instructions -->
+                    <div class="col-sm-8 instructions-right">
+                        <div class="tab-content instructions-content" id="v-pills-tabContent">
+                            <!-- Step 1 -->
+                            <div class="tab-pane fade show active" id="v-pills-personal-account" role="tabpanel" aria-labelledby="v-pills-personal-account-tab">
+                                <section>
+                                    <h4 data-i18n="site.main.join.step_1.right.title">Fund your account</h4>
+                                    <p data-i18n="site.main.join.step_1.right.transfer">First of all you will need to transfer all your Lumens to a wallet controlled by you. If you keep your Lumens in an exchange then the exchange will receive the Inflation and will not credit you. Also, having your Lumens in a wallet saved and controlled by you can prevent your Lumens from being stolen due to hacks.</p>
+                                    <p data-i18n="site.main.join.step_1.right.need_help">Need help choosing a wallet? Check out Stellar's officially supported wallets.</p>
+                                    <a href="https://www.stellar.org/lumens/wallets/" class="btn btn-outline-info" target="_blank" data-i18n="site.main.join.step_1.right.wallets">Wallets</a>
+                                </section>
+                            </div>
+                            <!-- Step 2 -->
+                            <div class="tab-pane fade" id="v-pills-select-wallet" role="tabpanel" aria-labelledby="v-pills-select-wallet-tab">
+                                <section>
+                                    <h4 data-i18n="site.main.join.step_2.right.title">Select your wallet to see the related tutorial</h4>
+                                    <div class="wallet-grid row">
+                                        <div class="wallet-grid-item col-sm-4">
+                                            <!-- Ledger -->
+                                            <a href="#"><img class="wallet-logos" src="https://www.stellar.org/wp-content/uploads/2017/09/ledger-1.png" alt="" data-wallet="ledger"></a>
+                                        </div>
+                                        <div class="wallet-grid-item col-sm-4">
+                                            <!-- StellarTerm -->
+                                            <a href="#"><img class="wallet-logos" src="https://www.stellar.org/wp-content/themes/stellar/images/graphics/wallets/stellarterm.png" alt="" data-wallet="stellarterm"></a>
+                                        </div>
+                                        <div class="wallet-grid-item col-sm-4">
+                                            <!-- Stellar Desktop Client -->
+                                            <a href="#"><img class="wallet-logos" src="https://www.stellar.org/wp-content/themes/stellar/images/graphics/wallets/stellardesktop.png" alt="" data-wallet="stellar-desktop-client"></a>
+                                        </div>
+                                        <div class="wallet-grid-item col-sm-4">
+                                            <!-- LuPoEx -->
+                                            <a href="#"><img class="wallet-logos" src="https://raw.githubusercontent.com/stellarport/portal/master/assets/stellarport_brand_200x500.png" alt="" data-wallet="stellarport"></a>
+                                        </div>
+                                        <div class="wallet-grid-item col-sm-4">
+                                            <!-- Lobstr -->
+                                            <a href="#"><img class="wallet-logos" src="https://www.stellar.org/wp-content/themes/stellar/images/graphics/wallets/lobstr.png" alt="" data-wallet="lobstr"></a>
+                                        </div>
+                                        <div class="wallet-grid-item col-sm-4">
+                                            <!-- stargazer -->
+                                            <a href="#"><img class="wallet-logos" src="https://www.stellar.org/wp-content/themes/stellar/images/graphics/wallets/stargazer.png" alt="" data-wallet="stargazer"></a>
+                                        </div>
+                                        <div class="wallet-grid-item col-sm-4">
+                                            <!-- Saza -->
+                                            <a href="#"><img class="wallet-logos" src="https://www.stellar.org/wp-content/themes/stellar/images/graphics/wallets/saza.png" alt="" data-wallet="saza"></a>
+                                        </div>
+                                        <div class="wallet-grid-item col-sm-4">
+                                            <!-- Other -->
+                                            <button class="btn btn-outline-secondary wallet-logos" data-wallet="other" style="width: 100%; height: 100%;" data-i18n="site.main.join.step_2.right.other">Other</button>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                            <!-- Step 3 -->
+                            <div class="tab-pane fade" id="v-pills-cast-vote" role="tabpanel" aria-labelledby="v-pills-cast-vote-tab">
+                                <h4 data-i18n="site.main.join.step_3.right.title">Cast your vote</h4>
+                                <!-- StellarTerm instructions -->
+                                <div class="instructions hidden" id="stellarterm-instructions">
+                                    <ol>
+                                        <li>
+                                            <span data-i18n="site.main.join.step_3.right.stellarterm.set_inflation">Go to "Account", choose "Inflation", input our address in "Inflation destination", and click "Set inflation destination";</span>
+                                            <img src="https://i.imgur.com/KGJpS5O.png" alt="StellarTerm instructions">
+                                        </li>
+                                        <li>
+                                            <span data-i18n="site.main.join.step_3.right.stellarterm.wait_server">Wait for the server answer;</span>
+                                            <img src="https://i.imgur.com/oDsH8v0.png" alt="StellarTerm instructions">
+                                        </li>
+                                        <li>
+                                            <span data-i18n="site.main.join.step_3.right.stellarterm.confirm_success">Confirm if it was successfully set;</span>
+                                            <img src="https://i.imgur.com/pRSnrFh.png" alt="StellarTerm instructions"></li>
+                                        <li data-i18n="site.main.join.step_3.right.done">Done!</li>
+                                    </ol>
+                                </div>
 
+                                <!-- Stellar Desktop Client instructions -->
+                                <div class="instructions hidden" id="stellar-desktop-client-instructions">
+                                    <img src="https://i.imgur.com/dWmjWNs.png" alt="Stellar Desktop Client instructions">
+                                </div>
 
-		<section id="join">
-			<h2>Join Community Pool</h2>
-			<div class="container instructions-container">
-				<div class="row">
-					<div class="col-sm-4 instructions-left">
-						<div class="nav flex-column nav-pills instructions-nav" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-							<a class="nav-link active" id="v-pills-personal-account-tab" data-toggle="pill" href="#v-pills-personal-account" role="tab" aria-controls="v-pills-personal-account" aria-selected="true">1. Fund your account</a>
-							<a class="nav-link" id="v-pills-select-wallet-tab" data-toggle="pill" href="#v-pills-select-wallet" role="tab" aria-controls="v-pills-select-wallet" aria-selected="false">2. Select your wallet</a>
-							<a class="nav-link" id="v-pills-cast-vote-tab" data-toggle="pill" href="#v-pills-cast-vote" role="tab" aria-controls="v-pills-cast-vote" aria-selected="false">3. Cast your vote</a>
-							<a class="nav-link" id="v-pills-confirm-vote-tab" data-toggle="pill" href="#v-pills-confirm-vote" role="tab" aria-controls="v-pills-confirm-vote" aria-selected="false">4. Confirm your vote</a>
-						</div>
-					</div>
-					<div class="col-sm-8 instructions-right">
-						<div class="tab-content instructions-content" id="v-pills-tabContent">
-							<div class="tab-pane fade show active" id="v-pills-personal-account" role="tabpanel" aria-labelledby="v-pills-personal-account-tab">
-								<section>
-									<h4>Fund your account</h4>
-									<p>First of all you will need to transfer all your Lumens to a wallet controlled by you. If you keep your Lumens in an exchange then the exchange will receive the Inflation and will not credit you. Also, having your Lumens in a wallet saved and controlled by you can prevent your Lumens from being stolen due to hacks.</p>
-									<p>Need help choosing a wallet? Check out Stellar's officially supported wallets.</p>
-									<a href="https://www.stellar.org/lumens/wallets/" class="btn btn-outline-info" target="_blank">Wallets</a>
-									</section>
-								</div>
-								<div class="tab-pane fade" id="v-pills-select-wallet" role="tabpanel" aria-labelledby="v-pills-select-wallet-tab">
-									<section>
-<h4>Select your wallet to see the related tutorial</h4>
-<div class="wallet-grid row">
-<div class="wallet-grid-item col-sm-4">
-<!-- Ledger -->
-<a href="#"><img class="wallet-logos" src="https://www.stellar.org/wp-content/uploads/2017/09/ledger-1.png" alt="" data-wallet="ledger"></a>
-</div>
-<div class="wallet-grid-item col-sm-4">
-<!-- StellarTerm -->
-<a href="#"><img class="wallet-logos" src="https://www.stellar.org/wp-content/themes/stellar/images/graphics/wallets/stellarterm.png" alt="" data-wallet="stellarterm"></a>
-</div>
-<div class="wallet-grid-item col-sm-4">
-<!-- Stellar Desktop Client -->
-<a href="#"><img class="wallet-logos" src="https://www.stellar.org/wp-content/themes/stellar/images/graphics/wallets/stellardesktop.png" alt="" data-wallet="stellar-desktop-client"></a>
-</div>
-<div class="wallet-grid-item col-sm-4">
-<!-- Stellarport -->
-<a href="#"><img class="wallet-logos" src="https://raw.githubusercontent.com/stellarport/portal/master/assets/stellarport_brand_200x500.png" alt="" data-wallet="stellarport"></a>
-</div>
-<div class="wallet-grid-item col-sm-4">
-<!-- Lobstr -->
-<a href="#"><img class="wallet-logos" src="https://www.stellar.org/wp-content/themes/stellar/images/graphics/wallets/lobstr.png" alt="" data-wallet="lobstr"></a>
-</div>
-<div class="wallet-grid-item col-sm-4">
-<!-- stargazer -->
-<a href="#"><img class="wallet-logos" src="https://www.stellar.org/wp-content/themes/stellar/images/graphics/wallets/stargazer.png" alt="" data-wallet="stargazer"></a>
-</div>
-<div class="wallet-grid-item col-sm-4">
-<!-- Saza -->
-<a href="#"><img class="wallet-logos" src="https://www.stellar.org/wp-content/themes/stellar/images/graphics/wallets/saza.png" alt="" data-wallet="saza"></a>
-</div>
-<div class="wallet-grid-item col-sm-4">
-<!-- Other -->
-<button class="btn btn-outline-secondary wallet-logos" data-wallet="other" style="width: 100%; height: 100%;">Other</button>
-</div>
-</div>
-</section>
-</div>
-<div class="tab-pane fade" id="v-pills-cast-vote" role="tabpanel" aria-labelledby="v-pills-cast-vote-tab">
-	<h4>Cast your vote</h4>
-	<div class="instructions hidden" id="stellarterm-instructions">
-		<ol>
-		<li>Go to "Account", choose "Inflation", input our address in "Inflation destination", and click "Set inflation destination";
-		<img src="https://i.imgur.com/KGJpS5O.png" alt="StellarTerm instructions"></li>
-		<li>Wait for the server answer;
-		<img src="https://i.imgur.com/oDsH8v0.png" alt="StellarTerm instructions"></li>
-		<li>Confirm if it was successfully set;
-		<img src="https://i.imgur.com/pRSnrFh.png" alt="StellarTerm instructions"></li>
-		<li>Done!</li>
-		</ol>
-	</div>
-	<div class="instructions hidden" id="stellar-desktop-client-instructions">
-		<img src="https://i.imgur.com/dWmjWNs.png" alt="Stellar Desktop Client instructions">
-	</div>
-	<div class="instructions hidden" id="ledger-nano-instructions">
-		<ol>
-		<li>Go to <a href="https://www.stellar.org/laboratory/#?network=public">Stellar Laboratory</a> and switch to public network:
-		<img src="https://i.imgur.com/4O9WpXQ.png" alt="Nano S instructions"></li>
-		<li>Click in the tab "Transaction Builder":
-		<img src="https://i.imgur.com/bEywBp6.png" alt="Nano S instructions"></li>
-		<li>Paste your Public Key in "Source Account":
-		<img src="https://i.imgur.com/1sVXIVp.png" alt="Nano S instructions"></li>
-		<li>Click the blue button "Fetch next sequence number for account starting with...":
-		<img src="https://i.imgur.com/TAysyf9.png" alt="Nano S instructions"></li>
-		<li>Scroll down the page to "Operation Type", click the dropdown menu and choose "Set Options":
-		<img src="https://i.imgur.com/TCyCxru.png" alt="Nano S instructions"></li>
-		<li>Paste our address in the "Inflation Destination":
-		<img src="https://i.imgur.com/icmUU16.png" alt="Nano S instructions"></li>
-		<li>Scroll down the page and click the blue button "Sign in Transaction Signer":
-		<img src="https://i.imgur.com/qLFi668.png" alt="Nano S instructions"></li>
-		<li>Connect the Ledger and open the Stellar app;</li>
-		<li>Scroll down and click the blue button "Sign with Default BIP path":
-		<img src="https://i.imgur.com/bRRZCZR.png" alt="Nano S instructions"></li>
-		<li>Approve the transaction on the device;</li>
-		<li>Scroll down and click the blue button "Submit to Post Transaction endpoint":
-		<img src="https://i.imgur.com/K2mCN6z.png" alt="Nano S instructions"></li>
-		<li>You will be redirected to a new page, click the blue button "Submit":
-		<img src="https://i.imgur.com/NhTwQbt.png" alt="Nano S instructions"></li>
-		<li>Done!</li>
-		</ol>
-	</div>
-	<div class="instructions" id="stellar-laboratory-instructions">
-		<ol>
-		<li>Go to <a href="https://www.stellar.org/laboratory/#?network=public">Stellar Laboratory</a> and switch to public network:
-		<img src="https://i.imgur.com/4O9WpXQ.png" alt="Stellar Laboratory instructions"></li>
-		<li>Click in the tab "Transaction Builder":
-		<img src="https://i.imgur.com/bEywBp6.png" alt="Stellar Laboratory instructions"></li>
-		<li>Paste your Public Key in "Source Account":
-		<img src="https://i.imgur.com/1sVXIVp.png" alt="Stellar Laboratory instructions"></li>
-		<li>Click the blue button "Fetch next sequence number for account starting with...":
-		<img src="https://i.imgur.com/TAysyf9.png" alt="Stellar Laboratory instructions"></li>
-		<li>Scroll down the page to "Operation Type", click the dropdown menu and choose "Set Options":
-		<img src="https://i.imgur.com/TCyCxru.png" alt="Stellar Laboratory instructions"></li>
-		<li>Paste our address in the "Inflation Destination":
-		<img src="https://i.imgur.com/icmUU16.png" alt="Stellar Laboratory instructions"></li>
-		<li>Scroll down the page and click the blue button "Sign in Transaction Signer":
-		<img src="https://i.imgur.com/qLFi668.png" alt="Stellar Laboratory instructions"></li>
-		<li>You will be redirected to a new page, scroll down and paste your Secret Key in "Add Signer":
-		<img src="https://i.imgur.com/uYgicX5.png" alt="Stellar Laboratory instructions"></li>
-		<li>Scroll down and click the blue button "Submit to Post Transaction endpoint":
-		<img src="https://i.imgur.com/K2mCN6z.png" alt="Stellar Laboratory instructions"></li>
-		<li>You will be redirected to a new page, click the blue button "Submit":
-		<img src="https://i.imgur.com/NhTwQbt.png" alt="Stellar Laboratory instructions"></li>
-		<li>Done!</li>
-		</ol>
+                                <!-- Ledger Nano instructions -->
+                                <div class="instructions hidden" id="ledger-nano-instructions">
+                                    <ol>
+                                        <li>
+                                            <span data-i18n="site.main.join.step_3.right.goto_laboratory">Go to <a href="https://www.stellar.org/laboratory/#?network=public">Stellar Laboratory</a> and switch to public network:</span>
+                                            <img src="https://i.imgur.com/4O9WpXQ.png" alt="Nano S instructions">
+                                        </li>
+                                        <li>
+                                            <span data-i18n="site.main.join.step_3.right.laboratory.tx_builder">Click in the tab "Transaction Builder":</span>
+                                            <img src="https://i.imgur.com/bEywBp6.png" alt="Nano S instructions">
+                                        </li>
+                                        <li>
+                                            <span data-i18n="site.main.join.step_3.right.laboratory.src_acc">Paste your Public Key in "Source Account":</span>
+                                            <img src="https://i.imgur.com/1sVXIVp.png" alt="Nano S instructions">
+                                        </li>
+                                        <li>
+                                            <span data-i18n="site.main.join.step_3.right.laboratory.seq_number">Click the blue button "Fetch next sequence number for account starting with...":</span>
+                                            <img src="https://i.imgur.com/TAysyf9.png" alt="Nano S instructions">
+                                        </li>
+                                        <li>
+                                            <span data-i18n="site.main.join.step_3.right.laboratory.op_type">Scroll down the page to "Operation Type", click the dropdown menu and choose "Set Options":</span>
+                                            <img src="https://i.imgur.com/TCyCxru.png" alt="Nano S instructions">
+                                        </li>
+                                        <li>
+                                            <span data-i18n="site.main.join.step_3.right.laboratory.infl_destination">Paste our address in the "Inflation Destination":</span>
+                                            <img src="https://i.imgur.com/icmUU16.png" alt="Nano S instructions">
+                                        </li>
+                                        <li>
+                                            <span data-i18n="site.main.join.step_3.right.laboratory.sign_tx">Scroll down the page and click the blue button "Sign in Transaction Signer":</span>
+                                            <img src="https://i.imgur.com/qLFi668.png" alt="Nano S instructions">
+                                        </li>
+                                        <li data-i18n="site.main.join.step_3.right.ledger.connect_ledger">Connect the Ledger and open the Stellar app;</li>
+                                        <li>
+                                            <span data-i18n="site.main.join.step_3.right.ledger.sign_bip">Scroll down and click the blue button "Sign with Default BIP path":</span>
+                                            <img src="https://i.imgur.com/bRRZCZR.png" alt="Nano S instructions">
+                                        </li>
+                                        <li data-i18n="site.main.join.step_3.right.ledger.approve_tx">Approve the transaction on the device;</li>
+                                        <li>
+                                            <span data-i18n="site.main.join.step_3.right.ledger.submit_tx">Scroll down and click the blue button "Submit to Post Transaction endpoint":</span>
+                                            <img src="https://i.imgur.com/K2mCN6z.png" alt="Nano S instructions">
+                                        </li>
+                                        <li>
+                                            <span data-i18n="site.main.join.step_3.right.ledger.submit_final">You will be redirected to a new page, click the blue button "Submit":</span>
+                                            <img src="https://i.imgur.com/NhTwQbt.png" alt="Nano S instructions">
+                                        </li>
+                                        <li data-i18n="site.main.join.step_3.right.done">Done!</li>
+                                    </ol>
+                                </div>
 
-	</div>
-</div>
-<div class="tab-pane fade" id="v-pills-confirm-vote" role="tabpanel" aria-labelledby="v-pills-confirm-vote-tab">
-	<h4>Confirm your vote</h4>
-	<p>Insert your Public Key bellow and check if the inflation destination is set.</p>
-	<div class="input-group mb-3">
-		<input type="text" class="form-control" id="verify-xlm-address-input" placeholder="Insert your Public Key here..." aria-label="public address">
-		<div class="input-group-append">
-			<button class="btn btn-outline-success" type="button" id="verify-xlm-address-button">Verify</button>
-		</div>
-	</div>
-	<div id="verify-xlm-address-result"></div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		</section>
-	</main>
+                                <!-- Stellar Laboratory instructions -->
+                                <div class="instructions" id="stellar-laboratory-instructions">
+                                    <ol>
+                                        <li>
+                                            <span data-i18n="site.main.join.step_3.right.goto_laboratory">Go to <a href="https://www.stellar.org/laboratory/#?network=public">Stellar Laboratory</a> and switch to public network:</span>
+                                            <img src="https://i.imgur.com/4O9WpXQ.png" alt="Stellar Laboratory instructions">
+                                        </li>
+                                        <li>
+                                            <span data-i18n="site.main.join.step_3.right.laboratory.tx_builder">Click in the tab "Transaction Builder":</span>
+                                            <img src="https://i.imgur.com/bEywBp6.png" alt="Stellar Laboratory instructions">
+                                        </li>
+                                        <li>
+                                            <span data-i18n="site.main.join.step_3.right.laboratory.src_acc">Paste your Public Key in "Source Account":</span>
+                                            <img src="https://i.imgur.com/1sVXIVp.png" alt="Stellar Laboratory instructions">
+                                        </li>
+                                        <li>
+                                            <span data-i18n="site.main.join.step_3.right.laboratory.seq_number">Click the blue button "Fetch next sequence number for account starting with...":</span>
+                                            <img src="https://i.imgur.com/TAysyf9.png" alt="Stellar Laboratory instructions">
+                                        </li>
+                                        <li>
+                                            <span data-i18n="site.main.join.step_3.right.laboratory.op_type">Scroll down the page to "Operation Type", click the dropdown menu and choose "Set Options":</span>
+                                            <img src="https://i.imgur.com/TCyCxru.png" alt="Stellar Laboratory instructions">
+                                        </li>
+                                        <li>
+                                            <span data-i18n="site.main.join.step_3.right.laboratory.infl_destination">Paste our address in the "Inflation Destination":</span>
+                                            <img src="https://i.imgur.com/icmUU16.png" alt="Stellar Laboratory instructions">
+                                        </li>
+                                        <li>
+                                            <span data-i18n="site.main.join.step_3.right.laboratory.sign_tx">Scroll down the page and click the blue button "Sign in Transaction Signer":</span>
+                                            <img src="https://i.imgur.com/qLFi668.png" alt="Stellar Laboratory instructions">
+                                        </li>
+                                        <li>
+                                            <span data-i18n="site.main.join.step_3.right.laboratory.add_signer">You will be redirected to a new page, scroll down and paste your Secret Key in "Add Signer":</span>
+                                            <img src="https://i.imgur.com/uYgicX5.png" alt="Stellar Laboratory instructions">
+                                        </li>
+                                        <li>
+                                            <span data-i18n="site.main.join.step_3.right.laboratory.submit_tx">Scroll down and click the blue button "Submit to Post Transaction endpoint":</span>
+                                            <img src="https://i.imgur.com/K2mCN6z.png" alt="Stellar Laboratory instructions">
+                                        </li>
+                                        <li>
+                                            <span data-i18n="site.main.join.step_3.right.laboratory.submit_final">You will be redirected to a new page, click the blue button "Submit":</span>
+                                            <img src="https://i.imgur.com/NhTwQbt.png" alt="Stellar Laboratory instructions">
+                                        </li>
+                                        <li data-i18n="site.main.join.step_3.right.done">Done!</li>
+                                    </ol>
+                                </div>
+                            </div>
+                            
+                            <!-- Step 4 -->
+                            <div class="tab-pane fade" id="v-pills-confirm-vote" role="tabpanel" aria-labelledby="v-pills-confirm-vote-tab">
+                                <h4 data-i18n="site.main.join.step_4.right.title">Confirm your vote</h4>
+                                <p data-i18n="site.main.join.step_4.right.is_set">Insert your Public Key below and check if the inflation destination is set.</p>
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" id="verify-xlm-address-input" placeholder="Insert your Public Key here..." aria-label="public address">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-outline-success" type="button" id="verify-xlm-address-button" data-i18n="site.main.join.step_4.right.verify">Verify</button>
+                                    </div>
+                                </div>
+                                <div id="verify-xlm-address-result"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-	<footer>
-		<h6>2018 Lumenaut</h6>
-		<div>
-			<a href="https://www.reddit.com/r/lumenaut">Reddit</a>
-			<a href="https://twitter.com/lumenaut">Twitter</a>
-			<a href="https://facebook.com/lumenaut">Facebook</a>
-			<a href="https://lumenaut.slack.com">Slack</a>
-			<a href="https://discord.gg/VJZqkQn">Discord</a>
-			<a href="https://github.com/lumenaut-network">Github</a>
-		</div>
-	</footer>
+    <footer>
+        <h6>2018 Lumenaut</h6>
+        <div>
+            <a href="https://www.reddit.com/r/lumenaut">Reddit</a>
+            <a href="https://twitter.com/lumenaut">Twitter</a>
+            <a href="https://facebook.com/lumenaut">Facebook</a>
+            <a href="https://lumenaut.slack.com">Slack</a>
+            <a href="https://discord.gg/VJZqkQn">Discord</a>
+            <a href="https://github.com/lumenaut-network">Github</a>
+        </div>
+    </footer>
 
-	<!-- Stellar SDK -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/stellar-sdk/0.8.0/stellar-sdk.js" integrity="sha384-ZLFqobQQtphXg0EkBNEhn6PWrsETu9TotgyqNGtuSC6j108/jAvBOUpCUysC9iMp" crossorigin="anonymous"></script>
+    <!-- Stellar SDK -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/stellar-sdk/0.8.0/stellar-sdk.js" integrity="sha384-ZLFqobQQtphXg0EkBNEhn6PWrsETu9TotgyqNGtuSC6j108/jAvBOUpCUysC9iMp" crossorigin="anonymous"></script>
 
-	<!-- jQuery -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
-	<!-- Socket.io -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js" integrity="sha256-WPeFPWD3PZQUDrpFnDM1N2KadNVwCfNS4cCZ78b76T8=" crossorigin="anonymous"></script>
+    <!-- Socket.io -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js" integrity="sha256-WPeFPWD3PZQUDrpFnDM1N2KadNVwCfNS4cCZ78b76T8=" crossorigin="anonymous"></script>
 
-	<!-- Bootstrap -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
 
-	<!-- Clipboard -->
-	<script src="assets/js/clipboard.min.js"></script>
+    <!-- Clipboard -->
+    <script src="./assets/js/clipboard.min.js"></script>
 
-	<!-- Price streamer utility function - credit: https://github.com/cryptoqween/cryptoqween.github.io/blob/master/streamer/ccc-streamer-utilities.js -->
-	<script src="assets/js/ccc-streamer-utility.js"></script>
+    <!-- Price streamer utility function - credit: https://github.com/cryptoqween/cryptoqween.github.io/blob/master/streamer/ccc-streamer-utilities.js -->
+    <script src="./assets/js/ccc-streamer-utility.js"></script>
 
-	<!-- Price ticker JS -->
-	<script src="assets/js/ticker.js"></script>
+    <!-- Price ticker JS -->
+    <script src="./assets/js/ticker.js"></script>
 
-	<!-- Calculator JS -->
-	<script src="assets/js/calculator.js"></script>
+    <!-- Calculator JS -->
+    <script src="./assets/js/calculator.js"></script>
 
-	<!-- Font Awesome -->
-	<script defer src="assets/js/fontawesome-all.min.js"></script>
+    <!-- Font Awesome -->
+    <script defer src="./assets/js/fontawesome-all.min.js"></script>
 
-	<!-- Custom JS -->
-	<script src="assets/js/custom.js"></script>
+    <!-- i18n - http://i18njs.com -->
+    <script defer src="./assets/js/i18n.min.js"></script>
+    
+    <!-- Translation -->
+    <script defer src="./assets/js/translation.js"></script>
+
+    <!-- Custom JS -->
+    <script src="./assets/js/custom.js"></script>
 </body>
+
 </html>

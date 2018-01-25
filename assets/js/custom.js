@@ -57,7 +57,7 @@ $(document).ready(function() {
 			$verifyResult.empty();
 			$verifyResult.append(
 				"<div class=\"alert alert-warning alert-dismissible fade show\" role=\"alert\">\
-					Invalid address. Try copy-pasting again.\
+					" + translate('site.main.join.step_4.error.bad_format') + "\
 					<button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-label=\"Close\">\
 						<span aria-hidden=\"true\">&times;</span>\
 					</button>\
@@ -74,7 +74,7 @@ $(document).ready(function() {
 					$verifyResult.empty();
 					$verifyResult.append(
 						"<div class=\"alert alert-warning alert-dismissible fade show\" role=\"alert\">\
-							Hmmm. Looks like you're not in the pool yet.\
+							" + translate('site.main.join.step_4.error.not_joined') + " \
 							<button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-label=\"Close\">\
 								<span aria-hidden=\"true\">&times;</span>\
 							</button>\
@@ -84,7 +84,7 @@ $(document).ready(function() {
 					$verifyResult.empty();
 					$verifyResult.append(
 						"<div class=\"alert alert-success alert-dismissible fade show\" role=\"alert\">\
-							Success! Welcome to the pool!\
+							" + translate('site.main.join.step_4.success') + "\
 							<button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-label=\"Close\">\
 								<span aria-hidden=\"true\">&times;</span>\
 							</button>\
@@ -97,7 +97,7 @@ $(document).ready(function() {
 			$verifyResult.empty();
 			$verifyResult.append(
 				"<div class=\"alert alert-warning alert-dismissible fade show\" role=\"alert\">\
-					Error fetching account info. Please try again later.\
+					" + translate('site.main.join.step_4.error.fetching') + "\
 					<button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-label=\"Close\">\
 						<span aria-hidden=\"true\">&times;</span>\
 					</button>\

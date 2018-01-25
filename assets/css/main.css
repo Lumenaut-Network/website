@@ -182,18 +182,65 @@ body > header nav *:hover {
 	color: rgb(253,188,64);
 	}
 
-body > header nav :nth-child(3) {
+body > header nav .join_pool {
 	background-color: rgb(79,177,234);
 	border-radius: 1vmin;
 	-webkit-transition: background-color 0.2s ease-out;
 	transition: background-color 0.2s ease-out;
 	}
 
-body > header nav :nth-child(3):hover {
+body > header nav .join_pool:hover {
 	background-color: transparent;
 	-webkit-transition: background-color 0.2s ease-out;
 	transition: background-color 0.2s ease-out;
 	}
+
+.drop-btn {
+	background-color: #4CAF50;
+	color: white;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+}
+
+.language-picker {
+	position: relative;
+	display: inline-block;
+}
+
+.language-picker img {
+  padding: 0 5px 0 0;
+	margin-left: 0;
+}
+
+.language-picker-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+.language-picker-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	margin-left: 0;
+}
+
+.language-picker:hover .language-picker-content {
+	display: block;
+}
+
+.language-picker-content a:hover {
+	background-color: #f1f1f1
+}
+
+.language-picker:hover .dropbtn {
+	background-color: #3e8e41;
+}
 
 /*
  * Sections
