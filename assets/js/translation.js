@@ -4,7 +4,7 @@ var translate = null;
 // Method to translate into the specified language
 function translateInto(lang) {
 	// Getting all the nodes having a 'data-i18n' attribute
-	var nodes = document.querySelectorAll('[data-i18n]');
+	const nodes = document.querySelectorAll('[data-i18n]');
 
 	// Fetching the matched JSON translation file
 	$.get({
