@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Lumenaut Community Pool</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/stellar-sdk/0.8.0/stellar-sdk.js" integrity="sha384-ZLFqobQQtphXg0EkBNEhn6PWrsETu9TotgyqNGtuSC6j108/jAvBOUpCUysC9iMp" crossorigin="anonymous"></script>
+	<style>
+    	html {
+			font-family: sans-serif;
+			-ms-text-size-adjust: 100%;
+			-webkit-text-size-adjust: 100%;
+		}
+
+		body {
+			font-family: "Arial", sans-serif;
+			font-weight: 300;
+			margin: 0;
+		}
+
+		* {
+			border-color: #242a2e;
+		}
+
+		*, *:before, *:after {
+			box-sizing: inherit;
+		}
+
+		a {
+			background-color: transparent;
+			color: inherit;
+			text-decoration: underline;
+			cursor: pointer;
+		}
+
+		p {
+			display: block;
+			-webkit-margin-before: 1em;
+			-webkit-margin-after: 1em;
+			-webkit-margin-start: 0px;
+			-webkit-margin-end: 0px;
+
+			margin: 0;
+			margin-bottom: 1em;
+
+			font-weight: 300;
+		}
+
+		.container {
+			padding-left: 36px;
+			padding-right: 36px;
+			padding-bottom: 18px;
+		}
+
+		.header-link {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+
+			-webkit-box-orient: horizontal;
+			-webkit-box-direction: normal;
+			-ms-flex-direction: row;
+			  flex-direction: row;
+
+			-webkit-box-align: baseline;
+			-ms-flex-align: baseline;
+			  align-items: baseline;
+
+			text-decoration: none;
+			font-size: 28px;
+			line-height: 1.5;
+			color: #3a3f43; 
+
+			box-sizing: inherit;
+			padding: 18px 0 18px 0;
+		}
+
+		.header-stellar {
+			color: #08b5e5;
+			font-weight: 500;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+			text-transform: lowercase;
+			text-decoration: none;
+		}
+
+		.header-separator {
+		    -ms-flex-item-align: center;
+		    align-self: center;
+		    height: 0.8em;
+		    margin-left: 0.4em;
+		    margin-right: 0.4em;
+		    border-left: 1px solid currentColor;
+		}
+
+		.header-subtitle {
+		    font-size: 18px;
+		    text-decoration: none;
+		    font-weight: 300;
+		}
+
+		.donate-box {
+			max-width: 38em;
+			padding: 1.5em 2em 1em 2em;
+			border: 1px solid #9ce1f5;
+			background: #e6f8fc;
+			border-radius: 3px;
+			box-sizing: inherit;
+			overflow-wrap: break-word;
+		}
+
+		button {
+			z-index: 1;
+			padding: 0.35em 1em 0.3166em 1em;
+			border: 1px solid #0691b7;
+			box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12), inset 0 -1px 0 rgba(0, 0, 0, 0.08);
+			color: white;
+			background: #08b5e5;
+			text-decoration: none;
+			display: inline-block;
+			margin: 0;
+			border-radius: 3px;
+			cursor: pointer;
+		}
+
+		#btn-xdr {
+			background: #05b2d3;
+		}
+	</style>
+<body>
+	<div class="container">
+		<div class="header">
+			<span class="header-link">
+				<a href="https://www.stellar.org/" class="header-stellar">Stellar</a>
+				<span class="header-separator"> </span>
+				<a href="https://www.stellar.org/account-viewer/" class="header-subtitle">manage donation</a>
+			</span>
+		</div>
+
+		<div class="donate-box">
+			<div style="display: inline;">
+				<span>Donation Percentage (0-100)</span>
+				<input type="text" id="donationpct">
+			</div>
+			<br><br>
+			<div style="display: inline">
+				<span>Address to donate to</span>
+				<select id="donationaccts">
+					<option value="ADDRESS">ADDRESS</option>
+				</select>
+			</div>
+			<br><br><br>
+			Input public key to generate XDR, or secret key to automatically submit:<br>
+			<input type="text" oninput="update_desc()" name="skey" style="width: 85%" id="key"><br><br>
+			<button id="btn-submit" onclick="submit()">Generate XDR</button>
+			<a href="#" style="display: none" id="tra-link">Success! Link to transaction</a><br><br>
+			<div id="xdr-div" style="display: none">
+				<a href="https://www.stellar.org/laboratory/#xdr-viewer?type=TransactionEnvelope" id="xdr-link">Built! Click to go to to the stellar.org xdr-viewer</a><br>
+				<br>
+				<span id="xdr-text"></span>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+	function update_desc() {
+		var key = document.getElementById("key");
+		document.getElementById("btn-submit").innerHTML = (key.value.charAt(0) === 'G') && "Generate XDR" || "Set donation preference";
+	}
+
+	function setButton(text, disabled) {
+		document.getElementById("btn-submit").innerHTML = text;
+		document.getElementById("btn-submit").disabled = disabled;
+	}
+
+	function setLink(text, href) {
+		if (text) document.getElementById("tra-link").innerHTML = text;
+		if (href) document.getElementById("tra-link").href = href;
+		document.getElementById("tra-link").style = "display: inline";
+	}
+
+
+	function buildXDR() {
+		var account = document.getElementById("key").value;
+		var pct = document.getElementById("donationpct").value;
+		try {
+			var int = parseInt(pct);
+			if (int > 100 || int <= 0) {
+				throw "donation percentage out of bounds";
+			}
+		} catch(e) {
+			alert("Could not build: " + e);
+			return;
+		}
+
+		var accounts = document.getElementById("donationaccts");
+		var acct = accounts[accounts.selectedIndex].value;
+
+		var server = new StellarSdk.Server('https://horizon-testnet.stellar.org');
+		StellarSdk.Network.useTestNetwork();
+
+		server.loadAccount(account)
+		.then(function(account) {
+			var transaction = new StellarSdk.TransactionBuilder(account)
+			.addOperation(StellarSdk.Operation.manageData({
+				name: "lumenaut.net", 
+				value: pct + "%" + acct
+			}))
+			.build();
+
+			var xdr = transaction.toEnvelope().toXDR('base64');
+			
+			document.getElementById("xdr-div").style = "display: block";
+			document.getElementById("xdr-text").innerHTML = xdr;
+		});
+	}
+
+	function submit() {
+		var key = document.getElementById("key").value;
+		if (key.charAt(0) === 'G') {
+			buildXDR();
+			return;
+		}
+
+		setButton("Loading...", true);
+		var sourceKeypair;
+		try {
+			sourceKeypair = StellarSdk.Keypair.fromSecret(secKey);
+		} catch(err) {
+			alert("Invalid key");
+			setButton("Generate XDR", false);
+			document.getElementById("key").value = "";
+			return;
+		}
+		var sourcePublicKey = sourceKeypair.publicKey();
+
+		var server = new StellarSdk.Server('https://horizon-testnet.stellar.org');
+		StellarSdk.Network.useTestNetwork();
+
+		server.loadAccount(sourcePublicKey)
+		.then(function(account) {
+			setButton("Building...", true);
+			var transaction = new StellarSdk.TransactionBuilder(account)
+			.addOperation(StellarSdk.Operation.manageData({
+				name: "lumenaut.net donation",
+				value: "15%blah"
+			}))
+			.build();
+
+			transaction.sign(sourceKeypair);
+
+			console.log(transaction.toEnvelope().toXDR('base64'));
+			setButton("Submitting...", true);
+
+			server.submitTransaction(transaction)
+			.then(function(transactionResult) {
+				setButton("Generate XDR", false);
+				setLink(null, transactionResult._links.transaction.href);
+			})
+			.catch(function(err) {
+				setLink("An error occured, check the console", null);
+				console.log('An error has occured:');
+				console.log(err);
+			});
+		})
+		.catch(function(e) {
+			setLink("An error occured, check the console", null);
+			setButton("Generate XDR", false);
+			console.error(e);
+		});
+	}
+	</script>
+</body>
+</html>
