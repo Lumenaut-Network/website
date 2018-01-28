@@ -147,11 +147,10 @@
 					<option value="ADDRESS">ADDRESS</option>
 				</select>
 			</div>
-			<br><br><br>
-			Input public key to generate XDR, or secret key to automatically submit:<br>
+			<br><br>
+			Public key:<br>
 			<input type="text" oninput="update_desc()" name="skey" style="width: 85%" id="key"><br><br>
 			<button id="btn-submit" onclick="submit()">Generate XDR</button>
-			<a href="#" style="display: none" id="tra-link">Success! Link to transaction</a><br><br>
 			<div id="xdr-div" style="display: none">
 				<a href="https://www.stellar.org/laboratory/#xdr-viewer?type=TransactionEnvelope" id="xdr-link">Built! Click to go to to the stellar.org xdr-viewer</a><br>
 				<br>
@@ -170,13 +169,6 @@
 		document.getElementById("btn-submit").innerHTML = text;
 		document.getElementById("btn-submit").disabled = disabled;
 	}
-
-	function setLink(text, href) {
-		if (text) document.getElementById("tra-link").innerHTML = text;
-		if (href) document.getElementById("tra-link").href = href;
-		document.getElementById("tra-link").style = "display: inline";
-	}
-
 
 	function buildXDR() {
 		var account = document.getElementById("key").value;
@@ -201,7 +193,7 @@
 		.then(function(account) {
 			var transaction = new StellarSdk.TransactionBuilder(account)
 			.addOperation(StellarSdk.Operation.manageData({
-				name: "lumenaut.net", 
+				name: "lumenaut.net donation", 
 				value: pct + "%" + acct
 			}))
 			.build();
@@ -210,61 +202,6 @@
 			
 			document.getElementById("xdr-div").style = "display: block";
 			document.getElementById("xdr-text").innerHTML = xdr;
-		});
-	}
-
-	function submit() {
-		var key = document.getElementById("key").value;
-		if (key.charAt(0) === 'G') {
-			buildXDR();
-			return;
-		}
-
-		setButton("Loading...", true);
-		var sourceKeypair;
-		try {
-			sourceKeypair = StellarSdk.Keypair.fromSecret(secKey);
-		} catch(err) {
-			alert("Invalid key");
-			setButton("Generate XDR", false);
-			document.getElementById("key").value = "";
-			return;
-		}
-		var sourcePublicKey = sourceKeypair.publicKey();
-
-		var server = new StellarSdk.Server('https://horizon-testnet.stellar.org');
-		StellarSdk.Network.useTestNetwork();
-
-		server.loadAccount(sourcePublicKey)
-		.then(function(account) {
-			setButton("Building...", true);
-			var transaction = new StellarSdk.TransactionBuilder(account)
-			.addOperation(StellarSdk.Operation.manageData({
-				name: "lumenaut.net donation",
-				value: "15%blah"
-			}))
-			.build();
-
-			transaction.sign(sourceKeypair);
-
-			console.log(transaction.toEnvelope().toXDR('base64'));
-			setButton("Submitting...", true);
-
-			server.submitTransaction(transaction)
-			.then(function(transactionResult) {
-				setButton("Generate XDR", false);
-				setLink(null, transactionResult._links.transaction.href);
-			})
-			.catch(function(err) {
-				setLink("An error occured, check the console", null);
-				console.log('An error has occured:');
-				console.log(err);
-			});
-		})
-		.catch(function(e) {
-			setLink("An error occured, check the console", null);
-			setButton("Generate XDR", false);
-			console.error(e);
 		});
 	}
 	</script>
