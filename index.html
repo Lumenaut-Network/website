@@ -219,56 +219,22 @@
                                 </div>
 
                                 <!-- Ledger Nano instructions -->
-                                <div class="instructions hidden" id="ledger-nano-instructions">
-                                    <ol>
-                                        <li>
-                                            <span data-i18n="site.main.join.step_3.right.goto_laboratory">Go to <a href="https://www.stellar.org/laboratory/#?network=public">Stellar Laboratory</a> and switch to public network:</span>
-                                            <img src="https://i.imgur.com/4O9WpXQ.png" alt="Nano S instructions">
-                                        </li>
-                                        <li>
-                                            <span data-i18n="site.main.join.step_3.right.laboratory.tx_builder">Click in the tab "Transaction Builder":</span>
-                                            <img src="https://i.imgur.com/bEywBp6.png" alt="Nano S instructions">
-                                        </li>
-                                        <li>
-                                            <span data-i18n="site.main.join.step_3.right.laboratory.src_acc">Paste your Public Key in "Source Account":</span>
-                                            <img src="https://i.imgur.com/1sVXIVp.png" alt="Nano S instructions">
-                                        </li>
-                                        <li>
-                                            <span data-i18n="site.main.join.step_3.right.laboratory.seq_number">Click the blue button "Fetch next sequence number for account starting with...":</span>
-                                            <img src="https://i.imgur.com/TAysyf9.png" alt="Nano S instructions">
-                                        </li>
-                                        <li>
-                                            <span data-i18n="site.main.join.step_3.right.laboratory.op_type">Scroll down the page to "Operation Type", click the dropdown menu and choose "Set Options":</span>
-                                            <img src="https://i.imgur.com/TCyCxru.png" alt="Nano S instructions">
-                                        </li>
-                                        <li>
-                                            <span data-i18n="site.main.join.step_3.right.laboratory.infl_destination">Paste our address in the "Inflation Destination":</span>
-                                            <img src="https://i.imgur.com/icmUU16.png" alt="Nano S instructions">
-                                        </li>
-                                        <li>
-                                            <span data-i18n="site.main.join.step_3.right.laboratory.sign_tx">Scroll down the page and click the blue button "Sign in Transaction Signer":</span>
-                                            <img src="https://i.imgur.com/qLFi668.png" alt="Nano S instructions">
-                                        </li>
-                                        <li data-i18n="site.main.join.step_3.right.ledger.connect_ledger">Connect the Ledger and open the Stellar app;</li>
-                                        <li>
-                                            <span data-i18n="site.main.join.step_3.right.ledger.sign_bip">Scroll down and click the blue button "Sign with Default BIP path":</span>
-                                            <img src="https://i.imgur.com/bRRZCZR.png" alt="Nano S instructions">
-                                        </li>
-                                        <li data-i18n="site.main.join.step_3.right.ledger.approve_tx">Approve the transaction on the device;</li>
-                                        <li>
-                                            <span data-i18n="site.main.join.step_3.right.ledger.submit_tx">Scroll down and click the blue button "Submit to Post Transaction endpoint":</span>
-                                            <img src="https://i.imgur.com/K2mCN6z.png" alt="Nano S instructions">
-                                        </li>
-                                        <li>
-                                            <span data-i18n="site.main.join.step_3.right.ledger.submit_final">You will be redirected to a new page, click the blue button "Submit":</span>
-                                            <img src="https://i.imgur.com/NhTwQbt.png" alt="Nano S instructions">
-                                        </li>
-                                        <li data-i18n="site.main.join.step_3.right.done">Done!</li>
-                                    </ol>
+                                <div class="instructions" id="ledger-nano-instructions">
+                                  <p class="ledger-loading">Please connect your Ledger and open the Stellar app…</p>
+                                  <div class="ledger-available hidden input-group mb-3">
+                                    <p>Use the following public key to cast your vote?</p>
+                                    <p><a class="ledger-public-key">Replace</a></p>
+                                    <button class="btn btn-outline-success" type="button" id="ledger-cast-vote">Cast Vote</button>
+                                    <textfield class="ledger-transaction-xdr hidden"></textfield>
+                                  </div>
+
+                                  <p class="ledger-error hidden">
+                                    Unable to connect your Ledger. Please ensure it's connected and try again.
+                                  </p>
                                 </div>
 
                                 <!-- Stellar Laboratory instructions -->
-                                <div class="instructions" id="stellar-laboratory-instructions">
+                                <div class="instructions hidden" id="stellar-laboratory-instructions">
                                     <ol>
                                         <li>
                                             <span data-i18n="site.main.join.step_3.right.goto_laboratory">Go to <a href="https://www.stellar.org/laboratory/#?network=public">Stellar Laboratory</a> and switch to public network:</span>
@@ -314,7 +280,7 @@
                                     </ol>
                                 </div>
                             </div>
-                            
+
                             <!-- Step 4 -->
                             <div class="tab-pane fade" id="v-pills-confirm-vote" role="tabpanel" aria-labelledby="v-pills-confirm-vote-tab">
                                 <h4 data-i18n="site.main.join.step_4.right.title">Confirm your vote</h4>
@@ -358,6 +324,12 @@
     <!-- Bootstrap -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
 
+    <!-- Stellar Ledger API -->
+    <script src="./assets/js/ledger-api.js"></script>
+
+    <!-- Ledger -->
+    <script src="./assets/js/ledger.js"></script>
+
     <!-- Clipboard -->
     <script src="./assets/js/clipboard.min.js"></script>
 
@@ -375,7 +347,7 @@
 
     <!-- i18n - http://i18njs.com -->
     <script defer src="./assets/js/i18n.min.js"></script>
-    
+
     <!-- Translation -->
     <script defer src="./assets/js/translation.js"></script>
 
