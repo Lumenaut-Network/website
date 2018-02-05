@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Lumenaut • Payments History</title>
+	<link rel="stylesheet" href="assets/css/base.css">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="assets/css/fonts.css">
+	<link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+	<link rel="shortcut icon" href="assets/img/favicon.ico">
+</head>
+<body>
+	<main>
+		<section>
+			<h2>Lumenaut Payments History</h2>
+
+			<table id="payments" class="display">
+			<thead>
+				<tr>
+					<th>Date</th>
+					<th>Pool Payment</th>
+					<th>Pool Fee</th>
+					<th>Donations</th>
+					<th>Transactions</th>
+				</tr>
+			</thead>
+			</table>
+		</section>
+	</main>
+
+	<footer>
+
+	</footer>
+
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+	<!-- DataTables -->
+	<script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+
+	<!-- Custom JS -->
+	<script>$(document).ready(function(){
+
+			var table = $('#payments').DataTable({
+				"paging":   false,
+				"info":     false,
+				"ajax": "https://lumenaut.net/payments/arrays.txt",
+				"columnDefs": [ {
+					"targets": -1,
+					"data": null,
+					"defaultContent": "<a>Results</a>"
+				}]
+			});
+
+			$('#payments tbody').on( 'click', 'a', function() {
+				var data = table.row($(this).parents('tr')).data();
+				window.open(data[ 4 ], '_blank');
+			});
+
+		});
+	</script>
+</body>
+</html>
