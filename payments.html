@@ -42,7 +42,7 @@
 	<!-- Custom JS -->
 	<script>$(document).ready(function(){
 
-			$('#payments').DataTable({
+			var table = $('#payments').DataTable({
 				"paging":   false,
 				"info":     false,
 				"order": [[ 0, "desc" ]],
@@ -56,7 +56,7 @@
 
 			$('#payments tbody').on( 'click', 'a', function() {
 				var data = table.row($(this).parents('tr')).data();
-				window.open(data[ 4 ], '_blank');
+				window.open(data[ 5 ], '_blank');
 			});
 
 		});
