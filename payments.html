@@ -41,10 +41,10 @@
 	<!-- Custom JS -->
 	<script>$(document).ready(function(){
 
-			var table = $('#payments').DataTable({
+			$('#payments').DataTable({
 				"paging":   false,
 				"info":     false,
-				"ajax": "../payments/arrays.txt",
+				"ajax": "payments/arrays.txt",
 				"columnDefs": [ {
 					"targets": -1,
 					"data": null,
