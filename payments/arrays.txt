@@ -1,27 +1,27 @@
 {
   "data": [
     [
-      "February 6 2018",
+      "2018-02-06",
       "51,728.6280545 XLM",
       "0.0662300 XLM",
       "6623",
-      "",
+      "—",
       "https://lumenaut.net/payments/00h14m44s_c8246ec8-c9b6-426e-986f-ecb283d51302_transaction_result.json"
     ],
     [
-      "January 30 2018",
+      "2018-01-30",
       "48,981.0158492 XLM",
       "0.0575200 XLM",
       "5752",
-      "",
+      "—",
       "https://lumenaut.net/payments/00h07m31s_80d0ee7b-f52e-420c-bd9e-e5c198823d76_transaction_result.json"
     ],
     [
-      "January 23 2018",
+      "2018-01-23",
       "36,107.9188442 XLM",
       "0.0374300 XLM",
       "3743",
-      "",
+      "—",
       "https://lumenaut.net/payments/00h07m41s_21b74e5c-a494-4a7e-860d-9541dcc9cc44_transaction_result.json"
     ]
   ]
