@@ -20,6 +20,7 @@
 					<th>Date</th>
 					<th>Pool Payment</th>
 					<th>Pool Fee</th>
+					<th>Operations</th>
 					<th>Donations</th>
 					<th>Transactions</th>
 				</tr>
@@ -54,7 +55,7 @@
 
 			$('#payments tbody').on( 'click', 'a', function() {
 				var data = table.row($(this).parents('tr')).data();
-				window.open(data[ 4 ], '_blank');
+				window.open(data[ 5 ], '_blank');
 			});
 
 		});
