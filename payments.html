@@ -45,6 +45,7 @@
 			$('#payments').DataTable({
 				"paging":   false,
 				"info":     false,
+				"order": [[ 0, "desc" ]],
 				"ajax": "payments/arrays.txt",
 				"columnDefs": [ {
 					"targets": -1,
