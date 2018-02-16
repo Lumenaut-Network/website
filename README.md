@@ -1,10 +1,10 @@
-# LUMENAUT WEBSITE
+# Lumenaut website
 
 Repository for the Lumenaut website.
 
 You can visit the website here: https://lumenaut-network.github.io/website
 
-# OBSERVATIONS
+# Observations
 
 Some considerations taken while making the website:
 
@@ -15,9 +15,10 @@ Some considerations taken while making the website:
 - [not used yet] Maintain video's aspect ratio and prevent black bands, which happens when the browser's window is resized, by using the formula B/(A/100)=C;
 - Use '%' in 'font-size' to allow the end user to control the font size with zoom in browser (for % to work here you need to first set 'font-size: 100%' hierarchyly in the html);
 - Does not require Javascript to have standard functionality;
+- No dependencies from frameworks;
 - 100% markup and stylesheet validation according to W3C standards.
 
-# VALIDATION
+# Validation
 
 HTML5 validation:
 
@@ -27,7 +28,7 @@ CSS3 validation:
 
 https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Flumenaut-network.github.io%2Fwebsite%2F
 
-# DEPENDENCIES
+# Dependencies
 
 None.
 
