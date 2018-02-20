@@ -1,6 +1,14 @@
 {
   "data": [
     [
+      "2018-02-20",
+      "62,131.1999994 XLM",
+      "0.0823000 XLM",
+      "8230",
+      "—",
+      "https://lumenaut.net/payments/00h10m13s_5a10ffa4-cbc7-44da-ab85-db10f81fabeb_transaction_result.json"
+    ],
+    [
       "2018-02-13",
       "57,672.7799994 XLM",
       "0.0732900 XLM",
