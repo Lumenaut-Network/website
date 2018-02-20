@@ -6,6 +6,7 @@
       "0.0823000 XLM",
       "8230",
       "—",
+      "—",
       "https://lumenaut.net/payments/00h10m13s_5a10ffa4-cbc7-44da-ab85-db10f81fabeb_transaction_result.json"
     ],
     [
@@ -13,6 +14,7 @@
       "57,672.7799994 XLM",
       "0.0732900 XLM",
       "7329",
+      "—",
       "—",
       "https://lumenaut.net/payments/00h07m45s_4dfb2d23-7df9-4de2-b45e-280d5dcd90c4_transaction_result.json"
     ],
@@ -22,6 +24,7 @@
       "0.0662300 XLM",
       "6623",
       "—",
+      "—",
       "https://lumenaut.net/payments/00h14m44s_c8246ec8-c9b6-426e-986f-ecb283d51302_transaction_result.json"
     ],
     [
@@ -30,6 +33,7 @@
       "0.0575200 XLM",
       "5752",
       "—",
+      "—",
       "https://lumenaut.net/payments/00h07m31s_80d0ee7b-f52e-420c-bd9e-e5c198823d76_transaction_result.json"
     ],
     [
@@ -37,6 +41,7 @@
       "36,107.9188442 XLM",
       "0.0374300 XLM",
       "3743",
+      "—",
       "—",
       "https://lumenaut.net/payments/00h07m41s_21b74e5c-a494-4a7e-860d-9541dcc9cc44_transaction_result.json"
     ]
