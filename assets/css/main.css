@@ -153,9 +153,9 @@ button::after,
 
 button:hover::after,
 .btn:hover::after {
-	height: 200%;
+	height: 300%;
         opacity: 1;
-	transition: all 1s cubic-bezier(0,0,0,1);
+	transition: all .3s cubic-bezier(0,0,0,1);
 	}
 
 
