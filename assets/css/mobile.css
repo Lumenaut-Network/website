@@ -1,12 +1,24 @@
 @media
-only screen and (max-width: 1200px),
-only screen and (max-device-width: 1200px) {
-
-}
-
-@media
 only screen and (max-width: 980px),
 only screen and (max-device-width: 980px) {
+
+	body {
+		padding: 0 9vmin;
+		}
+
+	h1 {
+		width: 10vmin;
+		}
+
+	h1 a img {
+		content: url('../img/logo.svg');
+		}
+
+	main > section {
+		left: 9vmin !important;
+		right: 9vmin !important;
+		padding: 12vmin 9vmin !important;
+		}
 
 }
 
@@ -14,10 +26,17 @@ only screen and (max-device-width: 980px) {
 only screen and (max-width: 720px),
 only screen and (max-device-width: 720px) {
 
-}
+	body {
+		padding: 0 6vmin;
+		}
 
-@media
-only screen and (max-width: 520px),
-only screen and (max-device-width: 520px) {
+	h1 a img {
+		content: url('../img/logo.svg');
+		}
 
+	main > section {
+		left: 6vmin !important;
+		right: 6vmin !important;
+		padding: 12vmin 6vmin !important;
+		}
 }
