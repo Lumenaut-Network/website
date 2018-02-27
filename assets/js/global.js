@@ -20,8 +20,8 @@ $(document).ready(() => {
 // clipboard
 $(document).ready(() => {
 	var clipboard = new Clipboard('.addr a');
-	const $inflation = $('#addrInflation a');
-	const $donation = $('#addrDonation a');
+	const $inflation = $('.addrInflation a');
+	const $donation = $('.addrDonation a');
 
 	$inflation.click((e) => {
 		e.preventDefault();
@@ -267,28 +267,34 @@ $(document).ready(function() {
 
 
 // close button
-$(document).on('click', '.close', function (e) {
-    e.preventDefault();
-    document.location.hash = "";
+$(document).on('click', '.close', function(e) {
+	e.preventDefault();
+	document.location.hash = "";
 });
 
+$(document).keypress(function(e) {
+	var keycode = e.keyCode || e.which;
+	if(keycode == '27') {
+		document.location.hash = "";
+	}
+});
 
 
 // Setup & Instructions
 $(document).ready(function() {
 	// Lumenaut Community Pool address
 	const POOL_ADDRESS = 'GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT';
-	const $castVoteTab = $('#v-pills-cast-vote-tab');
+	const $castVoteTab = $('#cast');
 	const $instructions = $('.instructions');
 	const $walletLogos = $('.wallet-logos');
-	const $addrInput = $('#verify-xlm-address-input');
-	const $verifyButton = $('#verify-xlm-address-button');
-	const $verifyResult = $('#verify-xlm-address-result');
+	const $addrInput = $('#confirm input');
+	const $verifyButton = $('#confirm button');
+	const $verifyResult = $('#confirm-result');
 
 	const instructionsState = {};
 	const wallet_to_custom_instructions = {
-		'stellar-desktop-client': 'stellar-desktop-client-instructions',
-		'ledger': 'ledger-nano-instructions'
+		'stellar-desktop-client': 'stellar-desktop-client',
+		'ledger': 'ledger-nano'
 	};
 
 	const server = new StellarSdk.Server('https://horizon.stellar.org');
