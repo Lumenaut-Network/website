@@ -424,8 +424,6 @@ main > section h2:not(:first-child) {
 	font-family: 'Oswald', 'Arial Narrow', 'Arial Nova Cond', sans-serif;
 	text-transform: uppercase;
 	font-size: 125%;
-
-	border: 2px dashed #fff;
 	}
 
 .addr .qrCode {
