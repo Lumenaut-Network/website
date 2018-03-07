@@ -33,7 +33,7 @@ a:focus {
 a:active,
 a.active,
 a.visited {
-color: #01AA78; /* green */
+	color: #01AA78; /* green */
 	transition: color .3s cubic-bezier(0,0,0,1);
 	}
 
@@ -528,9 +528,6 @@ main > section h2:not(:first-child) {
 	background-color: #fff;
 	border-radius: 0.5vmin;
 	box-shadow: rgba(51,51,94,0.1) 0 6px 12px 0;
-
-	box-shadow: rgba(0,0,0,0.06) 0px 2px 4px 0px, rgba(0,0,0,0.04) 0px 2px 24px 9px;
-
 	transition: box-shadow .3s cubic-bezier(0,0,0,1);
 	}
 
@@ -573,6 +570,18 @@ main section:not(#welcome):not(#join) .addr {
 	margin-top: 3vmin;
 	margin-bottom: 6vmin;
 	}
+
+#confirm .alert {
+	margin: 6vmin auto 0;
+	padding: 1.5vmin 3vmin;
+	text-align: center;
+	color: #fff;
+	background-color: #F8B657;
+	border-radius: 0.5vmin;
+	}
+
+#confirm .alert-success {
+	background-color: #01AA78; /* green */	}
 
 
 
