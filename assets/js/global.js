@@ -205,7 +205,7 @@ $(document).ready(function() {
     //Format: {SubscriptionId}~{ExchangeName}~{FromSymbol}~{ToSymbol}
     //Use SubscriptionId 0 for TRADE, 2 for CURRENT and 5 for CURRENTAGG
     //For aggregate quote updates use CCCAGG as market
-    var subs = ['5~CCCAGG~XLM~USD', '5~CCCAGG~XLM~BTC', '5~CCCAGG~XLM~ETH'];
+    var subs = ['5~CCCAGG~XLM~USD', '5~CCCAGG~XLM~BTC'];
     socket.emit('SubAdd', { subs });
     socket.on("m", function(message) {
         var messageType = message.substring(0, message.indexOf("~"));
@@ -266,12 +266,11 @@ $(document).ready(function() {
 
 
 
-// close button
-$(document).on('click', '.close', function(e) {
+// close button/key
+$(document).on('click', 'section > .close', function(e) {
 	e.preventDefault();
 	document.location.hash = "";
 });
-
 $(document).keypress(function(e) {
 	var keycode = e.keyCode || e.which;
 	if(keycode == '27') {
@@ -282,7 +281,6 @@ $(document).keypress(function(e) {
 
 // Setup & Instructions
 $(document).ready(function() {
-	// Lumenaut Community Pool address
 	const POOL_ADDRESS = 'GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT';
 	const $castVoteTab = $('#cast');
 	const $instructions = $('.instructions');
@@ -315,7 +313,6 @@ $(document).ready(function() {
 		$castVoteTab.click();
 	});
 
-
 	$addrInput.keyup((e) => {
 		e.preventDefault();
 
@@ -330,19 +327,15 @@ $(document).ready(function() {
 	$verifyButton.click(verifyAccount);
 
 	function verifyAccount() {
-
 		const pubKey = $addrInput.val();
+
 		console.log('pub key: ', pubKey);
 
 		if (!StellarSdk.StrKey.isValidEd25519PublicKey(pubKey)) {
 			$verifyResult.empty();
+
 			$verifyResult.append(
-				"<div class=\"alert alert-warning alert-dismissible fade show\" role=\"alert\">\
-					" + translate('site.main.join.step_4.error.bad_format') + "\
-					<button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-label=\"Close\">\
-						<span aria-hidden=\"true\">&times;</span>\
-					</button>\
-				</div>"
+				"<p class=\"alert alert-warning\">Invalid address. Try copy-pasting again.</p>"
 			);
 			return;
 		}
@@ -354,35 +347,22 @@ $(document).ready(function() {
 				if (account.inflation_destination != POOL_ADDRESS) {
 					$verifyResult.empty();
 					$verifyResult.append(
-						"<div class=\"alert alert-warning alert-dismissible fade show\" role=\"alert\">\
-							" + translate('site.main.join.step_4.error.not_joined') + " \
-							<button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-label=\"Close\">\
-								<span aria-hidden=\"true\">&times;</span>\
-							</button>\
-						</div>"
+						"<p class=\"alert alert-warning\">Hmmm. Looks like you're not in the pool yet.</p>"
 					);
 				} else {
 					$verifyResult.empty();
 					$verifyResult.append(
-						"<div class=\"alert alert-success alert-dismissible fade show\" role=\"alert\">\
-							" + translate('site.main.join.step_4.success') + "\
-							<button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-label=\"Close\">\
-								<span aria-hidden=\"true\">&times;</span>\
-							</button>\
-						</div>"
+						"<p class=\"alert alert-success\">Success! Welcome to the pool!</p>"
 					);
 				}
 			});
 		} catch(err) {
 			console.log(err);
+
 			$verifyResult.empty();
+
 			$verifyResult.append(
-				"<div class=\"alert alert-warning alert-dismissible fade show\" role=\"alert\">\
-					" + translate('site.main.join.step_4.error.fetching') + "\
-					<button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-label=\"Close\">\
-						<span aria-hidden=\"true\">&times;</span>\
-					</button>\
-				</div>"
+				"<p class=\"alert alert-warning\">Error fetching account info. Please try again later.</p>"
 			);
 			return;
 		}
