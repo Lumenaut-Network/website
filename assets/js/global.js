@@ -352,7 +352,7 @@ $(document).ready(function() {
 				} else {
 					$verifyResult.empty();
 					$verifyResult.append(
-						"<p class=\"alert alert-success\">Success! Welcome to the pool!</p>"
+						"<p class=\"alert alert-success\">Success! Welcome to the pool and thanks for your support.</p>"
 					);
 				}
 			});
