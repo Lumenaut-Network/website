@@ -284,28 +284,30 @@
 		</section>
 
 		<section id="export">
-			<h2>Lumenaut Payments Export</h2>
-			<p>This will export the payments sent by Lumenaut to your Public Key.</p>
+			<h2 data-i18n="naut-export-payments">Lumenaut Payments Export</h2>
 
-			<input type="text" id="address" placeholder="input your Public Key here...">
+			<p data-i18n="naut-export-key">This will export the payments sent by Lumenaut to a given Public Key. Input the Public Key bellow and press the button "Load" to get the payment's information directly from the network. If desired you can export a CSV file with the payment's information by pressing the button "Export CSV".</p>
 
 			<select id="timeframe">
-				<option value="30days">Last 30 Days</option>
-				<option value="year">Last Year</option>
-				<option value="prevYear">Previous Year</option>
+				<option value="30days" data-i18n="naut-export-30">Last 30 Days</option>
+				<option value="year" data-i18n="naut-export-year">Last Year</option>
+				<option value="prevYear" data-i18n="naut-export-previous">Previous Year</option>
 			</select>
 
-			<input type="button" value="See Payments" id="get">
-			<input type="button" value="Export Payments" id="csv" disabled>
-
+			<input type="text" id="address" placeholder="input your Public Key here...">
+			<small data-i18n="naut-export-more">We don't store anything on our server, calculation is done locally on your browser. <a href="https://github.com/Lumenaut-Network/lumenaut-payments-export" target="_blank" data-i18n="naut-export-info">More Info</a></small>
+		<div>
+				<input type="button" value="Load" class="btn" id="load">
+				<input type="button" value="Export CSV" class="btn" id="csv" disabled>
+			</div>
 			<table>
-				<thead>
-					<td>Date</td>
-					<td>Amount</td>
-				</thead>
-				<tbody id="data">
-					<td>No Public Key loaded...</td>
-				</tbody>
+				<tr>
+					<th data-i18n="naut-export-date">Date</th>
+					<th data-i18n="naut-export-amount">Amount</th>
+				</tr>
+				<tr id="data">
+					<td colspan="2" data-i18n="naut-export-no">No Public Key loaded...</td>
+				</tr>
 			</table>
 
 			<a href="" class="close"><svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M314.523,256l192.268,-192.268c6.945,-6.946 6.945,-18.177 0,-25.123l-33.4,-33.4c-6.946,-6.945 -18.177,-6.945 -25.123,0l-192.268,192.268l-192.268,-192.268c-6.946,-6.945 -18.177,-6.945 -25.123,0l-33.4,33.4c-6.945,6.946 -6.945,18.177 0,25.123l192.268,192.268l-192.268,192.268c-6.945,6.946 -6.945,18.177 0,25.123l33.4,33.4c6.946,6.945 18.177,6.945 25.123,0l192.268,-192.268l192.268,192.268c6.946,6.945 18.177,6.945 25.123,0l33.4,-33.4c6.945,-6.946 6.945,-18.177 0,-25.123l-192.268,-192.268Z"/></svg></a>
