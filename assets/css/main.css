@@ -109,8 +109,8 @@ button,
 	transition: all .3s cubic-bezier(0,0,0,1);
 	}
 
-button:hover,
-.btn:hover {
+button:not(:disabled):hover,
+.btn:not(:disabled):hover {
 	color: #fff;
 	background-color: #626495; /* violet */
 	box-shadow: rgba(51,51,94,.1) 0 15px 35px 0, rgba(0,0,0,.1) 0 5px 15px 0;
@@ -126,6 +126,13 @@ button:active,
 	background-color: #01AA78; /* green */
 	transition: all .5s cubic-bezier(0,0,0,1);
 	}
+
+button:disabled,
+.btn:disabled {
+	background: rgba(0,0,0,0.3);
+	box-shadow: none;
+	}
+
 
 button::after,
 .btn::after {
@@ -332,7 +339,7 @@ main > section:not(#welcome) {
 	right: 18vmin;
 	padding: 12vmin 24vmin;
 	color: #444;
-	background-color: rgb(228,231,235);
+	background-color: rgb(230,234,238);
 	border-radius: 0.5vmin;
 	box-shadow: rgba(51,51,94,0.1) 0 15px 35px 0, rgba(0,0,9,0.15) 0 5px 15px 0;
 
@@ -493,7 +500,7 @@ main > section h2:not(:first-child) {
 	background-color: transparent;
 	color: #01AA78; /* green */
 	border-color: rgba(0,0,9,0.05);
-	box-shadow: rgb(228,231,235) 0 4px 0 -2px;		/* same as section */
+	box-shadow: rgb(230,234,238) 0 4px 0 -2px;		/* same as section */
 	}
 
 #join .join-content {
@@ -576,7 +583,7 @@ main section:not(#welcome):not(#join) .addr {
 	padding: 1.5vmin 3vmin;
 	text-align: center;
 	color: #fff;
-	background-color: #F8B657;
+	background-color: #ED6A5E; /* red */
 	border-radius: 0.5vmin;
 	}
 
@@ -589,7 +596,8 @@ main section:not(#welcome):not(#join) .addr {
  * FAQ
 */
 
-.calculator small {
+.calculator small,
+#export small {
 	display: block;
 	margin: 1vmin 0 0;
 	text-align: center;
@@ -652,7 +660,6 @@ table {
 table th,
 table td {
 	padding: 1vmin;
-
 	}
 
 table th {
@@ -678,6 +685,21 @@ table .result {
 	min-height: 16px;
 	width: 3vmin;
 	height: 3vmin;
+	}
+
+
+
+/*
+ * EXPORT
+*/
+
+#timeframe {
+	margin-bottom: 3vmin;
+	}
+
+#export div {
+	margin: 3vmin auto;
+	text-align: center;
 	}
 
 
