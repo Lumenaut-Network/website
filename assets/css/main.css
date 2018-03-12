@@ -109,8 +109,8 @@ button,
 	transition: all .3s cubic-bezier(0,0,0,1);
 	}
 
-button:not(:disabled):hover,
-.btn:not(:disabled):hover {
+button:hover,
+.btn:hover {
 	color: #fff;
 	background-color: #626495; /* violet */
 	box-shadow: rgba(51,51,94,.1) 0 15px 35px 0, rgba(0,0,0,.1) 0 5px 15px 0;
@@ -129,10 +129,13 @@ button:active,
 
 button:disabled,
 .btn:disabled {
-	background: rgba(0,0,0,0.3);
+	background-color: rgba(0,0,0,0.3);
 	box-shadow: none;
+	-ms-transform: none;
+	-webkit-transform: none;
+	transform: none;
+	transition: none;
 	}
-
 
 button::after,
 .btn::after {
@@ -364,6 +367,7 @@ main > section:not(#welcome):target {
 	}
 
 main > section:not(#welcome):target::after {
+	pointer-events: none;
 	position: absolute;
 	display: block;
 	content: '';
