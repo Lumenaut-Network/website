@@ -369,14 +369,11 @@ $(document).ready(function() {
 	}
 });
 
-
-
 // lumenaut payments export
 
 var loadedPayments = [];
 
 document.getElementById("load").onclick = function () {
-
 	lumenaut = 'GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT';
 	address = document.getElementById('address').value;
 
@@ -416,8 +413,8 @@ document.getElementById("load").onclick = function () {
 }
 
 document.getElementById("csv").onclick = function () {
-	var timeFrameValue = document.getElementById("timeframe").value;
 	var lumenaut = 'GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT';
+	var timeFrameValue = document.getElementById("timeframe").value;
 
 	//create csv
 	var csvFile = 'Date,Amount(XLM)';
@@ -431,7 +428,7 @@ document.getElementById("csv").onclick = function () {
 		type: 'csv'
 	});
 	a.href = URL.createObjectURL(file);
-	a.download = `${lumenaut.substring(0,5)}_${timeFrameValue}_PaymentsExport.csv`;
+	a.download = `${lumenaut.substring(0,6)}_${timeFrameValue}_PaymentsExport.csv`;
 	a.click();
 }
 
