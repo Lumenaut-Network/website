@@ -282,6 +282,30 @@
 			<a href="" class="close"><svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M314.523,256l192.268,-192.268c6.945,-6.946 6.945,-18.177 0,-25.123l-33.4,-33.4c-6.946,-6.945 -18.177,-6.945 -25.123,0l-192.268,192.268l-192.268,-192.268c-6.946,-6.945 -18.177,-6.945 -25.123,0l-33.4,33.4c-6.945,6.946 -6.945,18.177 0,25.123l192.268,192.268l-192.268,192.268c-6.945,6.946 -6.945,18.177 0,25.123l33.4,33.4c6.946,6.945 18.177,6.945 25.123,0l192.268,-192.268l192.268,192.268c6.946,6.945 18.177,6.945 25.123,0l33.4,-33.4c6.945,-6.946 6.945,-18.177 0,-25.123l-192.268,-192.268Z"/></svg></a>
 		</section>
 
+		<section id="export">
+			<h2>Lumenaut Payments Export</h2>
+			<p>This will export the payments sent to your address from our pool.</p>
+			<small>By using this you accept the attached <a href="https://github.com/ZanderAdam/StellarTransactionExport/blob/master/LICENSE">license</a>.</small>
+			<input type="text" value="GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT" id="sourceAddress" placeholder="Source Address">
+			<input type="text" value="input your address here" id="destinationAddress" placeholder="Destination Address">
+			<select id="timeframe">
+				<option value="30days">Last 30 Days</option>
+				<option value="year">Last 1 Year</option>
+				<option value="prevYear">Previous Year</option>
+			</select>
+			<input type="button" value="Load Payments" id="get">
+			<input type="button" value="Export CSV" id="export" disabled>
+
+			<table>
+				<thead>
+					<td>Date</td>
+					<td>Amount</td>
+				</thead>
+				<tbody id="data">
+				</tbody>
+			</table>
+		</section>
+
 		<section id="about">
 			<h2 data-i18n="naut-about-what">What is Lumenaut</h2>
 			<p data-i18n="naut-about-is">Lumenaut is a collective network, enthusiastic about <a href="https://www.stellar.org">Stellar</a> technology.</p>
