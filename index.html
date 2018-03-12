@@ -285,16 +285,18 @@
 
 		<section id="export">
 			<h2>Lumenaut Payments Export</h2>
-			<p>This will export the payments sent to your address from our pool.</p>
-			<small>By using this you accept the attached <a href="https://github.com/ZanderAdam/StellarTransactionExport/blob/master/LICENSE">license</a>.</small>
-			<input type="text" id="destinationAddress" placeholder="input your address here">
+			<p>This will export the payments sent by Lumenaut to your Public Key.</p>
+
+			<input type="text" id="address" placeholder="input your Public Key here...">
+
 			<select id="timeframe">
 				<option value="30days">Last 30 Days</option>
-				<option value="year">Last 1 Year</option>
+				<option value="year">Last Year</option>
 				<option value="prevYear">Previous Year</option>
 			</select>
-			<input type="button" value="Load Payments" id="get">
-			<input type="button" value="Export CSV" id="export" disabled>
+
+			<input type="button" value="See Payments" id="get">
+			<input type="button" value="Export Payments" id="csv" disabled>
 
 			<table>
 				<thead>
@@ -302,8 +304,11 @@
 					<td>Amount</td>
 				</thead>
 				<tbody id="data">
+					<td>No Public Key loaded...</td>
 				</tbody>
 			</table>
+
+			<a href="" class="close"><svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M314.523,256l192.268,-192.268c6.945,-6.946 6.945,-18.177 0,-25.123l-33.4,-33.4c-6.946,-6.945 -18.177,-6.945 -25.123,0l-192.268,192.268l-192.268,-192.268c-6.946,-6.945 -18.177,-6.945 -25.123,0l-33.4,33.4c-6.945,6.946 -6.945,18.177 0,25.123l192.268,192.268l-192.268,192.268c-6.945,6.946 -6.945,18.177 0,25.123l33.4,33.4c6.946,6.945 18.177,6.945 25.123,0l192.268,-192.268l192.268,192.268c6.946,6.945 18.177,6.945 25.123,0l33.4,-33.4c6.945,-6.946 6.945,-18.177 0,-25.123l-192.268,-192.268Z"/></svg></a>
 		</section>
 
 		<section id="about">
