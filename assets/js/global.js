@@ -244,7 +244,7 @@ $(document).ready(function() {
 
 	document.getElementById("export").onclick = function () {
 		var timeFrameValue = document.getElementById("timeframe").value;
-		var sourceAddress = document.getElementById('sourceAddress').value;
+		var sourceAddress = GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT;
 
 		//create csv
 		var csvFile = 'Date,Amount(XLM)';
