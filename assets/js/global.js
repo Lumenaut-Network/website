@@ -199,121 +199,119 @@ $(document).ready(() => {
 
 // transaction export
 $(document).ready(function() {
-    var loadedPayments = [];
+	var loadedPayments = [];
 
-    document.getElementById("get").onclick = function () {
+	document.getElementById("get").onclick = function () {
 
-      sourceAddress = document.getElementById('sourceAddress').value;
-      destinationAddress = document.getElementById('destinationAddress').value;
+		sourceAddress = GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT;
+		destinationAddress = document.getElementById('destinationAddress').value;
 
-      if (!sourceAddress || !destinationAddress) {
-        console.error("Source Address and/or Destination Address missing");
-        return;
-      }
+		if (!destinationAddress) {
+			console.error("Destination Address is missing!");
+			return;
+		}
 
-      var timeFrameValue = document.getElementById("timeframe").value;
+		var timeFrameValue = document.getElementById("timeframe").value;
 
-      endDate = moment();
-      startDate = moment().subtract(30, 'days').startOf('day');
+		endDate = moment();
+		startDate = moment().subtract(30, 'days').startOf('day');
 
-      switch (timeFrameValue) {
-        case 'year':
-          startDate = moment().subtract(1, 'year').startOf('day');
-          break;
-        case 'prevYear':
-          endDate = moment().startOf('year');
-          timeFrameValue
-          startDate = moment().startOf('year').subtract(1, 'year');
-          break;
-      }
+		switch (timeFrameValue) {
+			case 'year':
+				startDate = moment().subtract(1, 'year').startOf('day');
+				break;
+			case 'prevYear':
+				endDate = moment().startOf('year');
+				timeFrameValue
+				startDate = moment().startOf('year').subtract(1, 'year');
+				break;
+		}
 
-      var url = 'https://horizon.stellar.org/accounts/' + destinationAddress + '/payments?limit=200&order=desc'
+		var url = 'https://horizon.stellar.org/accounts/' + destinationAddress + '/payments?limit=200&order=desc'
 
-      getData(url, sourceAddress, startDate, endDate, function (payments) {
+		getData(url, sourceAddress, startDate, endDate, function (payments) {
+			loadedPayments = payments;
+			var dataTable = document.getElementById("data");
+			dataTable.innerHTML = '';
 
-        loadedPayments = payments;
-        var dataTable = document.getElementById("data");
-        dataTable.innerHTML = '';
+			payments.forEach(function (payment) {
+				dataTable.innerHTML += `<tr><td>${payment.date.format()}</td><td>${payment.amount}</td></tr>`;
+			});
 
-        payments.forEach(function (payment) {
-          dataTable.innerHTML += `<tr><td>${payment.date.format()}</td><td>${payment.amount}</td></tr>`;
-        });
+			document.getElementById("export").disabled = false;
+		});
+	}
 
-        document.getElementById("export").disabled = false;
-      });
-    }
+	document.getElementById("export").onclick = function () {
+		var timeFrameValue = document.getElementById("timeframe").value;
+		var sourceAddress = document.getElementById('sourceAddress').value;
 
-    document.getElementById("export").onclick = function () {
-      var timeFrameValue = document.getElementById("timeframe").value;
-      var sourceAddress = document.getElementById('sourceAddress').value;
+		//create csv
+		var csvFile = 'Date,Amount(XLM)';
+		loadedPayments.forEach(function (payment) {
+			csvFile += '\n' + payment.date.format() + ',' + payment.amount;
+		})
 
-      //create csv
-      var csvFile = 'Date,Amount(XLM)';
-      loadedPayments.forEach(function (payment) {
-        csvFile += '\n' + payment.date.format() + ',' + payment.amount;
-      })
+		//download as file
+		var a = document.createElement('a');
+		var file = new Blob([csvFile], {
+			type: 'csv'
+		});
+		a.href = URL.createObjectURL(file);
+		a.download = `${sourceAddress.substring(0,5)}_${timeFrameValue}_PaymentsExport.csv`;
+		a.click();
+	}
 
-      //download as file
-      var a = document.createElement('a');
-      var file = new Blob([csvFile], {
-        type: 'csv'
-      });
-      a.href = URL.createObjectURL(file);
-      a.download = `${sourceAddress.substring(0,5)}_${timeFrameValue}_PaymentsExport.csv`;
-      a.click();
-    }
+	function getData(url, sourceAddress, startDate, endDate, callback) {
 
-    function getData(url, sourceAddress, startDate, endDate, callback) {
+		var xmlHttp = new XMLHttpRequest();
+		xmlHttp.onreadystatechange = function () {
+			if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
+				var payments = JSON.parse(xmlHttp.responseText);
+				processPayments(payments, sourceAddress, startDate, endDate, callback);
+			}
+			else if (xmlHttp.status == 404) {
+				callback([]);
+			}
+		}
 
-      var xmlHttp = new XMLHttpRequest();
-      xmlHttp.onreadystatechange = function () {
-        if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
+		xmlHttp.open("GET", url, true);
+		xmlHttp.send(null);
+	}
 
-          var payments = JSON.parse(xmlHttp.responseText);
+	function processPayments(payments, sourceAddress, startDate, endDate, callback) {
+		var paymentsOfInterest = [];
+		var lastPaymentDate;
+		var records = payments['_embedded'].records;
 
-          processPayments(payments, sourceAddress, startDate, endDate, callback);
-        } else if (xmlHttp.status == 404) {
-          callback([]);
-        }
-      }
+		if (records.length == 0) {
+			callback(paymentsOfInterest);
+			return;
+		}
 
-      xmlHttp.open("GET", url, true);
-      xmlHttp.send(null);
-    }
+		records.forEach(function (payment) {
+			lastPaymentDate = moment(payment['created_at']);
 
-    function processPayments(payments, sourceAddress, startDate, endDate, callback) {
-      var paymentsOfInterest = [];
-      var lastPaymentDate;
-      var records = payments['_embedded'].records;
+			if (!lastPaymentDate.isBetween(startDate, endDate)) {
+				return;
+			}
 
-      if (records.length == 0) {
-        callback(paymentsOfInterest);
-        return;
-      }
+			if (payment['source_account'] == sourceAddress) {
+				paymentsOfInterest.push({
+				date: lastPaymentDate,
+				amount: payment.amount
+			});
+		}
+	});
 
-      records.forEach(function (payment) {
-        lastPaymentDate = moment(payment['created_at']);
-
-        if (!lastPaymentDate.isBetween(startDate, endDate)) {
-          return;
-        }
-
-        if (payment['source_account'] == sourceAddress) {
-
-          paymentsOfInterest.push({
-            date: lastPaymentDate,
-            amount: payment.amount
-          });
-        }
-      });
-
-      if (lastPaymentDate.isAfter(startDate))
-        getData(payments['_links'].prev.href, sourceAddress, startDate, endDate, function (newPayments) {
-          callback(paymentsOfInterest.concat(newPayments));
-        });
-      else
-        callback(paymentsOfInterest);
-    }
+	if (lastPaymentDate.isAfter(startDate)) {
+		getData(payments['_links'].prev.href, sourceAddress, startDate, endDate, function (newPayments) {
+			callback(paymentsOfInterest.concat(newPayments));
+		});
+	}
+	else {
+        	callback(paymentsOfInterest);
+	}
 });
 
 
