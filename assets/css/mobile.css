@@ -16,7 +16,9 @@ only screen and (max-device-width: 1024px) {
 @media
 only screen and (max-width: 920px),
 only screen and (max-device-width: 920px) {
-
+	body {
+		font-size: 200%;
+	}
 	body > header {
 		padding-left: 6vmin;
 
