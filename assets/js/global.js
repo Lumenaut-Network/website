@@ -476,7 +476,7 @@ function processPayments(payments, lumenaut, startDate, endDate, callback) {
 	});
 
 	if (lastPaymentDate.isAfter(startDate))
-		getData(payments['_links'].prev.href, lumenaut, startDate, endDate, function (newPayments) {
+		getData(payments['_links'].next.href, lumenaut, startDate, endDate, function (newPayments) {
 			callback(paymentsOfInterest.concat(newPayments));
 	});
 	else
