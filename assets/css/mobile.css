@@ -6,7 +6,7 @@ only screen and (max-device-width: 1024px) {
 		content: url('../img/logo.svg');
 		}
 
-	main > section {
+	main > section:not(#welcome):target {
 		left: 9vmin;
 		right: 9vmin;
 		padding: 12vmin 9vmin;
@@ -16,7 +16,9 @@ only screen and (max-device-width: 1024px) {
 @media
 only screen and (max-width: 920px),
 only screen and (max-device-width: 920px) {
-
+	body {
+		font-size: 200%;
+	}
 	body > header {
 		padding-left: 6vmin;
 
@@ -27,7 +29,7 @@ only screen and (max-device-width: 920px) {
 		display: none;
 		}
 
-	main > section {
+	main > section:not(#welcome):target {
 		left: 6vmin;
 		right: 6vmin;
 		padding: 12vmin 6vmin;
@@ -39,7 +41,7 @@ only screen and (max-device-width: 920px) {
 		100% { opacity: 1; transform: translate3d(0,6vmin,0); }
 		}
 
-	main > section:not(#welcome):target::after {
+	main > section:not(#welcome):target:not(#welcome):target::after {
 		bottom: -6vmin;
 		height: 6vmin;
 		}
@@ -96,7 +98,7 @@ only screen and (max-device-width: 420px) {
 		display: none;
 		}
 
-	main > section:not(#welcome) {
+	main > section:not(#welcome):target:not(#welcome) {
 		display: block !important;
 		position: relative !important;
 		margin: 3vmin !important;
@@ -109,11 +111,11 @@ only screen and (max-device-width: 420px) {
 		animation: none !important;
 		}
 
-	main > section > .close {
+	main > section:not(#welcome):target > .close {
 		display: none;
 		}
 
-	main > section h2:not(:first-child) {
+	main > section:not(#welcome):target h2:not(:first-child) {
 		margin-top: 12vmin;
 		}
 }
