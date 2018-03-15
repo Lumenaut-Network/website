@@ -291,6 +291,7 @@ $(document).ready(function() {
 
 	const instructionsState = {};
 	const wallet_to_custom_instructions = {
+		'stellar-laboratory': 'stellar-laboratory-instructions',
 		'stellar-desktop-client': 'stellar-desktop-client',
 		'ledger': 'ledger-nano'
 	};
@@ -300,15 +301,52 @@ $(document).ready(function() {
 
 	// listen for wallet logo clicks
 	$walletLogos.click((e) => {
-		e.preventDefault();
+        e.preventDefault();
 
-		const selected_wallet = e.target.dataset['wallet'];
-		instructionsState['selected_wallet'] = selected_wallet;
-		instructionsState['instructions'] = wallet_to_custom_instructions[selected_wallet] || 'stellar-laboratory-instructions';
-		console.log(selected_wallet, instructionsState.instructions);
+        // When the user clicks inside the image or text link the parent dom element will contain the data
+        const currentNode = e.target;
 
+        // When the user clicks outside the image or text link the current dom element will contain the data
+        const parentNode = e.target.parentNode;
+
+        let selected_wallet;
+        if (currentNode.dataset && currentNode.dataset['wallet']) {
+            selected_wallet = currentNode.dataset['wallet'];
+        } else if (parentNode.dataset && parentNode.dataset['wallet']) {
+            selected_wallet = parentNode.dataset['wallet'];
+        } else {
+            selected_wallet = 'stellar-laboratory';
+            console.error("ERROR:", "unable to find wallet data in the current DOM target! Defaulting to 'stellar-laboratory' instructions");
+        }
+
+        // Set instructions state
+        instructionsState['selected_wallet'] = selected_wallet;
+        instructionsState['instructions'] = wallet_to_custom_instructions[selected_wallet] || 'stellar-laboratory-instructions';
+
+        console.log("Selected wallet:", selected_wallet);
+		console.log("Instructions state:", instructionsState.instructions);
+
+		// Hide all instructions divs
 		$instructions.hide();
-		$('#' + instructionsState.instructions).show();
+
+		// Show the selected instructions set
+		switch(instructionsState.instructions) {
+			case 'stellar-laboratory-instructions': {
+                $('#stellar-laboratory').show();
+
+                break;
+			}
+			case 'stellar-desktop-client': {
+                $('#stellar-desktop-client').show();
+
+                break;
+            }
+			case 'ledger-nano': {
+                $('#ledger-nano').show();
+
+                break;
+            }
+		}
 
 		$castVoteTab.click();
 	});
