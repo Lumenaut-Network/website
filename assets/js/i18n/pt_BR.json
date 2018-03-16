@@ -1,1 +1,123 @@
+{
+  "naut-head-title": "Fundo Comunitário • Lumenaut",
 
+
+
+  "naut-nav-join": "Participe",
+  "naut-nav-faq": "FAQ",
+  "naut-nav-payments": "Pagamentos",
+  "naut-nav-export": "Export",
+  "naut-nav-about": "Sobre",
+  "naut-nav-store": "Loja",
+
+
+
+  "naut-welcome-title": "Fundo Comunitário",
+  "naut-welcome-decription": "100% do pagamento, sem taxas.<br>Feito pela comunidade, para a comunidade.",
+  "naut-welcome-accounts": "Contas",
+  "naut-welcome-votes": "Votos",
+  "naut-welcome-inflation": "Destino de Inflação",
+  "naut-welcome-join": "Junte-se a nós",
+
+
+
+  "naut-join-title": "Participe do Fundo Comunitário",
+  "naut-join-tab-wallet": "1. Selecione sua carteira",
+  "naut-join-tab-cast": "2. Vote",
+  "naut-join-tab-confirm": "3. Confirme seu voto",
+  "naut-join-wallet": "Antes de mais nada, você precisa transferir seus Lumens para uma carteira que você controla. Se eles estiverem em uma casa de câmbio, então eles podem receber a inflação e não te pagar.",
+  "naut-join-wallet-tutorial": "Selecione o tutorial que corresponde à sua carteira:",
+  "naut-join-universal": "Todas as carteiras",
+
+  "naut-cast-laboratory-01": "Abra <a href=\"https://www.stellar.org/laboratory/#?network=public\" target=\"_blank\">Stellar Laboratory</a> e mude para a rede pública:",
+  "naut-cast-laboratory-02": "Clique na aba \"Transaction Builder\" (Construtor de Transações):",
+  "naut-cast-laboratory-03": "Cole a sua Chave Pública em \"Source Account\" (Conta de Origem):",
+  "naut-cast-laboratory-04": "Clique no botão azul \"Fetch next sequence number for account starting with...\" (Peque o próximo número de sequência da sua conta...):",
+  "naut-cast-laboratory-05": "Desça a página para \"Operation Type\" (Tipo de Operação), e escolha \"Set Options\" (Definir Opções) no menu:",
+  "naut-cast-laboratory-06": "Cole o nosso endereço em \"Inflation Destination\" (Destino de Inflação):",
+  "naut-cast-laboratory-07": "Desça a página e clique no botão azul \"Sign in Transaction Signer\" (Ir à tela de Assinar Transações):",
+  "naut-cast-laboratory-07n1": "Conecte o dispositivo Ledger e abra o aplicativo Stellar:",
+  "naut-cast-laboratory-07n2": "Desça a página e clique no botão azul \"Sign with Default BIP path\" (Assinar com o caminho BIP padrão):",
+  "naut-cast-laboratory-07n3": "Confirme a transação no dispositivo:",
+  "naut-cast-laboratory-08": "Nesta nova página, desça até \"Add Signer\" (Adicione Assinante) e cole sua Chave Privada:",
+  "naut-cast-laboratory-09": "Desça a página e clique no botão azul \"Submit to Post Transaction endpoint\" (Ir à tela de Envio de Transação):",
+  "naut-cast-laboratory-10": "Nesta nova página, clique no botão \"Submit\" (Enviar):",
+  "naut-cast-laboratory-11": "Você receberá um JSON de resposta confirmando seu voto. Pronto!",
+
+  "naut-confirm-set": "Insira sua Chave Pública abaixo e verifique se o Destino de Inflação está configurado.",
+  "naut-confirm-verify": "Verificar",
+
+
+
+  "naut-faq-what": "O Que é Inflação",
+  "naut-faq-inflation": "Inflação é um mecanismo nominal que distribui novos Lumens. Este evento ocorre semanalmente, em uma taxa de 1% ao ano para os donos de Lumens existentes. A inflação é distribuída usando um sistema de votação onde todos os endereços que recebem pelo menos 0,05% do total de votos são elegíveis para os novos Lumens. Para saber mais sobre o processo de inflação, consulte a documentação oficial em <a href=\"https://www.stellar.org/developers/guides/concepts/inflation.html\">Stellar.org</a>.",
+  "naut-faq-pool": "Se seu endereço não possui o mínimo de votos necessários, você ainda pode receber a inflação se juntando a um Fundo de Inflação. Esta é uma forma da comunidade se juntar e votar para alcançar o mínimo exigido. A inflação é paga para o fundo, e então é dividida entre os membros baseado no número de votos contribuídos. Basicamente, isto significa que se você possui Lumens, então você recebe Lumens grátis toda semana!",
+
+  "naut-faq-much": "Quanta Inflação Você Recebe",
+  "naut-faq-estimate": "Para uma estimativa de quanto você receberá no próximo pagamento de inflação, entre a quantidade de XLM ou a Chave Pública abaixo.",
+  "naut-faq-more": "Não armazenamos nada no nosso servidor, os cálculos são realizados localmente no seu navegador. <a href=\"https://github.com/Lumenaut-Network/website/tree/gh-pages\" target=\"_blank\">Mais informações</a>",
+
+  "naut-faq-when": "Quando a Inflação é Paga",
+  "naut-faq-utc": "A inflação é normalmente distribuída pela rede Stellar às terças-feiras 00:00 UTC. O processamento realizado por nós não deve demorar mais que alguns minutos após isso. Assim, você deve receber sua parte da inflação toda terça por volta de meia-noite UTC (21:00 Horário de Brasília).",
+
+  "naut-faq-why": "Por que Usar o Fundo Comunitário Lumenaut",
+  "naut-faq-fair": "Atualmente existem outros fundos, mas eles cobram taxas, ou fazem apostas com a inflação dos usuários. Devido à falta de um fundo justo ou de confiança, decidimos criar algo melhor, onde nenhuma taxa é descontada do seu pagamento. Você recebe o toda a sua parte da distribuição semanal de inflação.",
+
+  "naut-faq-voting": "Votar para o Fundo Comunitário Lumenaut",
+  "naut-faq-votes": "O voto é realizado ao colocar o nosso endereço como o seu Destino de Inflação. Seu voto é igual ao número de Lumens que você possui. Assim, se você tem 100 XLM, você tem 100 votos. Quanto mais Lumens você possui, maior é o seu pagamento pela inflação. Para saber como votar para o Fundo Comunitário Lumenaut, verifique os <a href=\"https://lumenaut.net/#join\">tutoriais</a>.",
+
+  "naut-faq-revote": "Resetar o Destino de Inflação",
+  "naut-faq-automatic": "Seu Destino de Inflação precisa ser configurado apenas uma vez. A opção é ligada ao seu endereço, e não às suas moedas. Portanto, enquanto seu endereço possuir Lumens, você vai automaticamente receber a sua parte do processo de inflação (proporcional à quantidade de votos contribuídos). Participar de um fundo de inflação não muda em nada como você usa seu endereço ou carteira. Tudo é automático!",
+
+  "naut-faq-safety": "Segurança do Fundo Comunitário Lumenaut",
+  "naut-faq-native": "O Destino de Inflação é um componente nativo da rede Stellar. É 100% seguro porque nós apenas temos acesso à sua Chave Pública, ou seja, o endereço que você usa para votar no fundo de inflação. Assim podemos saber para onde mandar seu pagamento semanal.",
+
+  "naut-faq-secret": "Uso da Chave Privada para Configurar o Destino de Inflação",
+  "naut-faq-key": "Dependendo da carteira que você usa e o tutorial escolhido, você talvez tenha que usar a sua Chave Privada para configurar o Destino de Inflação. Isto é geralmente seguro, já que a Chave Privada é usada no site oficial da Fundação Stellar ou com a sua carteira. Caso você não confie em nós (o que faz sentido), é importante saber que a sua Chave Privada não é compartilhada conosco. Nós não precisamos dessa informação, e nem queremos, pois seria problemático para todos... Então, não tem nada que podemos fazer para danificar sua conta ou roubar seus Lumens.",
+  "naut-faq-protection": "Toda transação ou opção configurada no seu endereço precisa ser assinada com a Chave Privada para garantir que quem está realizando a ação é o real dono do endereço. Este processo é algo bom, pois garante maior segurança do seu dinheiro, impedindo que terceiros alterem o Destino de Inflação do seu endereço sem o seu consentimento.",
+
+
+
+  "naut-payments-history": "Histórico de Pagamentos Lumenaut",
+  "naut-payments-date": "Data (a/m/d)",
+  "naut-payments-total": "Pagamento Total",
+  "naut-payments-fee": "Taxa Total",
+  "naut-payments-operations": "Operações",
+  "naut-payments-rerouted": "Retransmitido",
+  "naut-payments-donated": "Doado",
+  "naut-payments-result": "Resultado",
+
+
+
+  "naut-export-payments": "Exportar Pagamentos Lumenaut",
+  "naut-export-export": "Para exportar os pagamentos enviados a uma Chave Pública específica, insira o endereço abaixo e pressione o botão \"Load\" (Carregar) para pegar os pagamentos diretamente da rede Stellar. Se desejar, você pode exportar um arquivo CSV com estes dados pressionando o botão \"Export CSV\" (Exportar CSV).",
+  "naut-export-30": "Últimos 30 Dias",
+  "naut-export-year": "Último Ano",
+  "naut-export-previous": "Ano Anterior",
+  "naut-export-date": "Data",
+  "naut-export-amount": "Quantidade",
+  "naut-export-input": "Nenhuma chave pública carregada...",
+
+
+
+  "naut-about-what": "O que é Lumenaut",
+  "naut-about-collective": "Lumenaut é um coletivo, entusiasmados pela tecnologia da rede <a href=\"https://www.stellar.org\">Stellar</a>.",
+  "naut-about-lumenaut": "O termo Lumenaut é um jogo de palavras baseado em \"lumen\" e \"naut\". A palavra \"lumen\" se refere à criptomoeda da rede Stellar, enquanto \"naut\" se refere a astronauta ou cosmonauta. Se você gosta de Stellar, e possui Lumens (XLM), então você é um lumenaut como nós.",
+
+  "naut-about-members": "Membros do Lumenaut",
+  "naut-about-list": "O coletivo é formado por usuários que se encontraram no <a href=\"https://reddit.com/r/stellar\">subreddit oficial</a> da Stellar. Até agora os colaboradores são (por ordem alfabética):",
+  "naut-about-you": "e você!",
+
+  "naut-about-help": "Como Ajudar o Lumenaut",
+  "naut-about-services": "Nós tentamos melhorar a comunidade e o ecossistema da rede Stellar. Não cobramos nada, mas ao mesmo tempo tentamos ofercer um serviço de alta qualidade. Se você quiser contribuir com a nossa causa e nos ajudar a pagar a hospedagem, vai nos ajudar a continuar oferecendo nossos serviços gratuitamente. Isto permitirá que você não precise usar outros fundos de inflação que cobram taxas, fazem apostas com a sua inflação, ou te mandam spam. Basicamente, nós somos a sua melhor opção, somos confiáveis e grátis.",
+
+  "naut-about-donate": "Se você quiser nos ajudar a alcançar pelo menos $50 dólares por mês para que todos os nossos serviços funcionem sem problemas, você pode doar Lumens (XLM) para nosso endereço de doações:",
+
+  "naut-about-contribute": "Se não puder doar, você ainda pode nos ajudar falando sobre nossos serviços para outras pessoas, fazendo postagens em seu blog, participar das nossas redes sociais, sugerir ideias, contribuir com o código... Ou simplesmente usar o nosso fundo de inflação. Quanto mais votos, mais seguros estamos de manter os requisitos mínimos para receber a inflação, mesmo que alguns usuários decidam nos deixar.",
+
+
+
+  "naut-footer-terms": "Termos",
+  "naut-footer-privacy": "Privacidade",
+  "naut-footer-brand": "Imprensa"
+}
