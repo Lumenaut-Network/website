@@ -3,121 +3,122 @@
 
 
 
-  "naut-nav-join": "Unisciti",
+  "naut-nav-join": "Partecipa",
   "naut-nav-faq": "FAQ",
   "naut-nav-payments": "Pagamenti",
-  "naut-nav-export": "Esportazione",
+  "naut-nav-export": "Esporta",
   "naut-nav-about": "Chi siamo",
-  "naut-nav-store": "Store",
+  "naut-nav-store": "Negozio",
 
 
 
   "naut-welcome-title": "Community Pool",
-  "naut-welcome-decription": "Pagamento 100%, nessuna commissione.<br>Dalla community, per la community.",
+  "naut-welcome-decription": "Payout al 100%, nessuna commissione.<br>Creata dalla community, per la community.",
   "naut-welcome-accounts": "Accounts",
   "naut-welcome-votes": "Voti",
   "naut-welcome-inflation": "Destinazione dell'inflazione",
-  "naut-welcome-join": "Unisciti Adesso",
+  "naut-welcome-join": "Partecipa adesso",
 
 
 
-  "naut-join-title": "Unisciti alla Community Pool",
+  "naut-join-title": "Partecipa alla community pool",
   "naut-join-tab-wallet": "1. Seleziona il tuo wallet",
   "naut-join-tab-cast": "2. Dai il tuo voto",
   "naut-join-tab-confirm": "3. Conferma il tuo voto",
-  "naut-join-wallet": "Prima di tutto devi trasferire i tuoi Lumens in un wallet controllato da te. Se tieni i tuoi Lumens in un exchange l'inflazione ricevuta potrebbe essere trattenuta dall'exchange.",
-  "naut-join-wallet-tutorial": "Seleziona il tutorial corrispondente al wallet che stai usando:",
+  "naut-join-wallet": "Prima di tutto, si devono trasferire i Lumen su di un wallet gestito direttamente da te. Se i Lumen vengono tenuti presso un exchange, l'exchange riceverà l'inflazione ma tu non riceverai il pagamento.",
+  "naut-join-wallet-tutorial": "Seleziona il tutorial corrispondente al tuo wallet:",
   "naut-join-universal": "Tutti i wallet",
 
-  "naut-cast-laboratory-01": "Apri lo <a href=\"https://www.stellar.org/laboratory/#?network=public\" target=\"_blank\">Stellar Laboratory</a> e modifica la rete selezionata in quella Pubblica:",
-  "naut-cast-laboratory-02": "Clicca il tab \"Transaction Builder\":",
-  "naut-cast-laboratory-03": "Incolla la tua Chiave Pubblica nel campo \"Source Account\":",
-  "naut-cast-laboratory-04": "Clicca il pulsante \"Fetch next sequence number for account starting with...\":",
-  "naut-cast-laboratory-05": "Scendi in basso nella pagina a \"Operation Type\", clicca e seleziona \"Set Options\":",
-  "naut-cast-laboratory-06": "Incolla il nostro indirizzo nel campo \"Inflation Destination\":",
-  "naut-cast-laboratory-07": "Scendi in basso nella pagina e clicca il pulsante \"Sign in Transaction Signer\":",
-  "naut-cast-laboratory-07n1": "Collega il tuo Ledger e apri l'applicazione Stellar;",
-  "naut-cast-laboratory-07n2": "Scendi in basso nella pagina e clicca il pulsante \"Sign with Default BIP path\":",
-  "naut-cast-laboratory-07n3": "Approva la transazione nel Ledger;",
-  "naut-cast-laboratory-08": "Verrai rediretto ad una nuova pagina, scendi in basso e incolla la tua Chiave Privata nel campo \"Add Signer\":",
-  "naut-cast-laboratory-09": "Scendi in basso nella pagina e clicca il pulsante \"Submit to Post Transaction endpoint\":",
-  "naut-cast-laboratory-10": "Verrai rediretto ad una nuova pagina, clicca il pulsante \"Submit\":",
-  "naut-cast-laboratory-11": "Riceverai una risposta in formato JSON a conferma del tuo voto. Hai finito!",
+  "naut-cast-laboratory-01": "Vai su <a href=\"https://www.stellar.org/laboratory/#?network=public\" target=\"_blank\">Stellar Laboratory</a> e passa al network pubblico:",
+  "naut-cast-laboratory-02": "Clicca sull'etichetta \"Transaction Builder\":",
+  "naut-cast-laboratory-03": "Incolla la tua Chiave Pubblica nell'area \"Source Account\":",
+  "naut-cast-laboratory-04": "Clicca sul bottone blu \"Fetch next sequence number for account starting with...\":",
+  "naut-cast-laboratory-05": "Scorri verso il basso la pagina fino a \"Operation Type\", clicca sul menù a tendina e seleziona \"Set Options\":",
+  "naut-cast-laboratory-06": "Incolla il nostro indirizzo nell'area \"Inflation Destination\":",
+  "naut-cast-laboratory-07": "Scorri verso il basso la pagina e premi il bottone blu \"Sign in Transaction Signer\":",
+  "naut-cast-laboratory-07n1": "Connetti il dispositivo Ledger e apri l'app di Stellar;",
+  "naut-cast-laboratory-07n2": "Scorri verso il basso e premi il bottone blu \"Sign with Default BIP path\":",
+  "naut-cast-laboratory-07n3": "Approva la transazione sul dispositivo;",
+  "naut-cast-laboratory-08": "Sarai reindirizzato ad una nuova pagina, scorri verso il basso e incolla la tua Secret Key nell'area \"Add Signer\":",
+  "naut-cast-laboratory-09": "Scorri verso il basso e premi il bottone blu \"Submit to Post Transaction endpoint\":",
+  "naut-cast-laboratory-10": "Sarai reindirizzato ad una nuova pagina, premi il bottone blu \"Submit\":",
+  "naut-cast-laboratory-11": "Riceverai una risposta JSON che confermerà il tuo voto. Fatto!",
 
-  "naut-confirm-set": "Inserisci la tua Chiave Pubblica qui sotto per verificare se la destinazione per l'inflazione è impostata per il tuo account.",
+  "naut-confirm-set": "Inserisci quì sotto la tua Chiave Pubblica e verifica se l'inflazione è stata impostata correttamente.",
   "naut-confirm-verify": "Verifica",
 
 
 
-  "naut-faq-what": "Cosa è l'inflazione",
-  "naut-faq-inflation": "L'inflazione è un meccanismo che distribuisce nuovi Lumens. Questo evento occorre settimanalmente al ritmo di 1% all'anno per chi possiede Lumen. L'inflazione è distribuita usando un sistema di votazione per cui coloro che detengono lo 0.05% del numero totale di voti sono qualificati per la ricezione dell'inflazione. Per saperne di più vi preghiamo di consultare la documentazione ufficiale al seguente indirizzo <a href=\"https://www.stellar.org/developers/guides/concepts/inflation.html\">https://www.stellar.org/developers/guides/concepts/inflation.html</a>.",
-  "naut-faq-pool": "Se il tuo indirizzo non raggiunge il numero di voti minimo l'unico modo per ricevere l'inflazione è partecipare ad una Inflation Pool. Una Inflation Pool è il modo in cui una community può adoperarsi per raggiungere collettivamente il numero di voti necessario. L'inflazione viene ricevuta dalla Pool e ridistribuita ai partecipanti. In questo modo chiunque può ricevere nuovi Lumen settimanalmente!",
+  "naut-faq-what": "Cos'è l'inflazione",
+  "naut-faq-inflation": "L'inflazione è un meccanismo nominale che distribuisce nuovi Lumen. La distribuzione avviene su base settimanale per i soli possessori di Lumen, ad un tasso dell'1% annuo. L'inflazione è distribuita utilizzando un sistema di voto per il quale solo gli account con almeno lo 0,05% di voti sono qualificati a ricevere questi nuovi Lumen. Per maggiori informazioni riguardo il processo d'inflazione, si consiglia di consultare la documentazione ufficiale su <a href=\"https://www.stellar.org/developers/guides/concepts/inflation.html\">Stellar.org</a>.",
+  "naut-faq-pool": "Se il tuo account non possiede il numero minimo di voti necessari, allora puoi ricevere l'inflazione partecipando ad una "Inflation Pool". L'"Inflation Pool" è un processo tramite il quale le persone possono raccogliere e votare assieme un unico account, con l'obbiettivo di raggiungere i voti minimi necessari. L'inflazione è pagata all'account rappresentate la pool e successivamente suddivisa tra tutti i partecipanti in base alla dimensione dell'account. Sostanzialmente, questo significa che se possiedi dei Lumen, allora riceverai ulteriori Lumen gratuiti tutte le settimane!",
 
-  "naut-faq-much": "Quanta inflazione riceverai",
-  "naut-faq-estimate": "Per sapere quanto riceverai con il prossimo pagamento inserisci qui sotto il quantitativo di XLM oppure la tua Chiave Pubblica e stimeremo quanto riceverai settimanalmente.",
-  "naut-faq-more": "Questo strumento non mantiene alcuna informazione, il calcolo è effettuato localmente nel tuo browser, non nei nostri server. <a href=\"https://github.com/Lumenaut-Network/website/tree/gh-pages\" target=\"_blank\">Più Informazioni</a>",
+  "naut-faq-much": "Quanta inflazione si riceve",
+  "naut-faq-estimate": "Per conoscere l'ammontare dell'inflazione che si riceverà con il prossimo pagamento, basterà inserire qui sotto o la quantità di XLM che si possiedono oppure la propria Chiave Pubblica.",
+  "naut-faq-more": "Le informazioni non vengono salvate nei nostri server, il calcolo viene effettuato localmente nel browser stesso. <a href=\"https://github.com/Lumenaut-Network/website/tree/gh-pages\" target=\"_blank\">Maggiori informazioni</a>",
 
-  "naut-faq-when": "Quando viene pagata l'inflazione",
-  "naut-faq-utc": "L'inflazione è solitamente distribuita dalla rete Stellar tutti i Martedì alle 00:00 UTC. Processare la distribuzione da quel momento in poi non richiede solitamente che qualche minuto da parte nostra. Potrai pertanto attenderti di ricevere il pagamento settimanale ogni Martedì poco dopo le ore 00:00 UTC",
+  "naut-faq-when": "Quando avviene il pagamento dell'inflazione",
+  "naut-faq-utc": "L'inflazione viene distribuita solitamente dal network di Stellar tutti i martedì alle ore 00:00 UTC. L'elaborazione del pagamento da parte nostra non richiede più di qualche minuto. Di conseguenza, si potrà ricevere l'inflazione tutti i martedì alle ore 00:00 UTC circa.",
 
-  "naut-faq-why": "Perché usare la Lumenaut Community Pool",
-  "naut-faq-fair": "Correntemente sono presenti altre Pool per l'inflazione, ma tutte richiedono il pagamento di commissioni oppure utilizzano l'inflazione per speculare. Vista la mancanza di una Pool affidabile ed equa abbiamo deciso di creare qualcosa di meglio in cui nessuna commissione sara' mai sottratta dal tuo pagamento. Riceverai l'intero quantitativo della parte che ti è dovuta per l'inflazione settimanale.",
+  "naut-faq-why": "Perché utilizzare la Lumenaut Community Pool",
+  "naut-faq-fair": "Attualmente, esistono anche altre pool che però fanno pagare commissioni o speculano con l'inflazione dei loro utenti. A causa di questa mancanza di fiducia o di una pool affidabile - abbiamo deciso di creare qualcosa di migliore dove non ci sono commissioni che vengono tolte ai pagamenti. Si riceverà quindi l'ammontate completo al 100%, derivante dalla quota di inflazione distribuita settimanalmente.",
 
   "naut-faq-voting": "Votare per la Lumenaut Community Pool",
-  "naut-faq-votes": "Il voto per l'inflazione è effettuato impostando l'opzione \"Inflation Destination\" verso il nostro indirizzo. Il tuo voto è equivalente al numero di Lumen che possiedi. Se ad esempio hai 100 XLM il tuo contributo sara' di 100 voti. Più Lumen possiedi, più lumen riceverai tramite l'inflazione. Per sapere come votare per la Lumenaut Community Pool segui i <a href=\"https://lumenaut.net/#join\">tutorial</a>.",
+  "naut-faq-votes": "La votazione viene effettuata impostando la destinazione dell'inflazione presso il nostro indirizzo. Il numero di voti è pari al numero di Lumen posseduti. Quindi, se si possiedono 100 XLM, si avranno 100 voti. Più Lumen si possiedono, e più Lumen si riceveranno attraverso l'inflazione. Per capire come votare per la Lumenaut Community Pool, si consiglia di consultare i <a href=\"https://lumenaut.net/#join\">tutorial</a>.",
 
-  "naut-faq-revote": "Ri-votare per la destinazione dell'inflazione",
-  "naut-faq-automatic": "La destinazione dell'inflazione va impostata una sola volta. L'opzione è direttamente collegata al tuo indirizzo, non ai tuoi Lumen, perciò e fintanto che il tuo indirizzo possiede dei Lumen riceverai la tua parte dal processo di inflazione. Il quantitativo di Lumen che riceverai sara' proporzionale al numero di Lumen presenti nel tuo account. Unirsi ad una Inflation Pool non cambia il fatto che potrai utilizzare il tuo indirizzo/wallet come fai normalmente, è tutto automatico!",
+  "naut-faq-revote": "Revote della destinazione dell'inflazione",
+  "naut-faq-automatic": "La destinazione dell'inflazione necessita di essere impostata solo una volta. L'opzione infatti è collegata all'account e non ai Lumen. Quindi, fintanto che l'account possiede dei Lumen, automaticamente si potrà ricevere la propria quota d'inflazione. Si ricorda nuovamente, che l'accredito sarà proporzionale al quantitativo di Lumen posseduti sull'account. Partecipare alla pool non cambia il fatto che si possa comunque utilizzare normalmente il proprio indirizzo/wallet. Tutto è automatico!",
 
   "naut-faq-safety": "Sicurezza della Lumenaut Community Pool",
-  "naut-faq-native": "La destinazione dell'inflazione è un component nativo della rete Stellar. è 100% sicura perchè la nostra Pool ha accesso unicamente alla tua Chiave Pubblica, che rappresenta l'indirizzo che hai utilizzato per votarci e che ci permette di sapere dove inviare il pagamento ogni settimana.",
+  "naut-faq-native": "La destinazione dell'inflazione è un componente nativo del network di Stellar. E' al 100% sicuro perché la nostra pool ha accesso solamente alla Chiave Pubblica, il quale è l'indirizzo utilizzato per votare per la nostra pool, in questo modo possiamo sapere chi sei e inviarti il pagamento dell'inflazione tutte le settimane.",
 
-  "naut-faq-secret": "Uso della Chiave Privata per impostare la destinazione dell'inflazione",
-  "naut-faq-key": "A seconda del wallet che utilizzi e il <a href=\"#join\">tutorial</a> che segui, potresti aver bisogno della tua Chiave Privata per impostare la destinazione dell'inflazione. Per la maggior parte l'operazione sara' sicura, poichè la Chiave Privata è utilizzata sul sito ufficiale di Stellar o all'interno del tuo wallet. Nel caso in cui tu non ti dovessi fidare (che è perfettamente comprensibile) è importante capire che la tua Chiave Privata non verra' MAI condivisa con noi. Non abbiamo bisogno della tua Chiave Privata e non vogliamo essere responsabili per conto tuo della stessa. In tutto questo processo non c'è nulla che può arrecarti danno o sottrarti fondi dal tuo account.",
-  "naut-faq-protection": "Ogni transazione o opzione che imposti per il tuo indirizzo deve essere firmata con la tua Chiave Privata al fine di verificare che la persona che sta effettuando l'operazione sia il legittimo proprietario dell'indirizzo. Questo processo è necessario per la sicurezza dell'account in tuo possesso, ed è una misura di sicurezza utilizzata al fine di bloccare terze parti dal poter cambiare la tua destinazione per l'inflazione senza il tuo consenso.",
+  "naut-faq-secret": "Utilizzo della Secret Key per impostare la destinazione dell'inflazione",
+  "naut-faq-key": "In base al wallet che si possiede e al <a href=\"#join\">tutorial</a> seguito, potresti aver bisogno di utilizzare la Secret Key per impostare la destinazione dell'inflazione. Si può essere sicuri nell'utilizzare la propria Secret Key solamente sul sito ufficiale di Stellar o sul proprio wallet. Nel caso si dovesse avere poca fiducia (il che è comprensibile), è importate notare che la Secret Key non è condivisa con noi. Noi non abbiamo bisogno e, soprattutto, non vogliamo conoscere la tua Secret Key perchè potrebbe essere un problema per entrambi... Quindi, non possedendola, non c'è nulla che possiamo fare per danneggiarti in qualche modo o sottrarti dei fondi.",
+  "naut-faq-protection": "Tutte le transazioni o le opzioni impostate per il tuo account, hanno bisogno di essere approvate attraverso l'utilizzo della Secret Key in modo da essere sicuri che la persona che sta eseguendo l'azione sia effettivamente il vero possessore dell'account. Questa verifica è una cosa buona e, come risultato, ha quello di aumentare ulteriormente la sicurezza dei propri fondi. Ci sono delle misure preventive per bloccare qualunque terza parte dal settare la destinazione dell'inflazione dell'account senza il proprio consenso.",
 
 
 
-  "naut-payments-history": "Storico Pagamenti",
-  "naut-payments-date": "Data (AAAA/MM/GG)",
-  "naut-payments-total": "Totale Pagato",
+  "naut-payments-history": "Cronologia dei pagamenti di Lumenaut",
+  "naut-payments-date": "Data (a/m/g)",
+  "naut-payments-total": "Totale Pagamenti",
   "naut-payments-fee": "Totale Commissioni",
   "naut-payments-operations": "Operazioni",
-  "naut-payments-rerouted": "Redirezioni",
-  "naut-payments-donated": "Donazioni",
+  "naut-payments-rerouted": "Deviati",
+  "naut-payments-donated": "Donati",
   "naut-payments-result": "Risultato",
 
 
 
-  "naut-export-payments": "Esportazione Pagamenti",
-  "naut-export-export": "Questa operazione esportera' i pagamenti inviati da Lumenaut ad una Chiave Pubblica. Inserisci la Chiave Pubblica qui sotto e premi il pulsante \"Carica\" per ottenere i dati di pagamento direttamente dalla rete. Se desideri potrai esportare un file CSV con tutte le transazioni premento sul tasto \"Esporta CSV\"",
-  "naut-export-30": "Ultime 30 Giorni",
-  "naut-export-year": "Ultimo Anno",
-  "naut-export-previous": "Anno Precedente",
+  "naut-export-payments": "Esportazione dei pagamenti di Lumenaut",
+  "naut-export-export": "In questa sezione, si possono esportare i pagamenti inviati da Lumenaut ad una specifica Chiave Pubblica. Per ricevere le informazioni riguardanti i pagamenti direttamente dal network di Stellar, inserisci la Chiave Pubblica qui in basso e clicca su \"Load\". Se lo desideri, cliccando su \"Export CSV\", si possono esportare in un file CSV tutte le informazioni riguardati i pagamenti.",
+  "naut-export-30": "Ultimi 30 giorni",
+  "naut-export-year": "Ultimo anno",
+  "naut-export-previous": "Anno precedente",
+  "naut-export-more": "Le informazioni non vengono salvate nei nostri server, il calcolo viene effettuato localmente nel browser stesso. <a href=\"https://github.com/Lumenaut-Network/website/tree/gh-pages\" target=\"_blank\">Maggiori informazioni</a>",
   "naut-export-date": "Data",
-  "naut-export-amount": "Valore",
-  "naut-export-input": "Nessuna Chiave Pubblica caricata...",
+  "naut-export-amount": "Quantità",
+  "naut-export-input": "Nessuna Chiave Pubblica inserita...",
 
 
 
   "naut-about-what": "Cosa è Lumenaut",
-  "naut-about-collective": "Lumenaut è una collettivita' entusiasta della tecnologia <a href=\"https://www.stellar.org\">Stellar</a>.",
-  "naut-about-lumenaut": "Lumenaut è un gioco di parole basato su \"lumen\" e \"naut\". La parola lumen si riferisce al crypto-asset della rete Stellar, chiamato Lumen, e la parola \"naut\" si riferisce ad astronauta o cosmonauta. Se segui gli sviluppo di Stellar e possiedi dei Lumen sei un Lumenaut, come noi.",
+  "naut-about-collective": "Lumenaut è un network collettivo, entusiasta per la tecnologia di <a href=\"https://www.stellar.org\">Stellar</a>.",
+  "naut-about-lumenaut": "Lumenaut deriva dall'unione di due parole, \"lumen\" e \"naut\". La parola \"lumen\" si riferisce al crypto-asset utilizzato all'interno del network di Stellar chiamato Lumen e la parola \"naut\" si riferisce alla figura di astronauta o cosmonauta. Se siete appassionati di Stellar e possedere Lumen (XLM), allora siete dei lumenaut, proprio come noi.",
 
   "naut-about-members": "Membri di Lumenaut",
-  "naut-about-list": "La collettivita' è stata fondata da utenti che si sono incontrati nello <a href=\"https://reddit.com/r/stellar\">Stellar subreddit</a>. Ad oggi hanno contribuito a questo progetto (in ordine alfabetico):",
-  "naut-about-you": "e tu!",
+  "naut-about-list": "Il collettivo è formato da utenti che si sono incontrati nella subreddit ufficiale di <a href=\"https://reddit.com/r/stellar\">Stellar</a>. Al momento i collaboratori sono (in ordine alfabetico):",
+  "naut-about-you": "e te!",
 
   "naut-about-help": "Come aiutare Lumenaut",
-  "naut-about-services": "Tentiamo costantemente di migliorare la community intorno a Stellar ed il suo ecosistema. Non chiediamo nulla per i nostri servizi e cerchiamo di offrire un servizio di alta qualita' a costo zero. Se vuoi contribuire alla nostra causa ed aiutarci a pagare le spese di gestione dei server ci saresti di grande aiuto nel continuare ad offrire i nostri servizi gratuitamente. La nostra esistenza ti permette di non dover usare altre Pool che trattengono commissioni dalla tua inflazioni, speculano sulla tua inflazione o ti inviano spam. In poche parole siamo la tua migliore opzione, affidabile e gratuita.",
+  "naut-about-services": "Stiamo provando a migliorare la community di Stellar ed il suo ecosistema. Noi non chiediamo nulla per il nostro servizio ma proviamo a fornire un servizio di elevata qualità a costo zero. Se vorrai contribuire economicamente alla nostra causa, allora ci aiuterai a pagare l'infrastruttura ed a permetterci di poter offrire il servizio gratuitamente. Questo ti permetterà di evitare di utilizzare altre pool che fanno pagare commissioni o speculare sulla tua inflazione. Sostanzialmente, noi siamo la migliore opzione in circolazione, siamo affidabili e gratuiti.",
 
-  "naut-about-donate": "Se vuoi aiutarci a raggiungere almeno $50 al mese per il pagamento dei costi che sosteniamo puoi donare lumen al nostro indirizzo per le donazioni qui sotto.",
+  "naut-about-donate": "Se vuoi aiutarci a raggiungere l'obbiettivo mensile di raccolta di almeno 50$ al fine di permettere un funzionamento ottimale del servizio, puoi donare alcuni Lumen (XLM) al nostro indirizzo di donazione mostrato qui sotto.",
 
-  "naut-about-contribute": "Se non puoi donare puoi sempre aiutarci spargendo la voce sui nostri servizi ad altre persona, scrivere degli articoli nel tuo blog, unirti alle nostre piattaforme media, suggerire idee, contribuire codice... o semplicemente usare la nostra Pool, più voti abbiamo più forti siamo, perchè se alcuni utenti decidono di lasciare la Pool possiamo così mantenere il minimo richiesto per continuare a ricevere l'inflazione.",
+  "naut-about-contribute": "Se non puoi donare, allora potresti aiutarci condividendo con altre persone le informazioni di questo servizio, facendo magari post su blog, condividendo il nostro sito, partecipando alla nostra community, suggerendo idee o magari contribuendo aiutando a programmare. Oppure, semplicemente utilizzando la nostra pool, in quanto più voti riceveremo e più forti diventeremo, perchè se qualche utente decidesse di lasciare la pool potremmo o meno, rispettare ancora i requisiti minimi per ricevere l'inflazione.",
 
 
 
-  "naut-footer-terms": "Termini",
+  "naut-footer-terms": "Condizioni generali",
   "naut-footer-privacy": "Privacy",
-  "naut-footer-brand": "Stampa"
+  "naut-footer-brand": "Kit stampa"
 }
