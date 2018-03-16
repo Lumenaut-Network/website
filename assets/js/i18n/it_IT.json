@@ -44,7 +44,7 @@
   "naut-cast-laboratory-10": "Verrai rediretto ad una nuova pagina, clicca il pulsante \"Submit\":",
   "naut-cast-laboratory-11": "Riceverai una risposta in formato JSON a conferma del tuo voto. Hai finito!",
 
-  "naut-confirm-set": "Inserisci la tua <strong>Chiave Pubblica</strong> qui sotto per verificare se la destinazione per l'inflazione è impostata per il tuo account.",
+  "naut-confirm-set": "Inserisci la tua Chiave Pubblica qui sotto per verificare se la destinazione per l'inflazione è impostata per il tuo account.",
   "naut-confirm-verify": "Verifica",
 
 
@@ -54,7 +54,7 @@
   "naut-faq-pool": "Se il tuo indirizzo non raggiunge il numero di voti minimo l'unico modo per ricevere l'inflazione è partecipare ad una Inflation Pool. Una Inflation Pool è il modo in cui una community può adoperarsi per raggiungere collettivamente il numero di voti necessario. L'inflazione viene ricevuta dalla Pool e ridistribuita ai partecipanti. In questo modo chiunque può ricevere nuovi Lumen settimanalmente!",
 
   "naut-faq-much": "Quanta inflazione riceverai",
-  "naut-faq-estimate": "Per sapere quanto riceverai con il prossimo pagamento inserisci qui sotto il quantitativo di XLM oppure la tua <strong>Chiave Pubblica</strong> e stimeremo quanto riceverai settimanalmente.",
+  "naut-faq-estimate": "Per sapere quanto riceverai con il prossimo pagamento inserisci qui sotto il quantitativo di XLM oppure la tua Chiave Pubblica e stimeremo quanto riceverai settimanalmente.",
   "naut-faq-more": "Questo strumento non mantiene alcuna informazione, il calcolo è effettuato localmente nel tuo browser, non nei nostri server. <a href=\"https://github.com/Lumenaut-Network/website/tree/gh-pages\" target=\"_blank\">Più Informazioni</a>",
 
   "naut-faq-when": "Quando viene pagata l'inflazione",
@@ -64,7 +64,7 @@
   "naut-faq-fair": "Correntemente sono presenti altre Pool per l'inflazione, ma tutte richiedono il pagamento di commissioni oppure utilizzano l'inflazione per speculare. Vista la mancanza di una Pool affidabile ed equa abbiamo deciso di creare qualcosa di meglio in cui nessuna commissione sara' mai sottratta dal tuo pagamento. Riceverai l'intero quantitativo della parte che ti è dovuta per l'inflazione settimanale.",
 
   "naut-faq-voting": "Votare per la Lumenaut Community Pool",
-  "naut-faq-votes": "Il voto per l'inflazione è effettuato impostando l'opzione \"Inflation Destination\" verso il nostro indirizzo. Il tuo voto è equivalente al numero di Lumen che possiedi. Se ad esempio hai 100 XLM il tuo contributo sara' di 100 voti. Più Lumen possiedi, più lumen riceverai tramite l'inflazione. Per sapere come votare per la Lumenaut Community Pool segui i tutorial che puoi trovare <a href=\"https://lumenaut.net/#join\">qui</a>.",
+  "naut-faq-votes": "Il voto per l'inflazione è effettuato impostando l'opzione \"Inflation Destination\" verso il nostro indirizzo. Il tuo voto è equivalente al numero di Lumen che possiedi. Se ad esempio hai 100 XLM il tuo contributo sara' di 100 voti. Più Lumen possiedi, più lumen riceverai tramite l'inflazione. Per sapere come votare per la Lumenaut Community Pool segui i <a href=\"https://lumenaut.net/#join\">tutorial</a>.",
 
   "naut-faq-revote": "Ri-votare per la destinazione dell'inflazione",
   "naut-faq-automatic": "La destinazione dell'inflazione va impostata una sola volta. L'opzione è direttamente collegata al tuo indirizzo, non ai tuoi Lumen, perciò e fintanto che il tuo indirizzo possiede dei Lumen riceverai la tua parte dal processo di inflazione. Il quantitativo di Lumen che riceverai sara' proporzionale al numero di Lumen presenti nel tuo account. Unirsi ad una Inflation Pool non cambia il fatto che potrai utilizzare il tuo indirizzo/wallet come fai normalmente, è tutto automatico!",
