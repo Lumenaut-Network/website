@@ -188,15 +188,15 @@ $(document).ready(() => {
         translateInto('es_ES');
     });
 
-    $('.lang .en').click(function () {
+    $('.lang .pt').click(function () {
         translateInto('pt_PT');
     });
 
-    $('.lang .en').click(function () {
+    $('.lang .br').click(function () {
         translateInto('pt_BR');
     });
 
-    $('.lang .fr').click(function () {
+    $('.lang .it').click(function () {
         translateInto('it_IT');
     });
 
@@ -204,11 +204,11 @@ $(document).ready(() => {
         translateInto('fr_FR');
     });
 
-    $('.lang .fr').click(function () {
+    $('.lang .de').click(function () {
         translateInto('de_DE');
     });
 
-    $('.lang .fr').click(function () {
+    $('.lang .ru').click(function () {
         translateInto('ru_RU');
     });
 });
