@@ -94,7 +94,6 @@
   "naut-export-30": "Últimos 30 días",
   "naut-export-year": "Año pasado",
   "naut-export-previous": "Año anterior",
-  "naut-export-more": "No almacenamos nada en nuestro servidor, el cálculo se hace localmente en su navegador. <a href=\"https://github.com/Lumenaut-Network/lumenaut-payments-export\" target=\"_blank\">Más Información</a>",
   "naut-export-date": "Fecha",
   "naut-export-amount": "Cantidad",
   "naut-export-input": "Sin clave pública cargada...",
