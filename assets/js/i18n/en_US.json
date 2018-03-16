@@ -44,7 +44,7 @@
   "naut-cast-laboratory-10": "You will be redirected to a new page, click the blue button \"Submit\":",
   "naut-cast-laboratory-11": "You will receive a JSON response confirming your vote. Done!",
 
-  "naut-confirm-set": "Insert your <strong>Public Key</strong> below and check if the inflation destination is set.",
+  "naut-confirm-set": "Insert your Public Key below and check if the inflation destination is set.",
   "naut-confirm-verify": "Verify",
 
 
@@ -54,7 +54,7 @@
   "naut-faq-pool": "If your address does not meet the minimum required votes, then you can still receive the inflation by joining an inflation pool. The inflation pool is a way the community can gather and vote together to reach the minimum required votes. The inflation is paid to the pool and then divided between the members based on account size. Basically, it means that if you're a holder then you receive free Lumens every week!",
 
   "naut-faq-much": "How Much Inflation You Receive",
-  "naut-faq-estimate": "To know how much you will receive in the next inflation payment, enter your XLM amount or <strong>Public Key</strong> below for the estimate.",
+  "naut-faq-estimate": "To know how much you will receive in the next inflation payment, enter your XLM amount or Public Key below for the estimate.",
   "naut-faq-more": "We don't store anything on our server, calculation is done locally on your browser. <a href=\"https://github.com/Lumenaut-Network/website/tree/gh-pages\" target=\"_blank\">More Info</a>",
 
   "naut-faq-when": "When Is The Inflation Payment",
@@ -64,7 +64,7 @@
   "naut-faq-fair": "Currently, there are other pools but they charge fees or gamble with the inflation payouts of their users. Due to the lack of a trustworthy or fair pool - we decided to create something better where no fees will be subtracted from your payment. You will receive the full and fair amount of your share of the weekly inflation distribution.",
 
   "naut-faq-voting": "Voting To Lumenaut Community Pool",
-  "naut-faq-votes": "Voting is done by setting the customizable option of Inflation Destination to our address. Your vote is equal to the number of Lumens you hold. So, if you have 100 XLM then you have 100 votes. The more Lumens you hold - the more Lumens you receive via inflation. To learn how to vote for the Lumenaut Community Pool please check the tutorials <a href=\"https://lumenaut.net/#join\">here</a>.",
+  "naut-faq-votes": "Voting is done by setting the customizable option of Inflation Destination to our address. Your vote is equal to the number of Lumens you hold. So, if you have 100 XLM then you have 100 votes. The more Lumens you hold - the more Lumens you receive via inflation. To learn how to vote for the Lumenaut Community Pool please check the <a href=\"https://lumenaut.net/#join\">tutorials</a>.",
 
   "naut-faq-revote": "Revote of Inflation Destination",
   "naut-faq-automatic": "Your inflation destination only needs to be set once. The option is tied to your address, not your tokens. So, as long as your address has the Lumens, you will automatically receive your share of the inflation process. Again, please note that this will be proportionate to the amount of your holdings. Joining an inflation pool does not change the fact that you can use your address/wallet like you normally would. Everything is automatic!",
