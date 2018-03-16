@@ -184,12 +184,32 @@ $(document).ready(() => {
         translateInto('en_US');
     });
 
+    $('.lang .es').click(function () {
+        translateInto('es_ES');
+    });
+
+    $('.lang .en').click(function () {
+        translateInto('pt_PT');
+    });
+
+    $('.lang .en').click(function () {
+        translateInto('pt_BR');
+    });
+
+    $('.lang .fr').click(function () {
+        translateInto('it_IT');
+    });
+
     $('.lang .fr').click(function () {
         translateInto('fr_FR');
     });
 
-    $('.lang .es').click(function () {
-        translateInto('es_ES');
+    $('.lang .fr').click(function () {
+        translateInto('de_DE');
+    });
+
+    $('.lang .fr').click(function () {
+        translateInto('ru_RU');
     });
 });
 
