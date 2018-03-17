@@ -179,7 +179,7 @@ $(document).ready(() => {
 		$.get({
 			url: './assets/js/i18n/' + lang + '.json'
 		}).then((data) => {
-			const languageFile = JSON.parse(data)
+			const languageFile = JSON.parse(data);
 			translate = i18n.create({
 				values: languageFile
 			});
