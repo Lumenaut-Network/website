@@ -152,6 +152,20 @@ $(document).ready(function() {
 
 
 
+// close button/key
+$(document).on('click', 'section > .close', function(e) {
+	e.preventDefault();
+	document.location.hash = "";
+});
+$(document).keypress(function(e) {
+	var keycode = e.keyCode || e.which;
+	if(keycode == '27') {
+		document.location.hash = "";
+	}
+});
+
+
+
 // i18n
 $(document).ready(() => {
 	var translate = null;
@@ -182,36 +196,20 @@ $(document).ready(() => {
 		});
 	}
 
-	$('.lang .en').click(function () {
+	$('.lang .en').click(function() {
 		translateInto('en_US');
 	});
 
-	$('.lang .es').click(function () {
+	$('.lang .es').click(function() {
 		translateInto('es_ES');
 	});
 
-	$('.lang .pt').click(function () {
-		translateInto('pt_PT');
-	});
-
-	$('.lang .br').click(function () {
-		translateInto('pt_BR');
-	});
-
-	$('.lang .it').click(function () {
+	$('.lang .it').click(function() {
 		translateInto('it_IT');
 	});
 
-	$('.lang .fr').click(function () {
-		translateInto('fr_FR');
-	});
-
-	$('.lang .de').click(function () {
-		translateInto('de_DE');
-	});
-
-	$('.lang .ru').click(function () {
-		translateInto('ru_RU');
+	$('.lang .br').click(function() {
+		translateInto('pt_BR');
 	});
 });
 
@@ -284,19 +282,6 @@ $(document).ready(function() {
     };
 });
 
-
-
-// close button/key
-$(document).on('click', 'section > .close', function(e) {
-	e.preventDefault();
-	document.location.hash = "";
-});
-$(document).keypress(function(e) {
-	var keycode = e.keyCode || e.which;
-	if(keycode == '27') {
-		document.location.hash = "";
-	}
-});
 
 
 // Setup & Instructions
