@@ -94,7 +94,6 @@
   "naut-export-30": "Ultimi 30 giorni",
   "naut-export-year": "Ultimo anno",
   "naut-export-previous": "Anno precedente",
-  "naut-export-more": "Le informazioni non vengono salvate nei nostri server, il calcolo viene effettuato localmente nel browser stesso. <a href=\"https://github.com/Lumenaut-Network/website/tree/gh-pages\" target=\"_blank\">Maggiori informazioni</a>",
   "naut-export-date": "Data",
   "naut-export-amount": "Quantità",
   "naut-export-input": "Nessuna Chiave Pubblica inserita...",
