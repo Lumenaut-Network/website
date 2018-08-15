@@ -20,7 +20,7 @@ body {
 
 a {
 	font-weight: bold;
-	color: #4072A1; /* blue */
+	color: #5676B1; /* blue */
 	transition: color .3s cubic-bezier(0,0,0,1);
 	}
 
@@ -104,7 +104,7 @@ button,
 	color: #fff;
 	border-radius: 0.5vmin;
 	border: none;
-	background-color: #4072A1; /* blue */
+	background-color: #5676B1; /* blue */
 	box-shadow: rgba(51,51,94,.1) 0 3px 6px 0, rgba(0,0,9,.15) 0 2px 2px 0;
 	transition: all .3s cubic-bezier(0,0,0,1);
 	}
@@ -260,7 +260,7 @@ body > header nav > a {
 .lang > li:hover  {
 	opacity: 1;
 	cursor: s-resize;
-	background-color: #4072A1; /* blue */
+	background-color: #5676B1; /* blue */
 	border-top-left-radius: 0.5vmin;
 	border-top-right-radius: 0.5vmin;
 	}
@@ -275,7 +275,7 @@ body > header nav > a {
 	-webkit-transform: translateY(100%);
 	transform: translateY(100%);
 	text-align: right;
-	background-color: #4072A1; /* blue */
+	background-color: #5676B1; /* blue */
 	border-top-left-radius: 0.5vmin;
 	border-bottom-left-radius: 0.5vmin;
 	border-bottom-right-radius: 0.5vmin;
