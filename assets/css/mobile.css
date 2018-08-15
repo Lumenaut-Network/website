@@ -3,7 +3,7 @@ only screen and (max-width: 1024px),
 only screen and (max-device-width: 1024px) {
 
 	h1 a img {
-		content: url('../img/logo.svg');
+		content: url('../img/logomark.svg');
 		}
 
 	main > section:not(#welcome):target {
