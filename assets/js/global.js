@@ -42,7 +42,7 @@ $(document).ready(function(){
 		'paging':   false,
 		'info':     false,
 		'order': [[ 0, "desc" ]],
-		'ajax': 'https://lumenaut-network.github.io/website/payments/arrays.txt',
+		'ajax': 'https://lumenaut-network.github.io/website/payments.txt',
 		'columnDefs': [ {
 			'targets': -1,
 			'data': null,
@@ -52,7 +52,7 @@ $(document).ready(function(){
 
 	table.on( 'click', '.result', function() {
 		var data = table.row($(this).parents('tr')).data();
-		window.open(data[ 6 ], '_blank');
+		window.open(data[ 7 ], '_blank');
 	});
 
 
