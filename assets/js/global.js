@@ -52,7 +52,7 @@ $(document).ready(function(){
 
 	table.on( 'click', '.result', function() {
 		var data = table.row($(this).parents('tr')).data();
-		window.open(data[ 7 ], '_blank');
+		window.open(data[ 6 ], '_blank');
 	});
 
 
