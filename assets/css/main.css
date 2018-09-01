@@ -137,6 +137,23 @@ button:disabled,
 	transition: none;
 	}
 
+.loading {
+	background-color: rgba(0,0,0,.1);
+	font-size: 75%;
+	padding: 0.5vmin 1vmin;
+	border-radius: 0.3vmin;
+	animation-name: loading;
+	animation-duration: .6s;
+	animation-iteration-count: infinite;
+	animation-timing-function: cubic-bezier(0,0,0,1);
+	}
+
+@keyframes loading {
+	0% { color: transparent; }
+	50% { color: inherit; }
+	100% { color: transparent; }
+	}
+
 
 
 /*
