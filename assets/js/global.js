@@ -239,7 +239,7 @@ $(document).ready(function() {
 	const POOL_ADDRESS = 'GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT';
 	const $addrInput = $('#join input');
 	const $verifyButton = $('#join button');
-	const $verifyResult = $('#confirm');
+	const $verifyResult = $('#confirmation');
 
 	const server = new StellarSdk.Server('https://horizon.stellar.org');
 	StellarSdk.Network.usePublicNetwork();
