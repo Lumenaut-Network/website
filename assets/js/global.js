@@ -42,7 +42,7 @@ $(document).ready(function(){
 		'paging':   false,
 		'info':     false,
 		'order': [[ 0, "desc" ]],
-		'ajax': 'https://lumenaut-network.github.io/website/payments.txt',
+		'ajax': 'https://lumenaut-network.github.io/website/payments/arrays.txt',
 		'columnDefs': [ {
 			'targets': -1,
 			'data': null,
@@ -152,69 +152,6 @@ $(document).ready(function() {
 
 
 
-// close button/key
-$(document).on('click', 'section > .close', function(e) {
-	e.preventDefault();
-	document.location.hash = "";
-});
-$(document).keypress(function(e) {
-	var keycode = e.keyCode || e.which;
-	if(keycode == '27') {
-		document.location.hash = "";
-	}
-});
-
-
-
-// i18n
-$(document).ready(() => {
-	var translate = null;
-
-	// Method to translate into the specified language
-	function translateInto(lang) {
-		// Getting all the nodes having a 'data-i18n' attribute
-		const nodes = document.querySelectorAll('[data-i18n]');
-
-		// Fetching the matched JSON translation file
-		$.get({
-			url: './assets/js/i18n/' + lang + '.json'
-		}).then((data) => {
-			const languageFile = JSON.parse(data);
-			translate = i18n.create({
-				values: languageFile
-			});
-		
-			// Looping through the nodes to replace the [data-i18n]
-			// attribute string into the translation
-			for (const node of nodes) {
-				const key = node.attributes['data-i18n'].value;
-				const translation = translate(key); // to replace
-				if (translation) {
-					node.innerHTML = translation;
-				}
-			}
-		});
-	}
-
-	$('.lang .en').click(function() {
-		translateInto('en_US');
-	});
-
-	$('.lang .es').click(function() {
-		translateInto('es_ES');
-	});
-
-	$('.lang .it').click(function() {
-		translateInto('it_IT');
-	});
-
-	$('.lang .br').click(function() {
-		translateInto('pt_BR');
-	});
-});
-
-
-
 // price ticker
 $(document).ready(function() {
 
@@ -284,39 +221,28 @@ $(document).ready(function() {
 
 
 
+// close button/key
+$(document).on('click', 'section > .close', function(e) {
+	e.preventDefault();
+	document.location.hash = "";
+});
+$(document).keypress(function(e) {
+	var keycode = e.keyCode || e.which;
+	if(keycode == '27') {
+		document.location.hash = "";
+	}
+});
+
+
 // Setup & Instructions
 $(document).ready(function() {
 	const POOL_ADDRESS = 'GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT';
-	const $castVoteTab = $('#cast');
-	const $instructions = $('.instructions');
-	const $walletLogos = $('.wallet-logos');
-	const $addrInput = $('#confirm input');
-	const $verifyButton = $('#confirm button');
-	const $verifyResult = $('#confirm-result');
-
-	const instructionsState = {};
-	const wallet_to_custom_instructions = {
-		'stellar-desktop-client': 'stellar-desktop-client',
-		'ledger': 'ledger-nano'
-	};
+	const $addrInput = $('#join input');
+	const $verifyButton = $('#join button');
+	const $verifyResult = $('#confirm');
 
 	const server = new StellarSdk.Server('https://horizon.stellar.org');
 	StellarSdk.Network.usePublicNetwork();
-
-	// listen for wallet logo clicks
-	$walletLogos.click((e) => {
-		e.preventDefault();
-
-		const selected_wallet = e.target.dataset['wallet'];
-		instructionsState['selected_wallet'] = selected_wallet;
-		instructionsState['instructions'] = wallet_to_custom_instructions[selected_wallet] || 'stellar-laboratory-instructions';
-		console.log(selected_wallet, instructionsState.instructions);
-
-		$instructions.hide();
-		$('#' + instructionsState.instructions).show();
-
-		$castVoteTab.click();
-	});
 
 	$addrInput.keyup((e) => {
 		e.preventDefault();
