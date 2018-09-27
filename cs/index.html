@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+	<meta charset="utf-8">
+	<title>Lumenaut Pool</title>
+	<meta name="description" content="Lumenaut Pool. 100% payout, no fees. By the community, for the community.">
+	<link rel="stylesheet" href="assets/css/base.min.css">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="assets/css/mobile.css">
+	<link rel="shortcut icon" href="assets/img/favicon.ico">
+</head>
+<body>
+	<header>
+		<h1><a href="https://lumenaut.net"><img src="assets/img/logo.svg" alt="Lumenaut logo"></a></h1>
+
+		<aside>
+			<div><span class="op3">XLM/</span><span class="op5">BTC</span> <span id="price_XLM-BTC"></span> <span id="change24HourPct_XLM-BTC"></span></div>
+			<div><span class="op3">XLM/</span><span class="op5">USD</span> <span id="price_XLM-USD"></span> <span id="change24HourPct_XLM-USD"></span></div>
+		</aside>
+
+		<nav>
+			<a href="#join">Join</a>
+			<a href="#faq">FAQ</a>
+			<a href="#payments">Payments</a>
+			<a href="#export">Export</a>
+			<a href="#about">About</a>
+
+		</nav>
+	</header>
+
+	<main>
+		<section id="welcome">
+
+			<h2>Lumenaut Pool</h2>
+			<p>100% payout, no fees.<br>By the community, for the community.</p>
+
+			<mark>Trusted by <span id="accounts-contributing"><span class="loading">loading...</span></span> accounts with <span id="total-votes"><span class="loading">loading...</span></span> votes</mark>
+
+			<h3>Inflation Destination</h3>
+
+			<address class="addr addrInflation">
+				<a data-clipboard-text="GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT">GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT</a>
+			</address>
+			<a href="#join" class="btn">Join Now</a>
+		</section>
+
+		<section id="join">
+			<h2>Join Lumenaut Pool</h2>
+
+			<p>First of all, you need to transfer your Lumens to a wallet controlled by you. If you keep your Lumens in an exchange then the exchange may receive the inflation and will not pay you.</p>
+
+			<p>A simple way to vote for Lumenaut is to register an account with <a href="https://stellarx.com" target="_blank">StellarX</a> which is an official GUI for the Stellar distributed exchange, an ineherit exchange at protocol level. StellarX is using Lumenaut for the distribution of the inflation to their users, by using StellarX you can skip all steps shown bellow, which may result in a simple way to vote for our pool.</p>
+
+			<h3>Vote using Stellar Laboratory</h3>
+			<ol>
+				<li>
+					<span>Go to <a href="https://www.stellar.org/laboratory/#?network=public" target="_blank">Stellar Laboratory</a> and switch to public network:</span>
+					<img src="assets/img/laboratory01.png" alt="Stellar Laboratory instructions">
+				</li>
+				<li>
+					<span>Click in the tab "Transaction Builder":</span>
+					<img src="assets/img/laboratory02.png" alt="Stellar Laboratory instructions">
+				</li>
+				<li>
+					<span>Paste your Public Key in "Source Account":</span>
+					<img src="assets/img/laboratory03.png" alt="Stellar Laboratory instructions">
+				</li>
+				<li>
+					<span>Click the blue button "Fetch next sequence number for account starting with...":</span>
+					<img src="assets/img/laboratory04.png" alt="Stellar Laboratory instructions">
+				</li>
+				<li>
+					<span>Scroll down the page to "Operation Type", click the dropdown menu and choose "Set Options":</span>
+					<img src="assets/img/laboratory05.png" alt="Stellar Laboratory instructions">
+				</li>
+				<li>
+					<span>Paste our address in the "Inflation Destination":</span>
+					<address class="addr addrInflation">
+						<a data-clipboard-text="GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT">GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT</a>
+					</address>
+					<img src="assets/img/laboratory06.png" alt="Stellar Laboratory instructions">
+				</li>
+				<li>
+					<span>Scroll down the page and click the blue button "Sign in Transaction Signer":</span>
+					<img src="assets/img/laboratory07.png" alt="Stellar Laboratory instructions">
+				</li>
+				<li>
+					<span>You will be redirected to a new page, scroll down and paste your Secret Key in "Add Signer". Alternativelly, if you use an hardware wallet then connect the device, open the Stellar app, click the blue button "Sign with Default BIP path" and approve the transaction on the device;</span>
+					<img src="assets/img/laboratory08.png" alt="Stellar Laboratory instructions">
+				</li>
+				<li>
+					<span>Scroll down and click the blue button "Submit to Post Transaction endpoint":</span>
+					<img src="assets/img/laboratory09.png" alt="Stellar Laboratory instructions">
+				</li>
+				<li>
+					<span>You will be redirected to a new page, click the blue button "Submit":</span>
+					<img src="assets/img/laboratory10.png" alt="Stellar Laboratory instructions">
+				</li>
+				<li>
+					<span>You will receive a JSON response confirming your vote. Done!</span>
+				</li>
+			</ol>
+
+			<h3>Confirm Your Vote</h3>
+			
+			<p>Insert your Public Key below and check if the inflation destination is set.</p>
+			<input type="text" placeholder="input your Public Key here...">
+			<button type="button">Verify</button>
+			<span id="confirmation"></span>
+
+			<a href="" class="close"><svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M314.523,256l192.268,-192.268c6.945,-6.946 6.945,-18.177 0,-25.123l-33.4,-33.4c-6.946,-6.945 -18.177,-6.945 -25.123,0l-192.268,192.268l-192.268,-192.268c-6.946,-6.945 -18.177,-6.945 -25.123,0l-33.4,33.4c-6.945,6.946 -6.945,18.177 0,25.123l192.268,192.268l-192.268,192.268c-6.945,6.946 -6.945,18.177 0,25.123l33.4,33.4c6.946,6.945 18.177,6.945 25.123,0l192.268,-192.268l192.268,192.268c6.946,6.945 18.177,6.945 25.123,0l33.4,-33.4c6.945,-6.946 6.945,-18.177 0,-25.123l-192.268,-192.268Z"/></svg></a>
+        </section>
+
+		<section id="faq">
+			<h2>What Is Inflation</h2>
+			<p>Inflation is a nominal mechanism that distributes new Lumens. This event occurs on a weekly basis, at a rate of 1% per year to existing holders. The inflation is distributed using a voting system whereby those with 0.05% of the total votes qualify for the new Lumens. To read more about the inflation process, please consult the official documentation on <a href="https://www.stellar.org/developers/guides/concepts/inflation.html">Stellar.org</a>.</p>
+
+			<p>If your address doesn't meet the minimum required votes, then you can still receive the inflation by joining an inflation pool. The inflation pool is a way the community can gather and vote together to reach the minimum required votes. The inflation is paid to the pool and then divided between the members based on account size. Basically, it means that if you're a holder then you receive free Lumens every week!</p>
+
+			<h2>Requirements of Lumenaut Pool</h2>
+			<p>To receive inflation payments from Lumenaut you need to fulfil one requirement called Lumenaut Minimum Balance. The minimum balance you need to be able to receive inflation payments trough Lumenaut Pool is 2.5 XLM, we don't distribute payments to accounts with less than 2.5 XLM. Lumenaut Minimum Balance requirement is adopted to discourage bots from spamming the network with activity that emerges and disappears while the payments are processed, which repeatedly interrupts or slows the inflation distribution process.</p>
+			<p>If your address has 2.5 XLM or more, but between the inflation airdrop and the time Lumenaut Pool starts distributing payments you delete your address, or merge it with another address, we will not pay you since your old address doesn't exist in the network. If you want to delete your address but you're voting for Lumenaut Pool, please wait for the inflation payment distribution and then delete your address, because obviously, you will stop receiving payments if your address is deleted.</p>
+
+			<h2>How Much Inflation You Receive</h2>
+			<p>To know how much you will receive in the next inflation payment, enter your XLM amount or Public Key below for the estimate.</p>
+			<div class="calculator">
+				<input type="text" placeholder="XLM amount or Public Key...">
+				<small>We don't store anything on our server, calculation is done locally on your browser. <a href="https://github.com/Lumenaut-Network/website/tree/gh-pages" target="_blank">More Info</a></small>
+				<span></span>
+			</div>
+
+			<h2>When Is The Inflation Payment</h2>
+			<p>Inflation is usually distributed by the Stellar network on Tuesdays at 00:00 UTC. Processing on our end should take no more than a few minutes after that. As a result, you should receive your portion of the inflation distribution every Tuesday at around 00:00 UTC.</p>
+
+			<h2>Why Use Lumenaut Pool</h2>
+			<p>Currently, there are other pools but they charge fees or gamble with the inflation payouts of their users. Due to the lack of a trustworthy or fair pool - we decided to create something better where no fees will be subtracted from your payment. You will receive the full and fair amount of your share of the weekly inflation distribution.</p>
+
+			<h2>Voting To Lumenaut Pool</h2>
+			<p>Voting is done by setting the customizable option of Inflation Destination to our address. Your vote is equal to the number of Lumens you hold and the inflation payment you receive is proportionate to the amount of your holdings. The more Lumens you hold - the more Lumens you receive via inflation. Joining Lumenaut Pool doesn't change the fact that you can use your address/wallet like you normally would. Everything is automatic!</p>
+
+			<h2>Revote of Inflation Destination</h2>
+			<p>Your inflation destination only needs to be set once. The option is tied to your address, not your tokens. So, as long as your address has the Lumens, you will automatically receive your share of the inflation distribution.</p>
+
+			<h2>Safety of Lumenaut Pool</h2>
+			<p>Inflation destination is a native component of the Stellar network. It is 100% safe because Lumenaut Pool only has access to your Public Key, which is the address you use to vote for us so we can know who you are and send you the inflation payment every week.</p>
+
+			<h2>Use Of Secret Key To Set Inflation Destination</h2>
+			<p>Every transaction or option set in your address needs to be signed with your Secret Key, to make sure the person issuing the action is the true owner of the address. This process is a good thing, it results in heightened security for your holdings. These are preventative measures to block any third party from setting the inflation destination of your address without your consent.</p>
+			<p>Depending on the wallet you have and the tutorial you follow - you may need to use your Secret Key to set the inflation destination. For the most part, you will be safe since your Secret Key will be used with your wallet or on the official Stellar website. In case you have trust issues, which is understandable, it's important for you to note that your Secret Key isn't shared with us. We don't need to know your Secret Key and we don't want to. So, there's nothing we can do to damage you or steal your funds.</p>
+
+			<a href="" class="close"><svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M314.523,256l192.268,-192.268c6.945,-6.946 6.945,-18.177 0,-25.123l-33.4,-33.4c-6.946,-6.945 -18.177,-6.945 -25.123,0l-192.268,192.268l-192.268,-192.268c-6.946,-6.945 -18.177,-6.945 -25.123,0l-33.4,33.4c-6.945,6.946 -6.945,18.177 0,25.123l192.268,192.268l-192.268,192.268c-6.945,6.946 -6.945,18.177 0,25.123l33.4,33.4c6.946,6.945 18.177,6.945 25.123,0l192.268,-192.268l192.268,192.268c6.946,6.945 18.177,6.945 25.123,0l33.4,-33.4c6.945,-6.946 6.945,-18.177 0,-25.123l-192.268,-192.268Z"/></svg></a>
+		</section>
+
+		<section id="payments">
+			<h2>Lumenaut Pool Payments History</h2>
+
+			<table id="pool">
+				<thead>
+				<tr>
+					<th><span>Date (y/m/d)</span></th>
+					<th><span>Total Payment</span></th>
+					<th><span>Surplus</span></th>
+					<th><span>Voters</span></th>
+					<th><span>Rerouted</span></th>
+					<th><span>Donated</span></th>
+					<th><span>Results</span></th>
+				</tr>
+				</thead>
+			</table>
+
+			<a href="" class="close"><svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M314.523,256l192.268,-192.268c6.945,-6.946 6.945,-18.177 0,-25.123l-33.4,-33.4c-6.946,-6.945 -18.177,-6.945 -25.123,0l-192.268,192.268l-192.268,-192.268c-6.946,-6.945 -18.177,-6.945 -25.123,0l-33.4,33.4c-6.945,6.946 -6.945,18.177 0,25.123l192.268,192.268l-192.268,192.268c-6.945,6.946 -6.945,18.177 0,25.123l33.4,33.4c6.946,6.945 18.177,6.945 25.123,0l192.268,-192.268l192.268,192.268c6.946,6.945 18.177,6.945 25.123,0l33.4,-33.4c6.945,-6.946 6.945,-18.177 0,-25.123l-192.268,-192.268Z"/></svg></a>
+		</section>
+
+		<section id="export">
+			<h2>Lumenaut Pool Payments Export</h2>
+
+			<p>This will export the payments sent by Lumenaut to a given Public Key. Input the Public Key bellow and press the button "Load" to get the payment's information directly from the network. If desired you can export a CSV file with the payment's information by pressing the button "Export CSV".</p>
+
+			<select id="timeframe">
+				<option value="30days">Last 30 Days</option>
+				<option value="year">Last Year</option>
+				<option value="prevYear">Previous Year</option>
+			</select>
+
+			<input type="text" id="address" placeholder="input your Public Key here...">
+			<small>We don't store anything on our server, calculation is done locally on your browser. <a href="https://github.com/Lumenaut-Network/lumenaut-payments-export" target="_blank">More Info</a></small>
+
+			<div>
+				<input type="button" value="Load" class="btn" id="load">
+				<input type="button" value="Export CSV" class="btn" id="csv" disabled>
+			</div>
+
+			<table>
+				<thead>
+					<tr>
+						<th>Date</th>
+						<th>Amount</th>
+					</tr>
+				</thead>
+				<tbody id="data">
+					<tr>
+						<td colspan="2">No Public Key loaded...</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<a href="" class="close"><svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M314.523,256l192.268,-192.268c6.945,-6.946 6.945,-18.177 0,-25.123l-33.4,-33.4c-6.946,-6.945 -18.177,-6.945 -25.123,0l-192.268,192.268l-192.268,-192.268c-6.946,-6.945 -18.177,-6.945 -25.123,0l-33.4,33.4c-6.945,6.946 -6.945,18.177 0,25.123l192.268,192.268l-192.268,192.268c-6.945,6.946 -6.945,18.177 0,25.123l33.4,33.4c6.946,6.945 18.177,6.945 25.123,0l192.268,-192.268l192.268,192.268c6.946,6.945 18.177,6.945 25.123,0l33.4,-33.4c6.945,-6.946 6.945,-18.177 0,-25.123l-192.268,-192.268Z"/></svg></a>
+		</section>
+
+		<section id="about">
+			<h2>What is Lumenaut</h2>
+			<p>Lumenaut is formed by users that met in the official <a href="https://reddit.com/r/stellar">Stellar subreddit</a>. Lumenaut name is a play-on-words based on “lumen” and “naut”. The word “lumen” refers to the Stellar’s network crypto-asset called Lumen and the word “naut” refers to astronaut or cosmonaut.</p>
+
+			<p>Lumenaut seeks to improve Stellar ecosystem with new services and continuously improve the existing ones by Lumenaut. We don’t develop a service/product already offered by other entity unless we can do something better, this way Stellar benefits from a more healthy ecosystem since we don’t contribute for a saturation in the network.</p>
+
+			<p>Lumenaut is the original brand for which the name "lumenaut" was created, we are not associated with any other service using our name or variants of our name or logo. Lumenaut quickly became a way for users to collectively refer to themselves as a “lumenaut”. If you like Stellar and hold Lumens (XLM) then you’re a lumenaut, just like us.</p>
+
+			<h2>How To Help Lumenaut</h2>
+			<p>We try to improve the Stellar community and ecosystem. If you would like to contribute to our cause and help us so all our services can run smoothly, you can donate Lumens (XLM) to our donation’s address shared below and help us achieve at least USD $80 per month.</p>
+
+			<address class="addr addrDonation">
+				<img class="qrCode" src="assets/img/qrDonate.png" alt="QR Code">
+				<a data-clipboard-text="GDHJIGNUZDEH6T2PU7HBPGGJUUWTMMEENDFVMGIJO2KV7JEBBLDONATE">GDHJIGNUZDEH6T2PU7HBPGGJUUWTMMEENDFVMGIJO2KV7JEBBLDONATE</a>
+			</address>
+
+			<p>If you can't donate, you can still help us by spreading the word about our services to other persons, make blog posts, refer us, join our media platforms, suggest ideas, contribute code, <a href="https://translate.lumenaut.net/">help translating</a> our website to your language... Or simply just use the Lumenaut Pool, the more votes we have the stronger we're because if some users decide to leave the pool we can still have the minimum requirement to keep receiving the inflation from the Stellar network.</p>
+
+			<a href="" class="close"><svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M314.523,256l192.268,-192.268c6.945,-6.946 6.945,-18.177 0,-25.123l-33.4,-33.4c-6.946,-6.945 -18.177,-6.945 -25.123,0l-192.268,192.268l-192.268,-192.268c-6.946,-6.945 -18.177,-6.945 -25.123,0l-33.4,33.4c-6.945,6.946 -6.945,18.177 0,25.123l192.268,192.268l-192.268,192.268c-6.945,6.946 -6.945,18.177 0,25.123l33.4,33.4c6.946,6.945 18.177,6.945 25.123,0l192.268,-192.268l192.268,192.268c6.946,6.945 18.177,6.945 25.123,0l33.4,-33.4c6.945,-6.946 6.945,-18.177 0,-25.123l-192.268,-192.268Z"/></svg></a>
+		</section>
+	</main>
+
+	<footer>
+		<div>
+			<a href="https://www.reddit.com/r/lumenaut" target="_blank"><img src="assets/img/fooReddit.svg" alt="Reddit"></a>
+			<a href="https://twitter.com/lumenaut" target="_blank"><img src="assets/img/fooTwitter.svg" alt="Twitter"></a>
+			<a href="https://facebook.com/lumenaut" target="_blank"><img src="assets/img/fooFacebook.svg" alt="Facebook"></a>
+			<a href="https://lumenaut.slack.com" target="_blank"><img src="assets/img/fooSlack.svg" alt="Slack"></a>
+			<a href="https://github.com/lumenaut-network" target="_blank"><img src="assets/img/fooGithub.svg" alt="Github"></a>
+			<a href="https://keybase.io/team/lumenaut_network" target="_blank"><img src="assets/img/fooKeybase.svg" alt="Keybase"></a>
+			<a href="https://translate.lumenaut.net" target="_blank"><img src="assets/img/fooCrowdin.svg" alt="Crowdin"></a>
+		</div>
+		<div>
+			<p>Lumenaut is the original brand for which the name "lumenaut" was created, we are not associated with any other service using our name or variants of our name or logo.</p>
+			<p>To offer you a better browsing experience we use cookies for analytics, personalisation, or ads. Read our <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms of Use</a> to know how we use cookies and how you can control them. By using Lumenaut's services you consent to our use of cookies.</p>
+			<p>2018 © Lumenaut</p>
+		</div>
+	</footer>
+
+	<!-- Stellar SDK -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/stellar-sdk/0.8.0/stellar-sdk.js" integrity="sha384-ZLFqobQQtphXg0EkBNEhn6PWrsETu9TotgyqNGtuSC6j108/jAvBOUpCUysC9iMp" crossorigin="anonymous"></script>
+
+	<!-- jQuery -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha384-xBuQ/xzmlsLoJpyjoggmTEz8OWUFM0/RC5BsqQBDX2v5cMvDHcMakNTNrHIW2I5f" crossorigin="anonymous"></script>
+
+	<!-- Clipboard -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js" integrity="sha384-cV+rhyOuRHc9Ub/91rihWcGmMmCXDeksTtCihMupQHSsi8GIIRDG0ThDc3HGQFJ3" crossorigin="anonymous"></script>
+
+	<!-- DataTables -->
+	<script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js" integrity="sha384-Z9D45cp3elqajO+xEyjRTIK1Gr3eYsXiyCPIKNog1sIQzpo2fqFDqFdADGiJjzOv" crossorigin="anonymous"></script>
+
+	<!-- Socket.io -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js" integrity="sha384-1q57pfXLwPbzVVRAwqo5n8j8Gv7dStrYiNewqi8sOISrKZfKN/qZf9Z1uqwunaWX" crossorigin="anonymous"></script>
+
+	<!-- Price streamer utility function -->
+	<script src="assets/js/ccc.streamer.utility.min.js" integrity="sha384-Vhj9/B9H6r66EFY/LeLL3DYFgei4SBEdADchhc8q41n4Quu5DHiAyF5JGrF0QDbZ" crossorigin="anonymous"></script>
+
+	<!-- Moment -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.21.0/moment.js" integrity="sha384-ahj+s6Xl73DCw/77Z2uM/ETxQh9LuG2dUkcEaATtk1AY3hsJlOq1aFj8xInGmtOU" crossorigin="anonymous"></script>
+
+	<!-- Global JS -->
+	<script src="assets/js/global.js"></script>
+</body>
+</html>
