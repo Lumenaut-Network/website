@@ -42,7 +42,7 @@ $(document).ready(function(){
 		'paging':   false,
 		'info':     false,
 		'order': [[ 0, "desc" ]],
-		'ajax': 'https://lumenaut-network.github.io/website/payments/arrays.txt',
+		'ajax': 'https://lumenaut-network.github.io/website/payments.txt',
 		'columnDefs': [ {
 			'targets': -1,
 			'data': null,
@@ -237,36 +237,36 @@ $(document).keypress(function(e) {
 // Setup & Instructions
 $(document).ready(function() {
 	const POOL_ADDRESS = 'GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT';
-	const $addrInput = $('#join input');
-	const $verifyButton = $('#join button');
-	const $verifyResult = $('#confirmation');
+	const $key = $('#join input');
+	const $verify = $('#join button');
+	const $result = $('#confirming');
 
 	const server = new StellarSdk.Server('https://horizon.stellar.org');
 	StellarSdk.Network.usePublicNetwork();
 
-	$addrInput.keyup((e) => {
+	$key.keyup((e) => {
 		e.preventDefault();
 
-		$verifyResult.empty();
+		$verify.empty();
 
-		const pubKey = $addrInput.val();
+		const pubKey = $key.val();
 		if (pubKey && StellarSdk.StrKey.isValidEd25519PublicKey(pubKey)) {
 			verifyAccount();
 		}
 	});
 
-	$verifyButton.click(verifyAccount);
+	$verify.click(verifyAccount);
 
 	function verifyAccount() {
-		const pubKey = $addrInput.val();
+		const pubKey = $key.val();
 
 		console.log('pub key: ', pubKey);
 
 		if (!StellarSdk.StrKey.isValidEd25519PublicKey(pubKey)) {
-			$verifyResult.empty();
+			$result.empty();
 
-			$verifyResult.append(
-				"<p class=\"alert alert-warning\">Invalid address. Try copy-pasting again.</p>"
+			$result.append(
+				"<p class=\"alert alert-warning\">Invalid address. Please try to copy and paste again.</p>"
 			);
 			return;
 		}
@@ -276,13 +276,13 @@ $(document).ready(function() {
 				console.log(account);
 
 				if (account.inflation_destination != POOL_ADDRESS) {
-					$verifyResult.empty();
-					$verifyResult.append(
-						"<p class=\"alert alert-warning\">Hmmm. Looks like you're not in the pool yet.</p>"
+					$result.empty();
+					$result.append(
+						"<p class=\"alert alert-warning\">Hmmm! Looks like you're not in the pool yet.</p>"
 					);
 				} else {
-					$verifyResult.empty();
-					$verifyResult.append(
+					$result.empty();
+					$result.append(
 						"<p class=\"alert alert-success\">Success! Welcome to the pool and thanks for your support.</p>"
 					);
 				}
@@ -290,9 +290,9 @@ $(document).ready(function() {
 		} catch(err) {
 			console.log(err);
 
-			$verifyResult.empty();
+			$result.empty();
 
-			$verifyResult.append(
+			$result.append(
 				"<p class=\"alert alert-warning\">Error fetching account info. Please try again later.</p>"
 			);
 			return;
@@ -309,7 +309,7 @@ document.getElementById("load").onclick = function () {
 	address = document.getElementById('address').value;
 
 	if (!address) {
-		console.error("Your Public Key is missing!");
+		console.error("Your address is missing!");
 		return;
 	}
 
