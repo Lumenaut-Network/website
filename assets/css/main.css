@@ -387,11 +387,13 @@ main > section > .close svg {
 	fill: currentColor;
 	}
 
-main > section h2 {
+main > section h2,
+main > section h3 {
 	text-align: center;
 	}
 
-main > section h2:not(:first-child) {
+main > section h2:not(:first-child),
+main > section h3:not(:first-child) {
 	margin-top: 12vmin;
 	}
 
