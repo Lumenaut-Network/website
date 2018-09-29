@@ -237,19 +237,19 @@ $(document).keypress(function(e) {
 // Setup & Instructions
 $(document).ready(function() {
 	const POOL_ADDRESS = 'GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT';
-	const $key = $('#join input');
-	const $verify = $('#join button');
-	const $result = $('#confirming');
+	const $address = $('#address');
+	const $verify = $('#verify');
+	const $result = $('#result');
 
 	const server = new StellarSdk.Server('https://horizon.stellar.org');
 	StellarSdk.Network.usePublicNetwork();
 
-	$key.keyup((e) => {
+	$address.keyup((e) => {
 		e.preventDefault();
 
-		$verify.empty();
+		$result.empty();
 
-		const pubKey = $key.val();
+		const pubKey = $address.val();
 		if (pubKey && StellarSdk.StrKey.isValidEd25519PublicKey(pubKey)) {
 			verifyAccount();
 		}
@@ -258,7 +258,7 @@ $(document).ready(function() {
 	$verify.click(verifyAccount);
 
 	function verifyAccount() {
-		const pubKey = $key.val();
+		const pubKey = $address.val();
 
 		console.log('pub key: ', pubKey);
 
@@ -266,7 +266,7 @@ $(document).ready(function() {
 			$result.empty();
 
 			$result.append(
-				"<p class=\"alert alert-warning\">Invalid address. Please try to copy and paste again.</p>"
+				"<p class=\"alert alert-warning\">Invalid address. Try copy-pasting again.</p>"
 			);
 			return;
 		}
@@ -278,7 +278,7 @@ $(document).ready(function() {
 				if (account.inflation_destination != POOL_ADDRESS) {
 					$result.empty();
 					$result.append(
-						"<p class=\"alert alert-warning\">Hmmm! Looks like you're not in the pool yet.</p>"
+						"<p class=\"alert alert-warning\">Hmmm. Looks like you're not in the pool yet.</p>"
 					);
 				} else {
 					$result.empty();
