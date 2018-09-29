@@ -463,95 +463,6 @@ main > section h3:not(:first-child) {
 	margin-bottom: 6vmin;
 	}
 
-#join .join-tab {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	margin: 0 -24vmin;
-	font-family: 'Oswald', 'Arial Narrow', 'Arial Nova Cond', sans-serif;
-	text-transform: uppercase;
-	text-align: center;
-	border-bottom: 2px solid rgba(0,0,9,.05);
-	}
-
-#join .join-tab a {
-	margin: 0 1vmin;
-	padding: 1vmin 3vmin;
-	background-color: rgba(0,0,9,.05);
-	border-top-left-radius: 0.5vmin;
-	border-top-right-radius: 0.5vmin;
-	border-top: 2px solid transparent;
-	border-left: 2px solid transparent;
-	border-right: 2px solid transparent;
-
-	transition: background-color .3s cubic-bezier(0,0,0,1);
-	}
-
-#join .join-tab a:hover:not(.active) {
-	background-color: #626495; /* violet */
-	color: #fff;
-	transition: background-color .3s cubic-bezier(0,0,0,1);
-	}
-
-#join .join-tab a:active:not(.active) {
-	background-color: #01AA78; /* green */
-	transition: background-color .3s cubic-bezier(0,0,0,1);
-	}
-
-#join .join-tab a.active {
-	background-color: transparent;
-	color: #01AA78; /* green */
-	border-color: rgba(0,0,9,.05);
-	box-shadow: rgb(230,234,238) 0 4px 0 -2px;		/* same as section */
-	}
-
-#join .join-content {
-	display: flex;
-	flex-wrap: wrap;
-	padding-top: 6vmin;
-	}
-
-#join .join-content > div,
-#join #cast > div {
-	display: none;
-	}
-
-#join .join-content .active {
-	display: block !important;
-	}
-
-#join #wallet div {
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: row;
-	justify-content: center;
-	}
-
-#join #wallet a {
-	min-width: 24vmin;
-	width: 25%;
-	margin: 1.5vmin;
-	padding: 1.5vmin;
-	font-size: 75%;
-	text-align: center;
-	background-color: #fff;
-	border-radius: 0.5vmin;
-	box-shadow: rgba(51,51,94,.1) 0 6px 12px 0;
-	transition: box-shadow .3s cubic-bezier(0,0,0,1);
-	}
-
-#join #wallet a:hover {
-	box-shadow: rgba(51,51,94,.1) 0 15px 35px 0, rgba(0,0,9,.15) 0 5px 15px 0;
-	transition: box-shadow .3s cubic-bezier(0,0,0,1);
-	}
-
-#join #wallet a img {
-	display: block;
-	width: 6vmin;
-	height: 6vmin;
-	margin: 0 auto 1.5vmin;
-	}
-
 #join ol {
 	padding-left: 3vmin;
 	list-style-position: outside;
@@ -566,11 +477,7 @@ main > section h3:not(:first-child) {
 	margin-top: 3vmin;
 	}
 
-#confirm {
-	width: 100% !important;
-	}
-
-#confirm button {
+#verify {
 	display: block;
 	margin: 3vmin auto 0;
 	}
@@ -580,7 +487,7 @@ main section:not(#welcome):not(#join) .addr {
 	margin-bottom: 6vmin;
 	}
 
-#confirm .alert {
+#join .alert {
 	margin: 6vmin auto 0;
 	padding: 1.5vmin 3vmin;
 	text-align: center;
@@ -589,7 +496,7 @@ main section:not(#welcome):not(#join) .addr {
 	border-radius: 0.5vmin;
 	}
 
-#confirm .alert-success {
+#join .alert-success {
 	background-color: #01AA78; /* green */	}
 
 
