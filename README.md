@@ -1,10 +1,12 @@
-# Lumenaut website
+# THIS REPOSITORY IS OBSOLETE AND KEPT FOR REFERENCE PURPOSES ONLY
+
+### Lumenaut website
 
 Repository for the Lumenaut website.
 
 You can visit the website here: https://lumenaut-network.github.io/website
 
-# Observations
+### Observations
 
 Some considerations taken while making the website:
 
@@ -18,7 +20,7 @@ Some considerations taken while making the website:
 - No dependencies from frameworks;
 - 100% markup and stylesheet validation according to W3C standards.
 
-# Validation
+### Validation
 
 HTML5 validation:
 
@@ -28,10 +30,10 @@ CSS3 validation:
 
 https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Flumenaut-network.github.io%2Fwebsite%2F
 
-# Dependencies
+### Dependencies
 
 None.
 
 _________________________
 
-2018 @ Lumenaut
+2019 @ Lumenaut
