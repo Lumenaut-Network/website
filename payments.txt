@@ -1,6 +1,13 @@
 {
   "data": [
     [
+      "2019-04-02",
+      "149,862.0577462 XLM",
+      "74.1993299 XLM",
+      "289,349",
+      "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
+    ],
+    [
       "2019-03-26",
       "148,719.2027796 XLM",
       "70.5541941 XLM",
