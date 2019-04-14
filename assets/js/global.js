@@ -3,13 +3,10 @@ $(document).ready(() => {
 	// pool address
 	const inflationDest = 'GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT';
 	$.get({
-		url: 'https://fed.network/inflation/' + inflationDest
+		url: 'https://fed.network/inflation_stat/' + inflationDest
 	}).then((result) => {
-		$('#accounts-contributing').text(result.entries.length.toLocaleString());
-		const totalVotes = result.entries.reduce((sum, entry) => {
-			return sum + parseInt(entry.balance) / 10000000;
-		}, 0);
-		$('#total-votes').text(parseInt(totalVotes).toLocaleString());
+		$('#accounts-contributing').text((result.amount/ 10000000).toLocaleString());
+		$('#total-votes').text(result.entries.toLocaleString());
 	}, (err) => {
 		console.log('error: ', err.responseJSON);
 	});
