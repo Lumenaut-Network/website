@@ -2,279 +2,279 @@
   "data": [
     [
       "2019-04-16",
-      "151,135.3177219 XLM",
-      "260.5200310 XLM",
+      "151,135.3177219",
+      "260.5200310",
       "291,563",
-      "0.01 XLM",
+      "0.01",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
       "2019-04-09",
-      "149,789.8810033 XLM",
-      "203.6602294 XLM",
+      "149,789.8810033",
+      "203.6602294",
       "290,492",
-      "0.01 XLM",
+      "0.01",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
       "2019-04-02",
-      "149,862.0577462 XLM",
-      "74.1993299 XLM",
+      "149,862.0577462",
+      "74.1993299",
       "289,349",
       "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
       "2019-03-26",
-      "148,719.2027796 XLM",
-      "70.5541941 XLM",
+      "148,719.2027796",
+      "70.5541941",
       "284,865",
       "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
       "2019-03-19",
-      "148,846.1855633 XLM",
-      "70.4073407 XLM",
+      "148,846.1855633",
+      "70.4073407",
       "280,593",
       "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
       "2019-03-12",
-      "148,241.7119222 XLM",
-      "70.2591676 XLM",
+      "148,241.7119222",
+      "70.2591676",
       "279,658",
       "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
       "2019-03-05",
-      "146,169.6186755 XLM",
-      "69.820642 XLM",
+      "146,169.6186755",
+      "69.820642",
       "272,419",
       "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
       "2019-02-26",
-      "142,682.7048311 XLM",
-      "68.9476343 XLM",
+      "142,682.7048311",
+      "68.9476343",
       "277,474",
       "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
       "2019-02-19",
-      "143,381.2409853 XLM",
-      "71.5148654 XLM",
+      "143,381.2409853",
+      "71.5148654",
       "277,811",
       "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
       "2019-02-12",
-      "146,946.1891323 XLM",
-      "71.851639 XLM",
+      "146,946.1891323",
+      "71.851639",
       "277,775",
       "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
       "2019-02-05",
-      "139,877.5248594 XLM",
-      "72.3253542 XLM",
+      "139,877.5248594",
+      "72.3253542",
       "275,397",
       "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
       "2019-01-29",
-      "139,906.3971497 XLM",
-      "73.5692492 XLM",
+      "139,906.3971497",
+      "73.5692492",
       "273,762",
       "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
       "2019-01-22",
-      "141,541.9395869 XLM",
-      "75.372867 XLM",
+      "141,541.9395869",
+      "75.372867",
       "268,636",
       "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
       "2019-01-15",
-      "141,205.6297089 XLM",
-      "76.0708469 XLM",
+      "141,205.6297089",
+      "76.0708469",
       "269,910",
       "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
       "2019-01-08",
-      "141,417.1386936 XLM",
-      "76.0507322 XLM",
+      "141,417.1386936",
+      "76.0507322",
       "269,620",
       "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
       "2019-01-01",
-      "139,621.2653234 XLM",
-      "74.8103332 XLM",
+      "139,621.2653234",
+      "74.8103332",
       "265,562",
       "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
       "2018-12-25",
-      "139,636.223694 XLM",
-      "72.9629258 XLM",
+      "139,636.223694",
+      "72.9629258",
       "262,005",
       "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
       "2018-12-18",
-      "131,828.4864482 XLM",
-      "70.5484208 XLM",
+      "131,828.4864482",
+      "70.5484208",
       "256,172",
       "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
       "2018-12-11",
-      "129,304.6703844 XLM",
-      "69.4955388 XLM",
+      "129,304.6703844",
+      "69.4955388",
       "253,481",
       "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
       "2018-12-04",
-      "130,864.7839918 XLM",
-      "68.42452264 XLM",
+      "130,864.7839918",
+      "68.42452264",
       "249,445",
       "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
       "2018-11-27",
-      "130,230.780507 XLM",
-      "69.062989 XLM",
+      "130,230.780507",
+      "69.062989",
       "249,508",
       "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
       "2018-11-20",
-      "132,924.471658 XLM",
-      "68.1421062 XLM",
+      "132,924.471658",
+      "68.1421062",
       "241,776",
       "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
       "2018-11-13",
-      "133,122.732349 XLM",
-      "67.5629502 XLM",
+      "133,122.732349",
+      "67.5629502",
       "239,003",
       "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
       "2018-11-06",
-      "132,200.9336704 XLM",
-      "67.4056554 XLM",
+      "132,200.9336704",
+      "67.4056554",
       "236,552",
       "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
       "2018-10-30",
-      "131,652.4816740 XLM",
-      "63.7393169 XLM",
+      "131,652.4816740",
+      "63.7393169",
       "224,292",
       "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
       "2018-10-23",
-      "126,991.1396896 XLM",
-      "63.8482890 XLM",
+      "126,991.1396896",
+      "63.8482890",
       "224,104",
       "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
       "2018-10-16",
-      "124,872.3367726 XLM",
-      "63.9546747 XLM",
+      "124,872.3367726",
+      "63.9546747",
       "224,198",
       "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
       "2018-10-09",
-      "123,761.0548874 XLM",
-      "63.3669998 XLM",
+      "123,761.0548874",
+      "63.3669998",
       "222,930",
       "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
       "2018-10-02",
-      "122,560.9387657 XLM",
-      "62.9319294 XLM",
+      "122,560.9387657",
+      "62.9319294",
       "221,048",
       "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
       "2018-09-25",
-      "120,621.7655432 XLM",
-      "68.7724305 XLM",
+      "120,621.7655432",
+      "68.7724305",
       "239,803",
       "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
       "2018-09-18",
-      "121,661.048863 XLM",
-      "118.9770332 XLM",
+      "121,661.048863",
+      "118.9770332",
       "398,114",
       "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
       "2018-09-11",
-      "121,042.5263680 XLM",
-      "153.1323162 XLM",
+      "121,042.5263680",
+      "153.1323162",
       "509,868",
       "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
       "2018-09-04",
-      "122,618.017065 XLM",
-      "138.7103461 XLM",
+      "122,618.017065",
+      "138.7103461",
       "458,870",
       "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
       "2018-08-28",
-      "124,094.8835741 XLM",
-      "120.3426282 XLM",
+      "124,094.8835741",
+      "120.3426282",
       "397,944",
       "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
       "2018-08-21",
-      "123,715.3997402 XLM",
+      "123,715.3997402",
       "—",
       "335,326",
       "0.00001",
@@ -282,7 +282,7 @@
     ],
     [
       "2018-08-14",
-      "123,323.2445242 XLM",
+      "123,323.2445242",
       "—",
       "267,363",
       "0.00001",
@@ -290,7 +290,7 @@
     ],
     [
       "2018-08-07",
-      "123,319.5157939 XLM",
+      "123,319.5157939",
       "—",
       "196,141",
       "0.00001",
@@ -298,7 +298,7 @@
     ],
     [
       "2018-07-31",
-      "122,973.7517170 XLM",
+      "122,973.7517170",
       "—",
       "143,179",
       "0.00001",
@@ -306,7 +306,7 @@
     ],
     [
       "2018-07-24",
-      "115,562.1302000 XLM",
+      "115,562.1302000",
       "—",
       "128,460",
       "0.00001",
@@ -314,7 +314,7 @@
     ],
     [
       "2018-07-17",
-      "113,105.4595491 XLM",
+      "113,105.4595491",
       "—",
       "121,340",
       "0.00001",
@@ -322,7 +322,7 @@
     ],
     [
       "2018-07-10",
-      "112,026.6492847 XLM",
+      "112,026.6492847",
       "—",
       "105,435",
       "0.00001",
@@ -330,7 +330,7 @@
     ],
     [
       "2018-07-03",
-      "110,748.9299087 XLM",
+      "110,748.9299087",
       "—",
       "97,028",
       "0.00001",
@@ -338,7 +338,7 @@
     ],
     [
       "2018-06-26",
-      "110,664.2194079 XLM",
+      "110,664.2194079",
       "—",
       "91,038",
       "0.00001",
@@ -346,7 +346,7 @@
     ],
     [
       "2018-06-19",
-      "110,127.2000136 XLM",
+      "110,127.2000136",
       "—",
       "83,375",
       "0.00001",
@@ -354,7 +354,7 @@
     ],
     [
       "2018-06-12",
-      "110,191.8703078 XLM",
+      "110,191.8703078",
       "—",
       "72,821",
       "0.00001",
@@ -362,7 +362,7 @@
     ],
     [
       "2018-06-05",
-      "110,161.9398484 XLM",
+      "110,161.9398484",
       "—",
       "56,753",
       "0.00001",
@@ -370,7 +370,7 @@
     ],
     [
       "2018-05-29",
-      "104,941.0102857 XLM",
+      "104,941.0102857",
       "—",
       "46,937",
       "0.00001",
@@ -378,7 +378,7 @@
     ],
     [
       "2018-05-22",
-      "103,939.7600091 XLM",
+      "103,939.7600091",
       "—",
       "37,541",
       "0.00001",
@@ -386,7 +386,7 @@
     ],
     [
       "2018-05-15",
-      "105,890.2597731 XLM",
+      "105,890.2597731",
       "—",
       "33,617",
       "0.00001",
@@ -394,7 +394,7 @@
     ],
     [
       "2018-05-08",
-      "105,045.4298764 XLM",
+      "105,045.4298764",
       "—",
       "29,719",
       "0.00001",
@@ -402,7 +402,7 @@
     ],
     [
       "2018-05-01",
-      "104,563.4099829 XLM",
+      "104,563.4099829",
       "—",
       "17,791",
       "0.00001",
@@ -410,7 +410,7 @@
     ],
     [
       "2018-04-24",
-      "104,446.2500004 XLM",
+      "104,446.2500004",
       "—",
       "12,352",
       "0.00001",
@@ -418,7 +418,7 @@
     ],
     [
       "2018-04-17",
-      "100,511.3000010 XLM",
+      "100,511.3000010",
       "—",
       "11,447",
       "0.00001",
@@ -426,7 +426,7 @@
     ],
     [
       "2018-04-10",
-      "100,009.3000046 XLM",
+      "100,009.3000046",
       "—",
       "10,382",
       "0.00001",
@@ -434,7 +434,7 @@
     ],
     [
       "2018-04-03",
-      "97,070.4099986 XLM",
+      "97,070.4099986",
       "—",
       "10,231",
       "0.00001",
@@ -442,7 +442,7 @@
     ],
     [
       "2018-03-27",
-      "94,099.5500021 XLM",
+      "94,099.5500021",
       "—",
       "10,050",
       "0.00001",
@@ -450,7 +450,7 @@
     ],
     [
       "2018-03-20",
-      "90,121.8400001 XLM",
+      "90,121.8400001",
       "—",
       "9,717",
       "0.00001",
@@ -458,7 +458,7 @@
     ],
     [
       "2018-03-13",
-      "84,593.4600014 XLM",
+      "84,593.4600014",
       "—",
       "9,475",
       "0.00001",
@@ -466,7 +466,7 @@
     ],
     [
       "2018-03-06",
-      "78,705.9699983 XLM",
+      "78,705.9699983",
       "—",
       "9,161",
       "0.00001",
@@ -474,7 +474,7 @@
     ],
     [
       "2018-02-27",
-      "76,386.4599975 XLM",
+      "76,386.4599975",
       "—",
       "8,680",
       "0.00001",
@@ -482,7 +482,7 @@
     ],
     [
       "2018-02-20",
-      "62,131.1999994 XLM",
+      "62,131.1999994",
       "—",
       "8,230",
       "0.00001",
@@ -490,7 +490,7 @@
     ],
     [
       "2018-02-13",
-      "57,672.7799994 XLM",
+      "57,672.7799994",
       "—",
       "7,329",
       "0.00001",
@@ -498,7 +498,7 @@
     ],
     [
       "2018-02-06",
-      "51,728.6280545 XLM",
+      "51,728.6280545",
       "—",
       "6,623",
       "0.00001",
@@ -506,7 +506,7 @@
     ],
     [
       "2018-01-30",
-      "48,981.0158492 XLM",
+      "48,981.0158492",
       "—",
       "5,752",
       "0.00001",
@@ -514,7 +514,7 @@
     ],
     [
       "2018-01-23",
-      "36,107.9188442 XLM",
+      "36,107.9188442",
       "—",
       "3,743",
       "0.00001",
