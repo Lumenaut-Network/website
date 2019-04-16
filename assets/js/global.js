@@ -123,7 +123,7 @@ $(document).ready(function() {
 			Promise.all([getXLMAmount($calcInput.val().replace(/,/g, '')), getLatestLedgerInfo()])
 			.then(function([XLMAmount, _]){
 				// weekly inlation rate set in stellar core code - https://github.com/stellar/stellar-core/blob/master/src/transactions/InflationOpFrame.cpp
-				var total = Math.max((XLMAmount * 0.000190721) + (userXLM * feePool / totalCoins ) - 0.0000100, 0.0);
+				var total = Math.max((XLMAmount * 0.000190721) + (userXLM * feePool / totalCoins ) - 0.0100000, 0.0);
 
 				// This is not accurate and also slowwwww
 				$calcResult.html('Estimated payout = <strong>' + Number((total).toFixed(7)) + '</strong> XLM');
