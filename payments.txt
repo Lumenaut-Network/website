@@ -1,10 +1,27 @@
 {
   "data": [
     [
+      "2019-04-16",
+      "151,135.3177219 XLM",
+      "260.5200310 XLM",
+      "291,563",
+      "0.01 XLM",
+      "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
+    ],
+    [
+      "2019-04-09",
+      "149,789.8810033 XLM",
+      "203.6602294 XLM",
+      "290,492",
+      "0.01 XLM",
+      "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
+    ],
+    [
       "2019-04-02",
       "149,862.0577462 XLM",
       "74.1993299 XLM",
       "289,349",
+      "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
@@ -12,6 +29,7 @@
       "148,719.2027796 XLM",
       "70.5541941 XLM",
       "284,865",
+      "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
@@ -19,6 +37,7 @@
       "148,846.1855633 XLM",
       "70.4073407 XLM",
       "280,593",
+      "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
@@ -26,6 +45,7 @@
       "148,241.7119222 XLM",
       "70.2591676 XLM",
       "279,658",
+      "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
@@ -33,6 +53,7 @@
       "146,169.6186755 XLM",
       "69.820642 XLM",
       "272,419",
+      "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
@@ -40,6 +61,7 @@
       "142,682.7048311 XLM",
       "68.9476343 XLM",
       "277,474",
+      "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
@@ -47,6 +69,7 @@
       "143,381.2409853 XLM",
       "71.5148654 XLM",
       "277,811",
+      "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
@@ -54,6 +77,7 @@
       "146,946.1891323 XLM",
       "71.851639 XLM",
       "277,775",
+      "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
@@ -61,6 +85,7 @@
       "139,877.5248594 XLM",
       "72.3253542 XLM",
       "275,397",
+      "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
@@ -68,6 +93,7 @@
       "139,906.3971497 XLM",
       "73.5692492 XLM",
       "273,762",
+      "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
@@ -75,6 +101,7 @@
       "141,541.9395869 XLM",
       "75.372867 XLM",
       "268,636",
+      "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
@@ -82,6 +109,7 @@
       "141,205.6297089 XLM",
       "76.0708469 XLM",
       "269,910",
+      "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
@@ -89,6 +117,7 @@
       "141,417.1386936 XLM",
       "76.0507322 XLM",
       "269,620",
+      "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
@@ -96,6 +125,7 @@
       "139,621.2653234 XLM",
       "74.8103332 XLM",
       "265,562",
+      "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
@@ -103,6 +133,7 @@
       "139,636.223694 XLM",
       "72.9629258 XLM",
       "262,005",
+      "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
@@ -110,6 +141,7 @@
       "131,828.4864482 XLM",
       "70.5484208 XLM",
       "256,172",
+      "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
@@ -117,6 +149,7 @@
       "129,304.6703844 XLM",
       "69.4955388 XLM",
       "253,481",
+      "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
@@ -124,6 +157,7 @@
       "130,864.7839918 XLM",
       "68.42452264 XLM",
       "249,445",
+      "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
@@ -131,6 +165,7 @@
       "130,230.780507 XLM",
       "69.062989 XLM",
       "249,508",
+      "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
@@ -138,6 +173,7 @@
       "132,924.471658 XLM",
       "68.1421062 XLM",
       "241,776",
+      "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
@@ -145,6 +181,7 @@
       "133,122.732349 XLM",
       "67.5629502 XLM",
       "239,003",
+      "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
@@ -152,6 +189,7 @@
       "132,200.9336704 XLM",
       "67.4056554 XLM",
       "236,552",
+      "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
@@ -159,6 +197,7 @@
       "131,652.4816740 XLM",
       "63.7393169 XLM",
       "224,292",
+      "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
@@ -166,6 +205,7 @@
       "126,991.1396896 XLM",
       "63.8482890 XLM",
       "224,104",
+      "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
@@ -173,6 +213,7 @@
       "124,872.3367726 XLM",
       "63.9546747 XLM",
       "224,198",
+      "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
@@ -180,6 +221,7 @@
       "123,761.0548874 XLM",
       "63.3669998 XLM",
       "222,930",
+      "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
@@ -187,6 +229,7 @@
       "122,560.9387657 XLM",
       "62.9319294 XLM",
       "221,048",
+      "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
@@ -194,6 +237,7 @@
       "120,621.7655432 XLM",
       "68.7724305 XLM",
       "239,803",
+      "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
@@ -201,6 +245,7 @@
       "121,661.048863 XLM",
       "118.9770332 XLM",
       "398,114",
+      "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
@@ -208,6 +253,7 @@
       "121,042.5263680 XLM",
       "153.1323162 XLM",
       "509,868",
+      "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
@@ -215,6 +261,7 @@
       "122,618.017065 XLM",
       "138.7103461 XLM",
       "458,870",
+      "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
@@ -222,6 +269,7 @@
       "124,094.8835741 XLM",
       "120.3426282 XLM",
       "397,944",
+      "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
@@ -229,6 +277,7 @@
       "123,715.3997402 XLM",
       "—",
       "335,326",
+      "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
@@ -236,6 +285,7 @@
       "123,323.2445242 XLM",
       "—",
       "267,363",
+      "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
@@ -243,6 +293,7 @@
       "123,319.5157939 XLM",
       "—",
       "196,141",
+      "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
@@ -250,6 +301,7 @@
       "122,973.7517170 XLM",
       "—",
       "143,179",
+      "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
@@ -257,6 +309,7 @@
       "115,562.1302000 XLM",
       "—",
       "128,460",
+      "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
@@ -264,6 +317,7 @@
       "113,105.4595491 XLM",
       "—",
       "121,340",
+      "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
@@ -271,6 +325,7 @@
       "112,026.6492847 XLM",
       "—",
       "105,435",
+      "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
@@ -278,6 +333,7 @@
       "110,748.9299087 XLM",
       "—",
       "97,028",
+      "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
@@ -285,6 +341,7 @@
       "110,664.2194079 XLM",
       "—",
       "91,038",
+      "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
@@ -292,6 +349,7 @@
       "110,127.2000136 XLM",
       "—",
       "83,375",
+      "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
@@ -299,6 +357,7 @@
       "110,191.8703078 XLM",
       "—",
       "72,821",
+      "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
@@ -306,6 +365,7 @@
       "110,161.9398484 XLM",
       "—",
       "56,753",
+      "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
@@ -313,6 +373,7 @@
       "104,941.0102857 XLM",
       "—",
       "46,937",
+      "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
@@ -320,6 +381,7 @@
       "103,939.7600091 XLM",
       "—",
       "37,541",
+      "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
@@ -327,6 +389,7 @@
       "105,890.2597731 XLM",
       "—",
       "33,617",
+      "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
@@ -334,6 +397,7 @@
       "105,045.4298764 XLM",
       "—",
       "29,719",
+      "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
@@ -341,6 +405,7 @@
       "104,563.4099829 XLM",
       "—",
       "17,791",
+      "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
@@ -348,6 +413,7 @@
       "104,446.2500004 XLM",
       "—",
       "12,352",
+      "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
@@ -355,6 +421,7 @@
       "100,511.3000010 XLM",
       "—",
       "11,447",
+      "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
@@ -362,6 +429,7 @@
       "100,009.3000046 XLM",
       "—",
       "10,382",
+      "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
@@ -369,6 +437,7 @@
       "97,070.4099986 XLM",
       "—",
       "10,231",
+      "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
@@ -376,6 +445,7 @@
       "94,099.5500021 XLM",
       "—",
       "10,050",
+      "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
@@ -383,6 +453,7 @@
       "90,121.8400001 XLM",
       "—",
       "9,717",
+      "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
@@ -390,6 +461,7 @@
       "84,593.4600014 XLM",
       "—",
       "9,475",
+      "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
@@ -397,6 +469,7 @@
       "78,705.9699983 XLM",
       "—",
       "9,161",
+      "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
@@ -404,6 +477,7 @@
       "76,386.4599975 XLM",
       "—",
       "8,680",
+      "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
@@ -411,6 +485,7 @@
       "62,131.1999994 XLM",
       "—",
       "8,230",
+      "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
@@ -418,6 +493,7 @@
       "57,672.7799994 XLM",
       "—",
       "7,329",
+      "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
@@ -425,6 +501,7 @@
       "51,728.6280545 XLM",
       "—",
       "6,623",
+      "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
@@ -432,6 +509,7 @@
       "48,981.0158492 XLM",
       "—",
       "5,752",
+      "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ],
     [
@@ -439,6 +517,7 @@
       "36,107.9188442 XLM",
       "—",
       "3,743",
+      "0.00001",
       "https://stellar.expert/explorer/public/account/GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT"
     ]
   ]
