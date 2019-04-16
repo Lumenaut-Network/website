@@ -5,8 +5,8 @@ $(document).ready(() => {
 	$.get({
 		url: 'https://fed.network/inflation_stat/' + inflationDest
 	}).then((result) => {
-		$('#accounts-contributing').text((result.amount/ 10000000).toLocaleString());
-		$('#total-votes').text(result.entries.toLocaleString());
+		$('#total-votes').text((result.amount/ 10000000).toLocaleString());
+		$('#accounts-contributing').text(result.entries.toLocaleString());
 	}, (err) => {
 		console.log('error: ', err.responseJSON);
 	});
