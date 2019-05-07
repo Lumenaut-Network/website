@@ -1,3 +1,0 @@
-files:
-  - source: '*.html'
-    translation: '%original_file_name%'
