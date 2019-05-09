@@ -12,7 +12,57 @@ $(document).ready(() => {
 	});
 });
 
-
+//firefly
+$(document).ready(() => {
+	const FFWProxy = new FireFlyWallet();
+	const inflationDest = 'GCCD6AJOYZCUAQLX32ZJF2MKFFAUJ53PVCFQI3RHWKL3V47QYE2BNAUT';
+	const server = new StellarSdk.Server('https://horizon.stellar.org');
+	StellarSdk.Network.usePublicNetwork();
+	let address = ''
+	let destination = "";
+	let sequence = 0;
+	let joined = false;
+	FFWProxy.ready()
+		.then(() => {
+			address = FFWProxy.accountID;
+			return server.loadAccount(address);
+		})
+		.then((account) => {
+			destination = account.inflation_destination;
+			sequence = account.sequence;
+			$("#welcome .btn").css("display", 'block');
+			$("#welcome .btn").removeAttr("href");
+			if (destination === inflationDest) {
+				$("#welcome .btn").text('Joined');
+				joined = true;
+			} else {
+				$("#welcome .btn").click(function () {
+					if (joined) return;
+					let account = new StellarSdk.StellarBase.Account(address, sequence);
+					let transaction = new StellarSdk.StellarBase.TransactionBuilder(account, {
+						fee: StellarSdk.StellarBase.BASE_FEE
+					}).addOperation(StellarSdk.StellarBase.Operation.setOptions({
+						inflationDest: inflationDest
+					})).build();
+					let xdr = transaction.toEnvelope().toXDR('base64');
+					FFWProxy.signXDR(xdr, "sign XDR")
+						.then(data => {
+							$("#welcome .btn").text('Joining...');
+							let tx = new StellarSdk.Transaction(data);
+							return server.submitTransaction(tx);
+						})
+						.then(() => {
+							$("#welcome .btn").text('Joined');
+							$('.addrInflation a').addClass('visited');
+							joined = true;
+						})
+				})
+			}
+		})
+		.catch(err => {
+			console.error(err)
+		})
+})
 
 // clipboard
 $(document).ready(() => {
